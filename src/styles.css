@@ -21,6 +21,10 @@
     @apply font-bold text-brand-dark-purple text-xl lg:text-2xl leading-7 tracking-wider;
   }
 
+  h4 {
+    @apply font-bold text-brand-dark-purple text-lg leading-6 lg:leading-7 tracking-wider;
+  }
+
   p {
     @apply text-brand-neutrals-faded-puple leading-8 tracking-wide;
   }
@@ -38,4 +42,8 @@
 
 .scroll-none::-webkit-scrollbar {
   @apply hidden;
+}
+
+.swiper-wrapper {
+  @apply !items-stretch;
 }

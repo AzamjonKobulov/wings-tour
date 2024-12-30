@@ -3,10 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Wins Tour</title>
   </head>
-  <body class="pb-96">
+  <body>
     <!-- HEADER -->
     <header class="pt-8">
       <nav
@@ -410,7 +415,7 @@
               <h2><span class="text-brand-vivid-purple">Наши</span> услуги</h2>
 
               <div
-                class="xl:w-[55%] hidden sm:flex md:flex-col lg:flex-row lg:items-center justify-between gap-4"
+                class="xl:w-[55%] hidden sm:flex flex-col lg:flex-row lg:items-center justify-between gap-4"
               >
                 <p
                   class="max-w-[400px] text-brand-dark-purple font-medium leading-7"
@@ -1953,7 +1958,7 @@
               </h2>
 
               <div
-                class="xl:w-[55%] hidden sm:flex md:flex-col lg:flex-row lg:items-center justify-between gap-4"
+                class="xl:w-[55%] hidden sm:flex flex-col lg:flex-row lg:items-center justify-between gap-4"
               >
                 <p
                   class="max-w-[450px] text-brand-dark-purple font-medium leading-7"
@@ -2404,8 +2409,391 @@
           </div>
         </div>
       </section>
+
+      <!-- Reviews -->
+      <section id="reviews">
+        <div class="max-w-base mx-auto mt-12 lg:mt-16 px-3 md:px-16 lg:px-3">
+          <!-- Title & Slide Nav Btns -->
+          <div class="flex justify-between mb-5 lg:mb-7 gap-6">
+            <h2>
+              <span class="text-brand-vivid-purple">Отзывы</span> <br />
+              участников туров
+            </h2>
+
+            <div class="flex items-center justify-between gap-4">
+              <p
+                class="max-w-[450px] hidden xl:block text-brand-dark-purple font-medium leading-7"
+              >
+                В наших турах собираются замечательные участники, многие
+                становятся друзьями после путешествия
+              </p>
+
+              <!-- Slide Nav Btns -->
+              <div class="flex items-center gap-3">
+                <button
+                  class="prev-review shrink-0 bg-brand-vivid-purple disabled:bg-brand-vivid-purple-disabled hover:bg-brand-vivid-purple-hover active:bg-brand-vivid-purple-pressed rounded-2xl transition-all duration-300 p-4"
+                >
+                  <img
+                    src="./assets/images/icon-link-horizontal-arrow.svg"
+                    alt="Arrow Icon"
+                    class="rotate-180"
+                  />
+                </button>
+                <button
+                  class="next-review shrink-0 bg-brand-vivid-purple disabled:bg-brand-vivid-purple-disabled hover:bg-brand-vivid-purple-hover active:bg-brand-vivid-purple-pressed rounded-2xl transition-all duration-300 p-4"
+                >
+                  <img
+                    src="./assets/images/icon-link-horizontal-arrow.svg"
+                    alt="Arrow Icon"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Reviews -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <!-- Review 1 -->
+              <div class="swiper-slide">
+                <div
+                  class="min-h-[436px] lg:min-h-[452px] flex flex-col justify-between bg-white divide-y divide-brand-liliac-light rounded-3xl"
+                >
+                  <!-- Top -->
+                  <div
+                    class="space-y-2 lg:space-y-8 py-5 px-6 lg:px-11 lg:pt-11 lg:pb-6"
+                  >
+                    <!-- Quote -->
+                    <div class="flex items-center justify-between gap-8">
+                      <img
+                        src="./assets/images/icon-quotes.svg"
+                        alt="Qoute icon"
+                      />
+                      <h4 class="text-brand-vivid-purple">
+                        Поездка в Корею была моей мечтой последние годы
+                      </h4>
+                    </div>
+
+                    <p class="lg:pr-14">
+                      Если вы хотите увидеть Корею с разных сторон, полностью
+                      проникнуться жизнью здесь, то лучше Wings Tour, я уверена,
+                      вы не найдете. Вам ответят на все вопросы, помогут с
+                      каждой возникшей проблемой и исполнят вашу мечту!
+                    </p>
+                  </div>
+
+                  <!-- Bottom -->
+                  <div class="py-4 px-6 lg:pt-6 lg:pb-7 lg:px-10">
+                    <h3>Евгения</h3>
+                    <p>Тур «Цветение вишни», апрель 2024</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Review 2 -->
+              <div class="swiper-slide">
+                <div
+                  class="min-h-[436px] lg:min-h-[452px] flex flex-col justify-between bg-white divide-y divide-brand-liliac-light rounded-3xl"
+                >
+                  <!-- Top -->
+                  <div
+                    class="space-y-2 lg:space-y-8 py-5 px-6 lg:px-11 lg:pt-11 lg:pb-6"
+                  >
+                    <!-- Quote -->
+                    <div class="flex items-center justify-between gap-8">
+                      <img
+                        src="./assets/images/icon-quotes.svg"
+                        alt="Qoute icon"
+                      />
+                      <h4 class="text-brand-vivid-purple">
+                        Появились новые цели и планы
+                      </h4>
+                    </div>
+
+                    <p class="lg:pr-14">
+                      Под присмотром Wings Tour собралась в Южную Корею,
+                      оформила документы, пережила полёт и совершила
+                      увлекательное путешествие. У меня появились новые
+                      знакомые, море впечатлений и фотографий.
+                    </p>
+                  </div>
+
+                  <!-- Bottom -->
+                  <div class="py-4 px-6 lg:pt-6 lg:pb-7 lg:px-10">
+                    <h3>Марина</h3>
+                    <p>Январь 2023</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Review 3 -->
+              <div class="swiper-slide">
+                <div
+                  class="min-h-[436px] lg:min-h-[452px] flex flex-col justify-between bg-white divide-y divide-brand-liliac-light rounded-3xl"
+                >
+                  <!-- Top -->
+                  <div
+                    class="space-y-2 lg:space-y-8 py-5 px-6 lg:px-11 lg:pt-11 lg:pb-6"
+                  >
+                    <!-- Quote -->
+                    <div class="flex items-center justify-between gap-8">
+                      <img
+                        src="./assets/images/icon-quotes.svg"
+                        alt="Qoute icon"
+                      />
+                      <h4 class="text-brand-vivid-purple">
+                        Если есть мечта, исполняй её
+                      </h4>
+                    </div>
+
+                    <p class="lg:pr-14">
+                      Wings Tour молодцы, всё организовали до мелочей. Мы
+                      посетили очень много мест, посмотрели исторический и
+                      современный мир города Сеул. Я вернусь туда ещё раз,
+                      поскольку недели мало, чтобы посмотреть весь город.
+                    </p>
+                  </div>
+
+                  <!-- Bottom -->
+                  <div class="py-4 px-6 lg:pt-6 lg:pb-7 lg:px-10">
+                    <h3>Анастасия</h3>
+                    <p>Январь 2023</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Review 4 -->
+              <div class="swiper-slide">
+                <div
+                  class="min-h-[436px] lg:min-h-[452px] flex flex-col justify-between bg-white divide-y divide-brand-liliac-light rounded-3xl"
+                >
+                  <!-- Top -->
+                  <div
+                    class="space-y-2 lg:space-y-8 py-5 px-6 lg:px-11 lg:pt-11 lg:pb-6"
+                  >
+                    <!-- Quote -->
+                    <div class="flex items-center justify-between gap-8">
+                      <img
+                        src="./assets/images/icon-quotes.svg"
+                        alt="Qoute icon"
+                      />
+                      <h4 class="text-brand-vivid-purple">
+                        Это была самая незабываемая поездка
+                      </h4>
+                    </div>
+
+                    <p class="lg:pr-14">
+                      Море впечатлений, живой концерт BTS прямо возле сцены. Я
+                      надеюсь, что Wings Tour в дальнейшем продолжит радовать
+                      других и собирать новые интересные туры, а я буду только
+                      рада присоединиться ещё раз.
+                    </p>
+                  </div>
+
+                  <!-- Bottom -->
+                  <div class="py-4 px-6 lg:pt-6 lg:pb-7 lg:px-10">
+                    <h3>Алёна</h3>
+                    <p>Ноябрь 2022</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contacts -->
+      <section id="contacts">
+        <div
+          class="max-w-base mx-auto flex flex-col lg:flex-row items-stretch gap-4 mt-12 lg:mt-16 px-3 md:px-16 lg:px-3"
+        >
+          <!-- Image -->
+          <div class="flex-1 rounded-2xl lg:rounded-3xl overflow-hidden">
+            <img
+              src="./assets/images/img-contacts.png"
+              alt="Image"
+              class="size-full object-cover"
+            />
+          </div>
+
+          <!-- Contacts -->
+          <div
+            class="lg:max-w-[557px] shrink-0 space-y-7 bg-white rounded-2xl lg:rounded-3xl px-6 pt-6 pb-7 lg:pt-10 lg:px-11 lg:pb-12"
+          >
+            <h2>Контакты и оплата</h2>
+            <div class="space-y-6">
+              <div class="grid sm:grid-cols-2 gap-4">
+                <!-- Instagram -->
+                <div
+                  class="text-center border border-brand-neutrals-dirty-liliac rounded-3xl p-3 sm:p-6"
+                >
+                  <a
+                    href="#"
+                    class="text-lg sm:text-2xl font-bold text-brand-vivid-purple leading-6 lg:leading-7 tracking-wider"
+                    >@wings_tour</a
+                  >
+                  <p class="text-brand-dark-purple">наш инстаграм</p>
+                </div>
+                <!-- Telegram -->
+                <div
+                  class="text-center border border-brand-neutrals-dirty-liliac rounded-3xl p-3 sm:p-6"
+                >
+                  <a
+                    href="#"
+                    class="text-lg sm:text-2xl font-bold text-brand-vivid-purple leading-6 lg:leading-7 tracking-wider"
+                    >@wings_tour</a
+                  >
+                  <p class="text-brand-dark-purple">наш телеграм</p>
+                </div>
+                <!-- Email -->
+                <div
+                  class="sm:col-span-2 text-center border border-brand-neutrals-dirty-liliac rounded-3xl p-3 sm:p-6"
+                >
+                  <a
+                    href="#"
+                    class="text-lg sm:text-2xl font-bold text-brand-vivid-purple leading-6 lg:leading-7 tracking-wider"
+                    >wingstour.info@gmail.com</a
+                  >
+                  <p class="text-brand-dark-purple">наша почта</p>
+                </div>
+              </div>
+
+              <!-- Payments -->
+              <div class="flex flex-col sm:flex-row sm:items-center gap-6">
+                <div class="sm:w-[140px] shrink-0 flex flex-wrap gap-3">
+                  <!-- Visa -->
+                  <div
+                    class="w-16 h-11 grid place-content-center border border-brand-neutrals-dirty-liliac rounded-md"
+                  >
+                    <img src="./assets/images/logo-visa.svg" alt="Visa Logo" />
+                  </div>
+                  <!-- Mastercard -->
+                  <div
+                    class="w-16 h-11 grid place-content-center border border-brand-neutrals-dirty-liliac rounded-md"
+                  >
+                    <img
+                      src="./assets/images/logo-mastercard.svg"
+                      alt="Mastercard Logo"
+                    />
+                  </div>
+                  <!-- Maestro -->
+                  <div
+                    class="w-16 h-11 grid place-content-center border border-brand-neutrals-dirty-liliac rounded-md"
+                  >
+                    <img
+                      src="./assets/images/logo-meastro.svg"
+                      alt="Maestro Logo"
+                    />
+                  </div>
+                  <!-- Apple pay -->
+                  <div
+                    class="w-16 h-11 grid place-content-center border border-brand-neutrals-dirty-liliac rounded-md"
+                  >
+                    <img
+                      src="./assets/images/logo-apple-pay.svg"
+                      alt="Apple pay Logo"
+                    />
+                  </div>
+                </div>
+                <p>
+                  Вы можете оплатить тур любым удобным для вас способом из любой
+                  страны.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
+    <!-- FOOTER -->
+    <footer
+      class="space-y-11 bg-brand-dark-purple text-white mt-12 lg:mt-16 pt-6 pb-5"
+    >
+      <div
+        class="max-w-base mx-auto space-y-8 sm:space-y-11 px-3 md:px-16 lg:px-3 pt-2"
+      >
+        <!-- Top -->
+        <div
+          class="flex flex-col sm:flex-col-reverse lg:flex-row lg:items-center justify-between gap-10"
+        >
+          <!-- Links -->
+          <div
+            class="max-w-xl xl:max-w-[714px] w-full grid grid-cols-2 sm:flex items-center sm:justify-between font-medium leading-8 tracking-wider gap-10"
+          >
+            <ul class="space-y-5">
+              <li>
+                <a href="#" class="hover:underline">О нас</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">Услуги</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">Расписание туров</a>
+              </li>
+            </ul>
+            <ul class="space-y-5">
+              <li>
+                <a href="#" class="hover:underline">FAQ</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">Отзывы</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">Вакансии</a>
+              </li>
+            </ul>
+            <ul class="hidden sm:block space-y-5">
+              <li>
+                <a href="#" class="hover:underline">Наши партнёры</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">Система лояльности</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">Подарочный сертификат</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Logo & Others -->
+          <div
+            class="grid grid-cols-2 sm:flex lg:flex-col justify-between lg:justify-start space-x-3"
+          >
+            <div
+              class="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-10"
+            >
+              <!-- Logo -->
+              <a href="#">
+                <img src="./assets/images/logo-footer.svg" alt="Logo" />
+              </a>
+
+              <div class="w-fit">
+                <p class="text-white">ИП XXXXXXXXXXXXXX</p>
+                <p class="text-white">ИНН XXXXXXXXXXXXX</p>
+              </div>
+            </div>
+
+            <!-- Links -->
+            <div
+              class="sm:max-w-[213px] w-full flex flex-col sm:flex-row sm:flex-wrap gap-x-9 gap-y-1 text-xs leading-6 sm:leading-8 mt-3"
+            >
+              <a href="#" class="underline">Лицензия</a>
+              <a href="#" class="underline">Договор оферты</a>
+              <a href="#" class="underline"
+                >Политика <br class="sm:hidden" />
+                конфиденциальности</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom -->
+        <div class="text-center text-sm leading-8 tracking-wider">
+          <p class="text-white">© 2025, Wings Tour, все права защищены</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>

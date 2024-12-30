@@ -60,3 +60,29 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+// Initialize Swiper instance
+var swiper = new Swiper(".mySwiper", {
+  navigation: {
+    nextEl: ".next-review", // Set the correct next button class
+    prevEl: ".prev-review", // Set the correct prev button class
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1.1,
+      spaceBetween: 16,
+    },
+    768: {
+      slidesPerView: 1.5,
+      spaceBetween: 16,
+    },
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 16,
+    },
+    1280: {
+      slidesPerView: 2.6,
+      spaceBetween: 16,
+    },
+  },
+});
