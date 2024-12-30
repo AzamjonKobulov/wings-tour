@@ -1,0 +1,2411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Wins Tour</title>
+  </head>
+  <body class="pb-96">
+    <!-- HEADER -->
+    <header class="pt-8">
+      <nav
+        class="max-w-base mx-auto flex items-center gap-3 lg:gap-4 px-3 md:px-16 lg:px-3"
+      >
+        <!-- Mob Menu Btn -->
+        <button class="size-72 shrink-0 lg:hidden bg-white rounded-xl p-5">
+          <img src="./assets/images/icon-hamburger.svg" alt="Hamburger Icon" />
+        </button>
+
+        <!-- Logo -->
+        <a href="#" class="w-full lg:w-fit">
+          <div
+            class="w-full h-72 grid place-content-center bg-white rounded-xl px-8"
+          >
+            <img src="/public/assets/images/logo.svg" alt="Logo" />
+          </div>
+        </a>
+
+        <!-- Links -->
+        <ul
+          class="flex-1 h-72 hidden lg:flex items-center justify-between font-medium text-brand-dark-purple bg-white xl:text-lg leading-7 tracking-wider rounded-xl px-12"
+        >
+          <!-- Dropdown -->
+          <li class="group">
+            <button class="flex items-center gap-1.5 2xl:gap-3">
+              <span
+                class="group-hover:text-brand-dark-purple-hover transition-all duration-300"
+                >Wings Tour</span
+              >
+              <svg
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="size-4 xl:size-5 2xl:size-6 stroke-brand-dark-purple group-hover:stroke-brand-dark-purple-hover transition-all duration-300"
+              >
+                <path
+                  d="M12.5 17.3994L4.80021 9.69963"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M12.5 17.3994L20.1998 9.69963"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:text-brand-dark-purple-hover transition-all duration-300"
+              >Услуги</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:text-brand-dark-purple-hover transition-all duration-300"
+              >Расписание туров</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:text-brand-dark-purple-hover transition-all duration-300"
+              >FAQ</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:text-brand-dark-purple-hover transition-all duration-300"
+              >Отзывы</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:text-brand-dark-purple-hover transition-all duration-300"
+              >Контакты и оплата</a
+            >
+          </li>
+        </ul>
+
+        <!-- Cart -->
+        <a href="#">
+          <div
+            class="size-72 shrink-0 bg-brand-dark-purple rounded-xl hover:bg-brand-dark-purple-hover active:bg-brand-dark-purple-pressed transition-all duration-300 p-5"
+          >
+            <img
+              src="./assets/images/icon-cart.svg"
+              alt="Icon Cart"
+              class="size-8 shrink-0"
+            />
+          </div>
+        </a>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <!-- Hero -->
+      <section id="hero">
+        <!-- Main Content -->
+        <div
+          class="max-w-base mx-auto grid gap-3 lg:grid-cols-2 xl:flex items-stretch lg:gap-4 pt-4 px-3 md:px-16 lg:px-3"
+        >
+          <!-- Left Info -->
+          <div
+            class="xl:max-w-[557px] w-full bg-white rounded-xl lg:rounded-3xl px-6 pt-8 pb-5 lg:px-7 lg:pt-24 lg:pb-16 xl:px-10 xl:pt-[120px] xl:pb-20"
+          >
+            <div class="max-w-[400px] space-y-5 sm:space-y-10">
+              <!-- Title & Text -->
+              <div class="space-y-4 sm:space-y-6">
+                <h1>
+                  ВАШ ПРОВОДНИК В
+                  <span class="text-brand-vivid-purple">ЮЖНОЙ КОРЕЕ</span>
+                </h1>
+
+                <p>
+                  Мы предлагаем широкий выбор туров и услуг. Наслаждайтесь
+                  отдыхом, а мы возьмем на себя все организационные вопросы.
+                </p>
+              </div>
+
+              <!-- Socials -->
+              <div class="flex items-center gap-3">
+                <a
+                  href="#"
+                  class="bg-brand-liliac rounded-full hover:bg-brand-liliac-hover active:bg-brand-liliac-pressed transition-all duration-300 p-3"
+                >
+                  <img
+                    src="./assets/images/icon-instagram.svg"
+                    alt="Instagram Icon"
+                  />
+                </a>
+                <a
+                  href="#"
+                  class="bg-brand-liliac rounded-full hover:bg-brand-liliac-hover active:bg-brand-liliac-pressed transition-all duration-300 p-3"
+                >
+                  <img
+                    src="./assets/images/icon-telegram.svg"
+                    alt="Telegram Icon"
+                  />
+                </a>
+                <a
+                  href="#"
+                  class="bg-brand-liliac rounded-full hover:bg-brand-liliac-hover active:bg-brand-liliac-pressed transition-all duration-300 p-3"
+                >
+                  <img src="./assets/images/icon-talk.svg" alt="Icon Talk" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Image -->
+          <div
+            class="flex-1 min-h-[309px] relative rounded-xl lg:rounded-3xl overflow-hidden"
+          >
+            <img
+              src="./assets/images/img-hero.png"
+              alt="Image"
+              class="hero-img size-full object-cover"
+            />
+
+            <!-- Select tour link -->
+            <div
+              class="absolute w-fit right-0 sm:left-0 bottom-0 bg-brand-liliac-light rounded-tl-3xl sm:rounded-tl-none sm:rounded-tr-3xl pl-3 sm:pl-0 sm:pr-3 pt-3"
+            >
+              <div class="size-full relative">
+                <!-- Top corner -->
+                <span
+                  class="top-corner size-6 absolute -top-9 right-0 sm:left-0 bg-brand-liliac-light sm:rotate-90"
+                ></span>
+
+                <!-- Bottom corner -->
+                <span
+                  class="bottom-corner size-6 absolute -left-9 sm:left-auto sm:-right-9 bottom-0 bg-brand-liliac-light sm:rotate-90"
+                ></span>
+
+                <a
+                  href="#"
+                  class="h-72 group flex items-center gap-3 bg-brand-vivid-purple text-white text-lg leading-7 tracking-wider rounded-2xl hover:bg-brand-vivid-purple-hover active:bg-brand-vivid-purple-pressed transition-all duration-200 px-10"
+                >
+                  <span>Выбрать тур</span>
+                  <img
+                    src="./assets/images/icon-arrow.svg"
+                    alt="Arrow Icon"
+                    class="group-hover:-mt-3 group-hover:translate-x-3 transition-all duration-200"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tags -->
+        <div class="max-w-base mx-auto mt-6 lg:mt-7 px-3 md:px-16 lg:px-3">
+          <ul
+            class="flex items-center gap-3 whitespace-nowrap overflow-auto scroll-none text-brand-dark-purple leading-8 tracking-wider"
+          >
+            <li>
+              <button
+                class="h-10 bg-white border border-brand-neutrals-dirty-liliac rounded-10 hover:bg-brand-liliac-light transition-all duration-300 px-4"
+              >
+                Фирменные туры
+              </button>
+            </li>
+            <li>
+              <button
+                class="h-10 bg-white border border-brand-neutrals-dirty-liliac rounded-10 hover:bg-brand-liliac-light transition-all duration-300 px-4"
+              >
+                Групповые туры
+              </button>
+            </li>
+            <li>
+              <button
+                class="h-10 bg-white border border-brand-neutrals-dirty-liliac rounded-10 hover:bg-brand-liliac-light transition-all duration-300 px-4"
+              >
+                Туры выходного дня
+              </button>
+            </li>
+            <li>
+              <button
+                class="h-10 bg-white border border-brand-neutrals-dirty-liliac rounded-10 hover:bg-brand-liliac-light transition-all duration-300 px-4"
+              >
+                Экскурсии
+              </button>
+            </li>
+            <li>
+              <button
+                class="h-10 bg-white border border-brand-neutrals-dirty-liliac rounded-10 hover:bg-brand-liliac-light transition-all duration-300 px-4"
+              >
+                Индивидуальные туры
+              </button>
+            </li>
+            <li>
+              <button
+                class="h-10 bg-white border border-brand-neutrals-dirty-liliac rounded-10 hover:bg-brand-liliac-light transition-all duration-300 px-4"
+              >
+                Медтуры
+              </button>
+            </li>
+            <li>
+              <button
+                class="h-10 bg-white border border-brand-neutrals-dirty-liliac rounded-10 hover:bg-brand-liliac-light transition-all duration-300 px-4"
+              >
+                Визы\K-ETA
+              </button>
+            </li>
+            <li>
+              <button
+                class="h-10 bg-white border border-brand-neutrals-dirty-liliac rounded-10 hover:bg-brand-liliac-light transition-all duration-300 px-4"
+              >
+                Трансфер
+              </button>
+            </li>
+            <li>
+              <button
+                class="h-10 bg-white border border-brand-neutrals-dirty-liliac rounded-10 hover:bg-brand-liliac-light transition-all duration-300 px-4"
+              >
+                Бронирование отелей
+              </button>
+            </li>
+            <li>
+              <button
+                class="h-10 bg-white border border-brand-neutrals-dirty-liliac rounded-10 hover:bg-brand-liliac-light transition-all duration-300 px-4"
+              >
+                Составление маршрута
+              </button>
+            </li>
+            <li>
+              <button
+                class="h-10 bg-white border border-brand-neutrals-dirty-liliac rounded-10 hover:bg-brand-liliac-light transition-all duration-300 px-4"
+              >
+                Сопровождение
+              </button>
+            </li>
+            <li>
+              <button
+                class="h-10 bg-white border border-brand-neutrals-dirty-liliac rounded-10 hover:bg-brand-liliac-light transition-all duration-300 px-4"
+              >
+                Корпоративные туры
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about">
+        <div
+          class="max-w-base mx-auto grid lg:grid-cols-2 xl:grid-cols-3 gap-3 mt-6 lg:mt-7 px-3 md:px-16 lg:px-3"
+        >
+          <div class="space-y-3">
+            <div
+              class="lg:hidden xl:col-span-2 space-y-4 lg:space-y-5 bg-white rounded-2xl lg:rounded-3xl p-6 lg:px-11 lg:py-10"
+            >
+              <h2>
+                Расскажем больше <br />
+                <span class="text-brand-vivid-purple">о нашей компании</span>
+              </h2>
+
+              <div class="flex flex-col lg:flex-row gap-4 lg:gap-24">
+                <p class="max-w-[300px]">
+                  В Wings Tour мы предоставляем туры в Южную Корею и оказываем
+                  разный спектр дополнительных услуг.
+                </p>
+
+                <p class="second-text hidden max-w-[330px]">
+                  Мы работаем с XXXX года и провели XX туров. Наши туры
+                  уникальные, мы сами разрабатываем и проводим программы.
+                </p>
+              </div>
+
+              <div class="flex items-center justify-end">
+                <button
+                  class="text-brand-vivid-purple leading-8 tracking-wider border-b border-brand-vivid-purple pb-0.5"
+                >
+                  Подробнее
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="hidden lg:flex items-center gap-5 bg-brand-dark-purple rounded-2xl lg:rounded-3xl p-4 lg:px-9 lg:py-5"
+            >
+              <img
+                src="./assets/images/icon-sertificate.svg"
+                alt="Certificate Icon"
+              />
+
+              <p
+                class="font-medium text-lg leading-7 tracking-wider text-white"
+              >
+                Мы работаем по Лицензии, выданной государством
+              </p>
+            </div>
+
+            <!-- Partners -->
+            <div
+              class="space-y-4 bg-white rounded-2xl lg:rounded-3xl px-6 pt-4 pb-6 lg:px-11 lg:pt-5 lg:pb-7"
+            >
+              <h3>Наши партнеры</h3>
+
+              <div class="flex items-center gap-4">
+                <img src="./assets/images/img-partner-1.png" alt="Partner" />
+                <img src="./assets/images/img-partner-2.png" alt="Partner" />
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="hidden lg:block xl:col-span-2 space-y-4 lg:space-y-5 bg-white rounded-2xl lg:rounded-3xl p-6 lg:px-11 lg:py-10"
+          >
+            <h2>
+              Расскажем больше <br />
+              <span class="text-brand-vivid-purple">о нашей компании</span>
+            </h2>
+
+            <div class="flex flex-col lg:flex-row gap-4 lg:gap-24">
+              <p class="max-w-[300px]">
+                В Wings Tour мы предоставляем туры в Южную Корею и оказываем
+                разный спектр дополнительных услуг.
+              </p>
+
+              <p class="max-w-[330px]">
+                Мы работаем с XXXX года и провели XX туров. Наши туры
+                уникальные, мы сами разрабатываем и проводим программы.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="flex lg:hidden items-center gap-5 bg-brand-dark-purple rounded-2xl lg:rounded-3xl p-4 lg:px-9 lg:py-5"
+          >
+            <img
+              src="./assets/images/icon-sertificate.svg"
+              alt="Certificate Icon"
+            />
+
+            <p class="font-medium text-lg leading-7 tracking-wider text-white">
+              Мы работаем по Лицензии, выданной государством
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section id="services">
+        <div class="max-w-base mx-auto mt-6 lg:mt-7 px-3 md:px-16 lg:px-3">
+          <div
+            class="space-y-7 bg-white rounded-2xl lg:rounded-3xl p-6 lg:p-11"
+          >
+            <!-- Title & Socials -->
+            <div class="flex flex-col xl:flex-row justify-between gap-6">
+              <h2><span class="text-brand-vivid-purple">Наши</span> услуги</h2>
+
+              <div
+                class="xl:w-[55%] hidden sm:flex md:flex-col lg:flex-row lg:items-center justify-between gap-4"
+              >
+                <p
+                  class="max-w-[400px] text-brand-dark-purple font-medium leading-7"
+                >
+                  Если у вас возникли вопросы по нашим услугам, вы всегда можете
+                  связаться с нами
+                </p>
+
+                <!-- Socials -->
+                <div class="flex items-center gap-3">
+                  <a
+                    href="#"
+                    class="shrink-0 bg-brand-liliac rounded-full hover:bg-brand-liliac-hover active:bg-brand-liliac-pressed transition-all duration-300 p-3"
+                  >
+                    <img
+                      src="./assets/images/icon-instagram.svg"
+                      alt="Instagram Icon"
+                    />
+                  </a>
+                  <a
+                    href="#"
+                    class="shrink-0 bg-brand-liliac rounded-full hover:bg-brand-liliac-hover active:bg-brand-liliac-pressed transition-all duration-300 p-3"
+                  >
+                    <img
+                      src="./assets/images/icon-telegram.svg"
+                      alt="Telegram Icon"
+                    />
+                  </a>
+                  <a
+                    href="#"
+                    class="shrink-0 bg-brand-liliac rounded-full hover:bg-brand-liliac-hover active:bg-brand-liliac-pressed transition-all duration-300 p-3"
+                  >
+                    <img src="./assets/images/icon-talk.svg" alt="Icon Talk" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Services -->
+            <div class="grid xl:grid-cols-12 gap-3 sm:gap-4">
+              <!-- Left Services -->
+              <div class="col-span-7 grid sm:grid-cols-2 gap-3 sm:gap-4">
+                <!-- Service 1 -->
+                <div
+                  class="min-h-40 sm:min-h-[222px] bg-services sm:bg-none flex flex-col justify-between gap-3 border-2 border-brand-vivid-purple rounded-2xl lg:rounded-3xl pt-6 px-7 pb-5"
+                >
+                  <!-- Top Title -->
+                  <div class="flex items-center gap-4">
+                    <div
+                      class="size-12 shrink-0 grid place-content-center bg-brand-liliac rounded-full"
+                    >
+                      <img
+                        src="./assets/images/icon-services-1.svg"
+                        alt="Icon"
+                      />
+                    </div>
+
+                    <h3 class="text-brand-vivid-purple">Фирменные туры</h3>
+                  </div>
+
+                  <!-- Bottom Text -->
+                  <div class="flex items-end justify-between gap-4">
+                    <p>Те самые туры с Юлей и Арминой</p>
+
+                    <a
+                      href="#"
+                      class="shrink-0 bg-brand-vivid-purple hover:bg-brand-vivid-purple-hover active:bg-brand-vivid-purple-pressed rounded-2xl transition-all duration-300 p-4"
+                    >
+                      <img
+                        src="./assets/images/icon-link-horizontal-arrow.svg"
+                        alt="Arrow Icon"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <!-- Service 2 -->
+                <div
+                  class="min-h-40 sm:min-h-[222px] bg-services sm:bg-none flex flex-col justify-between gap-3 border-2 border-brand-vivid-purple rounded-2xl lg:rounded-3xl pt-6 px-7 pb-5"
+                >
+                  <!-- Top Title -->
+                  <div class="flex items-center gap-4">
+                    <div
+                      class="size-12 shrink-0 grid place-content-center bg-brand-liliac rounded-full"
+                    >
+                      <img
+                        src="./assets/images/icon-services-3.svg"
+                        alt="Icon"
+                      />
+                    </div>
+
+                    <h3 class="text-brand-vivid-purple">Групповые туры</h3>
+                  </div>
+
+                  <!-- Bottom Text -->
+                  <div class="flex items-end justify-between gap-4">
+                    <p>Пакетный тур с полным сопровождением</p>
+
+                    <a
+                      href="#"
+                      class="shrink-0 bg-brand-vivid-purple hover:bg-brand-vivid-purple-hover active:bg-brand-vivid-purple-pressed rounded-2xl transition-all duration-300 p-4"
+                    >
+                      <img
+                        src="./assets/images/icon-link-horizontal-arrow.svg"
+                        alt="Arrow Icon"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <!-- Service 3 -->
+                <div
+                  class="min-h-40 sm:min-h-[222px] bg-services sm:bg-none flex flex-col justify-between gap-3 border-2 border-brand-vivid-purple rounded-2xl lg:rounded-3xl pt-6 px-7 pb-5"
+                >
+                  <!-- Top Title -->
+                  <div class="flex items-center gap-4">
+                    <div
+                      class="size-12 shrink-0 grid place-content-center bg-brand-liliac rounded-full"
+                    >
+                      <img
+                        src="./assets/images/icon-services-3.svg"
+                        alt="Icon"
+                      />
+                    </div>
+
+                    <h3 class="text-brand-vivid-purple">Туры выходного дня</h3>
+                  </div>
+
+                  <!-- Bottom Text -->
+                  <div class="flex items-end justify-between gap-4">
+                    <p>
+                      Короткие туры в знаковые места: Пусан, Чеджу, Горнолыжный
+                      тур и т.д.
+                    </p>
+
+                    <a
+                      href="#"
+                      class="shrink-0 bg-brand-vivid-purple hover:bg-brand-vivid-purple-hover active:bg-brand-vivid-purple-pressed rounded-2xl transition-all duration-300 p-4"
+                    >
+                      <img
+                        src="./assets/images/icon-link-horizontal-arrow.svg"
+                        alt="Arrow Icon"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <!-- Service 4 -->
+                <div
+                  class="min-h-40 sm:min-h-[222px] bg-services sm:bg-none flex flex-col justify-between gap-3 border-2 border-brand-vivid-purple rounded-2xl lg:rounded-3xl pt-6 px-7 pb-5"
+                >
+                  <!-- Top Title -->
+                  <div class="flex items-center gap-4">
+                    <div
+                      class="size-12 shrink-0 grid place-content-center bg-brand-liliac rounded-full"
+                    >
+                      <img
+                        src="./assets/images/icon-services-4.svg"
+                        alt="Icon"
+                      />
+                    </div>
+
+                    <h3 class="text-brand-vivid-purple">
+                      Индивидуаль-ные туры
+                    </h3>
+                  </div>
+
+                  <!-- Bottom Text -->
+                  <div class="flex items-end justify-between gap-4">
+                    <p>
+                      Составление пакетного тура с программой по вашим
+                      пожеланиям
+                    </p>
+
+                    <a
+                      href="#"
+                      class="shrink-0 bg-brand-vivid-purple hover:bg-brand-vivid-purple-hover active:bg-brand-vivid-purple-pressed rounded-2xl transition-all duration-300 p-4"
+                    >
+                      <img
+                        src="./assets/images/icon-link-horizontal-arrow.svg"
+                        alt="Arrow Icon"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <!-- Service 5 -->
+                <div
+                  class="min-h-40 sm:min-h-[222px] bg-services sm:bg-none flex flex-col justify-between gap-3 border-2 border-brand-vivid-purple rounded-2xl lg:rounded-3xl pt-6 px-7 pb-5"
+                >
+                  <!-- Top Title -->
+                  <div class="flex items-center gap-4">
+                    <div
+                      class="size-12 shrink-0 grid place-content-center bg-brand-liliac rounded-full"
+                    >
+                      <img
+                        src="./assets/images/icon-services-5.svg"
+                        alt="Icon"
+                      />
+                    </div>
+
+                    <h3 class="text-brand-vivid-purple">Экскурсии</h3>
+                  </div>
+
+                  <!-- Bottom Text -->
+                  <div class="flex items-end justify-between gap-4">
+                    <p>
+                      Программа на 1 день: бьюти-тур, BTS-тур, гастро-тур,
+                      шоппинг-тур и т.д.
+                    </p>
+
+                    <a
+                      href="#"
+                      class="shrink-0 bg-brand-vivid-purple hover:bg-brand-vivid-purple-hover active:bg-brand-vivid-purple-pressed rounded-2xl transition-all duration-300 p-4"
+                    >
+                      <img
+                        src="./assets/images/icon-link-horizontal-arrow.svg"
+                        alt="Arrow Icon"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <!-- Service 6 -->
+                <div
+                  class="min-h-40 sm:min-h-[222px] bg-services sm:bg-none flex flex-col justify-between gap-3 border-2 border-brand-vivid-purple rounded-2xl lg:rounded-3xl pt-6 px-7 pb-5"
+                >
+                  <!-- Top Title -->
+                  <div class="flex items-center gap-4">
+                    <div
+                      class="size-12 shrink-0 grid place-content-center bg-brand-liliac rounded-full"
+                    >
+                      <img
+                        src="./assets/images/icon-services-6.svg"
+                        alt="Icon"
+                      />
+                    </div>
+
+                    <h3 class="text-brand-vivid-purple">Медицинский туризм</h3>
+                  </div>
+
+                  <!-- Bottom Text -->
+                  <div class="flex items-end justify-between gap-4">
+                    <p>
+                      Чекап здоровья, корейские процедуры, пластическая хирургия
+                    </p>
+
+                    <a
+                      href="#"
+                      class="shrink-0 bg-brand-vivid-purple hover:bg-brand-vivid-purple-hover active:bg-brand-vivid-purple-pressed rounded-2xl transition-all duration-300 p-4"
+                    >
+                      <img
+                        src="./assets/images/icon-link-horizontal-arrow.svg"
+                        alt="Arrow Icon"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right Services -->
+              <div
+                class="flex flex-col lg:flex-row xl:flex-col gap-4 col-span-7 xl:col-span-5"
+              >
+                <!-- Service 7 -->
+                <div
+                  class="min-h-40 sm:min-h-[222px] bg-services sm:bg-none flex flex-col justify-between gap-3 border-2 border-brand-vivid-purple rounded-2xl lg:rounded-3xl pt-6 px-7 pb-5"
+                >
+                  <!-- Top Title -->
+                  <div class="flex items-center gap-4">
+                    <div
+                      class="size-12 shrink-0 grid place-content-center bg-brand-liliac rounded-full"
+                    >
+                      <img
+                        src="./assets/images/icon-services-7.svg"
+                        alt="Icon"
+                      />
+                    </div>
+
+                    <h3 class="text-brand-vivid-purple">Визы / кета</h3>
+                  </div>
+
+                  <!-- Bottom Text -->
+                  <div class="flex items-end justify-between gap-4">
+                    <p>
+                      Оформление документов для туристической поездки в Корею
+                      для граждан всех стран от юриста Wings Tour
+                    </p>
+
+                    <a
+                      href="#"
+                      class="shrink-0 bg-brand-vivid-purple hover:bg-brand-vivid-purple-hover active:bg-brand-vivid-purple-pressed rounded-2xl transition-all duration-300 p-4"
+                    >
+                      <img
+                        src="./assets/images/icon-link-horizontal-arrow.svg"
+                        alt="Arrow Icon"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <!-- Service 8 -->
+                <div
+                  class="flex-1 bg-services sm:bg-none flex flex-col gap-4 border-2 border-brand-vivid-purple rounded-2xl lg:rounded-3xl pt-6 px-7 pb-5"
+                >
+                  <!-- Top Title -->
+                  <div class="flex items-center gap-4">
+                    <div
+                      class="size-12 shrink-0 grid place-content-center bg-brand-liliac rounded-full"
+                    >
+                      <img
+                        src="./assets/images/icon-services-8.svg"
+                        alt="Icon"
+                      />
+                    </div>
+
+                    <h3 class="text-brand-vivid-purple">
+                      Дополнительные услуги
+                    </h3>
+                  </div>
+
+                  <!-- Bottom Links -->
+                  <div class="flex items-end">
+                    <ul
+                      class="space-y-4 text-brand-vivid-purple underline underline-offset-4 leading-8 tracking-wider"
+                    >
+                      <li>
+                        <a href="#">Трансфер</a>
+                      </li>
+                      <li>
+                        <a href="#">Подбор и бронирование отеля</a>
+                      </li>
+                      <li>
+                        <a href="#">Билеты на концерты/фестивали</a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Составление маршрута без сопровождения и
+                          бронирований</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Личное сопровождение гида по свободной программе</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#">Корпоративные туры</a>
+                      </li>
+                    </ul>
+
+                    <a
+                      href="#"
+                      class="shrink-0 bg-brand-vivid-purple hover:bg-brand-vivid-purple-hover active:bg-brand-vivid-purple-pressed rounded-2xl transition-all duration-300 p-4"
+                    >
+                      <img
+                        src="./assets/images/icon-link-horizontal-arrow.svg"
+                        alt="Arrow Icon"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tours Schedule -->
+      <section id="schedule">
+        <div
+          class="max-w-base mx-auto space-y-4 lg:space-y-7 pt-12 lg:pt-16 px-6 md:px-20 lg:px-14"
+        >
+          <div class="flex flex-col lg:flex-row justify-between gap-4">
+            <h2 class="whitespace-nowrap">
+              Расписание <br />
+              <span class="text-brand-vivid-purple">групповых туров</span>
+            </h2>
+
+            <p
+              class="max-w-xl xl:max-w-2xl font-medium text-brand-dark-purple lg:pl-10 xl:px-11"
+            >
+              Приглашаем вас в удивительное путешествие полное новых впечатлений
+              знакомств с близкими по духу людьми!
+            </p>
+          </div>
+
+          <div class="space-y-4 lg:space-y-5">
+            <!-- Tour 1 -->
+            <div class="flex flex-col lg:flex-row items-stretch lg:gap-4">
+              <!-- Image -->
+              <div
+                class="lg:w-[400px] h-[215px] xs:h-auto xs:min-h-[345px] lg:min-h-0 aspect-video lg:aspect-auto relative z-10 bg-white lg:bg-transparent rounded-3xl overflow-hidden -mb-6 lg:mb-0 p-5"
+              >
+                <img
+                  src="./assets/images/img-tour-1.jpg"
+                  alt="Tour Image"
+                  class="absolute inset-0 size-full object-cover"
+                />
+
+                <!-- Info -->
+                <div class="relative z-10 space-y-2 leading-8 tracking-wider">
+                  <div
+                    class="w-fit bg-white text-brand-dark-purple rounded-10 py-1 px-4"
+                  >
+                    Фирменный тур
+                  </div>
+                  <div
+                    class="w-fit text-white rounded-10 backdrop-blur py-1 px-4"
+                  >
+                    Осталось 9 мест
+                  </div>
+                </div>
+              </div>
+
+              <!-- Info Side -->
+              <div
+                class="flex-1 relative flex flex-col xl:flex-row justify-between gap-5 bg-white rounded-b-3xl lg:rounded-3xl overflow-hidden px-6 pt-10 pb-4 sm:py-10 sm:px-11"
+              >
+                <!-- Tour Name & Date -->
+                <div class="space-y-4">
+                  <div class="space-y-4">
+                    <h3 class="text-brand-vivid-purple">Цветение вишни</h3>
+                    <ul>
+                      <li class="flex items-center gap-3">
+                        <img
+                          src="./assets/images/icon-calendar.svg"
+                          alt="Calendar Icon"
+                        />
+                        <p class="font-medium text-brand-dark-purple">
+                          01 апреля – 11 апреля 2025
+                        </p>
+                      </li>
+                      <li class="flex items-center gap-3">
+                        <img
+                          src="./assets/images/icon-location.svg"
+                          alt="Location Icon"
+                        />
+                        <p class="font-medium text-brand-dark-purple">
+                          Сеул, Южная Корея
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <p class="max-w-[450px]">
+                    Корейская культура, провинция Кёнгидо, деревня Букчон,
+                    остров Нами, парк аттракционов Lotte World.
+                  </p>
+                </div>
+
+                <!-- Tour Cost -->
+                <div class="space-y-6">
+                  <span
+                    class="inline-block whitespace-nowrap text-brand-neutrals-faded-puple border border-brand-neutrals-dirty-liliac leading-8 tracking-wider rounded-10 py-[3px] px-4"
+                  >
+                    Полное сопровождение
+                  </span>
+
+                  <div class="flex flex-col xl:items-end">
+                    <h3>$ 2700</h3>
+                    <p class="text-brand-neutrals-gray">11 дней / 10 ночей</p>
+                  </div>
+                </div>
+
+                <!-- Select tour link -->
+                <div
+                  class="absolute w-fit bottom-4 right-4 lg:right-0 lg:bottom-0 lg:bg-brand-liliac-light rounded-tl-3xl pl-3 pt-3"
+                >
+                  <div class="size-full relative">
+                    <!-- Top corner -->
+                    <span
+                      class="top-corner size-6 hidden lg:block absolute -top-9 right-0 bg-brand-liliac-light"
+                    ></span>
+
+                    <!-- Bottom corner -->
+                    <span
+                      class="bottom-corner size-6 hidden lg:block absolute -left-9 bottom-0 bg-brand-liliac-light"
+                    ></span>
+
+                    <a
+                      href="#"
+                      class="lg:h-72 group flex items-center gap-3 bg-brand-vivid-purple text-white text-lg leading-7 tracking-wider rounded-2xl hover:bg-brand-vivid-purple-hover active:bg-brand-vivid-purple-pressed transition-all duration-200 p-[15px] lg:px-10"
+                    >
+                      <span class="hidden lg:block">Подробнее</span>
+                      <img
+                        src="./assets/images/icon-arrow.svg"
+                        alt="Arrow Icon"
+                        class="group-hover:-mt-3 group-hover:translate-x-3 transition-all duration-200"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Tour 2 -->
+            <div class="flex flex-col lg:flex-row items-stretch lg:gap-4">
+              <!-- Image -->
+              <div
+                class="lg:w-[400px] h-[215px] xs:h-auto xs:min-h-[345px] lg:min-h-0 aspect-video lg:aspect-auto relative z-10 bg-white lg:bg-transparent rounded-3xl overflow-hidden -mb-6 lg:mb-0 p-5"
+              >
+                <img
+                  src="./assets/images/img-tour-2.png"
+                  alt="Tour Image"
+                  class="absolute inset-0 size-full object-cover"
+                />
+
+                <!-- Info -->
+                <div class="relative z-10 space-y-2 leading-8 tracking-wider">
+                  <div
+                    class="w-fit text-white rounded-10 backdrop-blur py-1 px-4"
+                  >
+                    Осталось X мест
+                  </div>
+                </div>
+              </div>
+
+              <!-- Info Side -->
+              <div
+                class="flex-1 relative flex flex-col xl:flex-row justify-between gap-5 bg-white rounded-b-3xl lg:rounded-3xl overflow-hidden px-6 pt-10 pb-4 sm:py-10 sm:px-11"
+              >
+                <!-- Tour Name & Date -->
+                <div class="space-y-4">
+                  <div class="space-y-4">
+                    <h3 class="text-brand-vivid-purple">Тур со звездой</h3>
+                    <ul>
+                      <li class="flex items-center gap-3">
+                        <img
+                          src="./assets/images/icon-calendar.svg"
+                          alt="Calendar Icon"
+                        />
+                        <p class="font-medium text-brand-dark-purple">
+                          01 апреля – 11 апреля 2025
+                        </p>
+                      </li>
+                      <li class="flex items-center gap-3">
+                        <img
+                          src="./assets/images/icon-location.svg"
+                          alt="Location Icon"
+                        />
+                        <p class="font-medium text-brand-dark-purple">
+                          Сеул, Южная Корея
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <p class="max-w-[450px]">
+                    Корейская культура, провинция Кёнгидо, деревня Букчон,
+                    остров Нами, парк аттракционов Lotte World.
+                  </p>
+                </div>
+
+                <!-- Tour Cost -->
+                <div class="space-y-6">
+                  <span
+                    class="inline-block whitespace-nowrap text-brand-neutrals-faded-puple border border-brand-neutrals-dirty-liliac leading-8 tracking-wider rounded-10 py-[3px] px-4"
+                  >
+                    Полное сопровождение
+                  </span>
+
+                  <div class="flex flex-col xl:items-end">
+                    <h3>$ XXXX</h3>
+                    <p class="text-brand-neutrals-gray">8 дней / 7 ночей</p>
+                  </div>
+                </div>
+
+                <!-- Select tour link -->
+                <div
+                  class="absolute w-fit bottom-4 right-4 lg:right-0 lg:bottom-0 lg:bg-brand-liliac-light rounded-tl-3xl pl-3 pt-3"
+                >
+                  <div class="size-full relative">
+                    <!-- Top corner -->
+                    <span
+                      class="top-corner size-6 hidden lg:block absolute -top-9 right-0 bg-brand-liliac-light"
+                    ></span>
+
+                    <!-- Bottom corner -->
+                    <span
+                      class="bottom-corner size-6 hidden lg:block absolute -left-9 bottom-0 bg-brand-liliac-light"
+                    ></span>
+
+                    <a
+                      href="#"
+                      class="lg:h-72 group flex items-center gap-3 bg-brand-vivid-purple text-white text-lg leading-7 tracking-wider rounded-2xl hover:bg-brand-vivid-purple-hover active:bg-brand-vivid-purple-pressed transition-all duration-200 p-[15px] lg:px-10"
+                    >
+                      <span class="hidden lg:block">Подробнее</span>
+                      <img
+                        src="./assets/images/icon-arrow.svg"
+                        alt="Arrow Icon"
+                        class="group-hover:-mt-3 group-hover:translate-x-3 transition-all duration-200"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Tour 3 -->
+            <div class="flex flex-col lg:flex-row items-stretch lg:gap-4">
+              <!-- Image -->
+              <div
+                class="lg:w-[400px] h-[215px] xs:h-auto xs:min-h-[345px] lg:min-h-0 aspect-video lg:aspect-auto relative z-10 bg-white lg:bg-transparent rounded-3xl overflow-hidden -mb-6 lg:mb-0 p-5"
+              >
+                <img
+                  src="./assets/images/img-tour-3.png"
+                  alt="Tour Image"
+                  class="absolute inset-0 size-full object-cover"
+                />
+
+                <!-- Info -->
+                <div class="relative z-10 space-y-2 leading-8 tracking-wider">
+                  <div
+                    class="w-fit text-white rounded-10 backdrop-blur py-1 px-4"
+                  >
+                    Осталось X мест
+                  </div>
+                </div>
+              </div>
+
+              <!-- Info Side -->
+              <div
+                class="flex-1 relative flex flex-col xl:flex-row justify-between gap-5 bg-white rounded-b-3xl lg:rounded-3xl overflow-hidden px-6 pt-10 pb-4 sm:py-10 sm:px-11"
+              >
+                <!-- Tour Name & Date -->
+                <div class="space-y-4">
+                  <div class="space-y-4">
+                    <h3 class="text-brand-vivid-purple">Бьюти-тур</h3>
+                    <ul>
+                      <li class="flex items-center gap-3">
+                        <img
+                          src="./assets/images/icon-calendar.svg"
+                          alt="Calendar Icon"
+                        />
+                        <p class="font-medium text-brand-dark-purple">
+                          01 апреля – 11 апреля 2025
+                        </p>
+                      </li>
+                      <li class="flex items-center gap-3">
+                        <img
+                          src="./assets/images/icon-location.svg"
+                          alt="Location Icon"
+                        />
+                        <p class="font-medium text-brand-dark-purple">
+                          Сеул, Южная Корея
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <p class="max-w-[450px]">
+                    Корейская культура, провинция Кёнгидо, деревня Букчон,
+                    остров Нами, парк аттракционов Lotte World.
+                  </p>
+                </div>
+
+                <!-- Tour Cost -->
+                <div class="space-y-6">
+                  <span
+                    class="inline-block whitespace-nowrap text-brand-neutrals-faded-puple border border-brand-neutrals-dirty-liliac leading-8 tracking-wider rounded-10 py-[3px] px-4"
+                  >
+                    Полное сопровождение
+                  </span>
+
+                  <div class="flex flex-col xl:items-end">
+                    <h3>$ XXXX</h3>
+                    <p class="text-brand-neutrals-gray">11 дней / 10 ночей</p>
+                  </div>
+                </div>
+
+                <!-- Select tour link -->
+                <div
+                  class="absolute w-fit bottom-4 right-4 lg:right-0 lg:bottom-0 lg:bg-brand-liliac-light rounded-tl-3xl pl-3 pt-3"
+                >
+                  <div class="size-full relative">
+                    <!-- Top corner -->
+                    <span
+                      class="top-corner size-6 hidden lg:block absolute -top-9 right-0 bg-brand-liliac-light"
+                    ></span>
+
+                    <!-- Bottom corner -->
+                    <span
+                      class="bottom-corner size-6 hidden lg:block absolute -left-9 bottom-0 bg-brand-liliac-light"
+                    ></span>
+
+                    <a
+                      href="#"
+                      class="lg:h-72 group flex items-center gap-3 bg-brand-vivid-purple text-white text-lg leading-7 tracking-wider rounded-2xl hover:bg-brand-vivid-purple-hover active:bg-brand-vivid-purple-pressed transition-all duration-200 p-[15px] lg:px-10"
+                    >
+                      <span class="hidden lg:block">Подробнее</span>
+                      <img
+                        src="./assets/images/icon-arrow.svg"
+                        alt="Arrow Icon"
+                        class="group-hover:-mt-3 group-hover:translate-x-3 transition-all duration-200"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Tour 4 -->
+            <div class="flex flex-col lg:flex-row items-stretch lg:gap-4">
+              <!-- Image -->
+              <div
+                class="lg:w-[400px] h-[215px] xs:h-auto xs:min-h-[345px] lg:min-h-0 aspect-video lg:aspect-auto relative z-10 bg-white lg:bg-transparent rounded-3xl overflow-hidden -mb-6 lg:mb-0 p-5"
+              >
+                <img
+                  src="./assets/images/img-tour-4.png"
+                  alt="Tour Image"
+                  class="absolute inset-0 size-full object-cover"
+                />
+
+                <!-- Info -->
+                <div class="relative z-10 space-y-2 leading-8 tracking-wider">
+                  <div
+                    class="w-fit text-white rounded-10 backdrop-blur py-1 px-4"
+                  >
+                    Осталось X мест
+                  </div>
+                </div>
+              </div>
+
+              <!-- Info Side -->
+              <div
+                class="flex-1 relative flex flex-col xl:flex-row justify-between gap-5 bg-white rounded-b-3xl lg:rounded-3xl overflow-hidden px-6 pt-10 pb-4 sm:py-10 sm:px-11"
+              >
+                <!-- Tour Name & Date -->
+                <div class="space-y-4">
+                  <div class="space-y-4">
+                    <h3 class="text-brand-vivid-purple">K-pop тур</h3>
+                    <ul>
+                      <li class="flex items-center gap-3">
+                        <img
+                          src="./assets/images/icon-calendar.svg"
+                          alt="Calendar Icon"
+                        />
+                        <p class="font-medium text-brand-dark-purple">
+                          01 апреля – 11 апреля 2025
+                        </p>
+                      </li>
+                      <li class="flex items-center gap-3">
+                        <img
+                          src="./assets/images/icon-location.svg"
+                          alt="Location Icon"
+                        />
+                        <p class="font-medium text-brand-dark-purple">
+                          Сеул, Южная Корея
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <p class="max-w-[450px]">
+                    Корейская культура, провинция Кёнгидо, деревня Букчон,
+                    остров Нами, парк аттракционов Lotte World.
+                  </p>
+                </div>
+
+                <!-- Tour Cost -->
+                <div class="space-y-6">
+                  <span
+                    class="inline-block whitespace-nowrap text-brand-neutrals-faded-puple border border-brand-neutrals-dirty-liliac leading-8 tracking-wider rounded-10 py-[3px] px-4"
+                  >
+                    Полное сопровождение
+                  </span>
+
+                  <div class="flex flex-col xl:items-end">
+                    <h3>$ XXXX</h3>
+                    <p class="text-brand-neutrals-gray">7 дней / 8 ночей</p>
+                  </div>
+                </div>
+
+                <!-- Select tour link -->
+                <div
+                  class="absolute w-fit bottom-4 right-4 lg:right-0 lg:bottom-0 lg:bg-brand-liliac-light rounded-tl-3xl pl-3 pt-3"
+                >
+                  <div class="size-full relative">
+                    <!-- Top corner -->
+                    <span
+                      class="top-corner size-6 hidden lg:block absolute -top-9 right-0 bg-brand-liliac-light"
+                    ></span>
+
+                    <!-- Bottom corner -->
+                    <span
+                      class="bottom-corner size-6 hidden lg:block absolute -left-9 bottom-0 bg-brand-liliac-light"
+                    ></span>
+
+                    <a
+                      href="#"
+                      class="lg:h-72 group flex items-center gap-3 bg-brand-vivid-purple text-white text-lg leading-7 tracking-wider rounded-2xl hover:bg-brand-vivid-purple-hover active:bg-brand-vivid-purple-pressed transition-all duration-200 p-[15px] lg:px-10"
+                    >
+                      <span class="hidden lg:block">Подробнее</span>
+                      <img
+                        src="./assets/images/icon-arrow.svg"
+                        alt="Arrow Icon"
+                        class="group-hover:-mt-3 group-hover:translate-x-3 transition-all duration-200"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Tour 5 -->
+            <div class="flex flex-col lg:flex-row items-stretch lg:gap-4">
+              <!-- Image -->
+              <div
+                class="lg:w-[400px] h-[215px] xs:h-auto xs:min-h-[345px] lg:min-h-0 aspect-video lg:aspect-auto relative z-10 bg-white lg:bg-transparent rounded-3xl overflow-hidden -mb-6 lg:mb-0 p-5"
+              >
+                <img
+                  src="./assets/images/img-tour-5.png"
+                  alt="Tour Image"
+                  class="absolute inset-0 size-full object-cover"
+                />
+
+                <!-- Info -->
+                <div class="relative z-10 space-y-2 leading-8 tracking-wider">
+                  <div
+                    class="w-fit bg-white text-brand-dark-purple rounded-10 py-1 px-4"
+                  >
+                    Фирменный тур
+                  </div>
+                  <div
+                    class="w-fit text-white rounded-10 backdrop-blur py-1 px-4"
+                  >
+                    Осталось 9 мест
+                  </div>
+                </div>
+              </div>
+
+              <!-- Info Side -->
+              <div
+                class="flex-1 relative flex flex-col xl:flex-row justify-between gap-5 bg-white rounded-b-3xl lg:rounded-3xl overflow-hidden px-6 pt-10 pb-4 sm:py-10 sm:px-11"
+              >
+                <!-- Tour Name & Date -->
+                <div class="space-y-4">
+                  <div class="space-y-4">
+                    <h3 class="text-brand-vivid-purple">BTS Festa</h3>
+                    <ul>
+                      <li class="flex items-center gap-3">
+                        <img
+                          src="./assets/images/icon-calendar.svg"
+                          alt="Calendar Icon"
+                        />
+                        <p class="font-medium text-brand-dark-purple">
+                          01 апреля – 11 апреля 2025
+                        </p>
+                      </li>
+                      <li class="flex items-center gap-3">
+                        <img
+                          src="./assets/images/icon-location.svg"
+                          alt="Location Icon"
+                        />
+                        <p class="font-medium text-brand-dark-purple">
+                          Сеул, Южная Корея
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <p class="max-w-[450px]">
+                    Корейская культура, провинция Кёнгидо, деревня Букчон,
+                    остров Нами, парк аттракционов Lotte World.
+                  </p>
+                </div>
+
+                <!-- Tour Cost -->
+                <div class="space-y-6">
+                  <span
+                    class="inline-block whitespace-nowrap text-brand-neutrals-faded-puple border border-brand-neutrals-dirty-liliac leading-8 tracking-wider rounded-10 py-[3px] px-4"
+                  >
+                    Полное сопровождение
+                  </span>
+
+                  <div class="flex flex-col xl:items-end">
+                    <h3>$ 2700</h3>
+                    <p class="text-brand-neutrals-gray">7 дней / 8 ночей</p>
+                  </div>
+                </div>
+
+                <!-- Select tour link -->
+                <div
+                  class="absolute w-fit bottom-4 right-4 lg:right-0 lg:bottom-0 lg:bg-brand-liliac-light rounded-tl-3xl pl-3 pt-3"
+                >
+                  <div class="size-full relative">
+                    <!-- Top corner -->
+                    <span
+                      class="top-corner size-6 hidden lg:block absolute -top-9 right-0 bg-brand-liliac-light"
+                    ></span>
+
+                    <!-- Bottom corner -->
+                    <span
+                      class="bottom-corner size-6 hidden lg:block absolute -left-9 bottom-0 bg-brand-liliac-light"
+                    ></span>
+
+                    <a
+                      href="#"
+                      class="lg:h-72 group flex items-center gap-3 bg-brand-vivid-purple text-white text-lg leading-7 tracking-wider rounded-2xl hover:bg-brand-vivid-purple-hover active:bg-brand-vivid-purple-pressed transition-all duration-200 p-[15px] lg:px-10"
+                    >
+                      <span class="hidden lg:block">Подробнее</span>
+                      <img
+                        src="./assets/images/icon-arrow.svg"
+                        alt="Arrow Icon"
+                        class="group-hover:-mt-3 group-hover:translate-x-3 transition-all duration-200"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Tour 6 -->
+            <div class="flex flex-col lg:flex-row items-stretch lg:gap-4">
+              <!-- Image -->
+              <div
+                class="lg:w-[400px] h-[215px] xs:h-auto xs:min-h-[345px] lg:min-h-0 aspect-video lg:aspect-auto relative z-10 bg-white lg:bg-transparent rounded-3xl overflow-hidden -mb-6 lg:mb-0 p-5"
+              >
+                <img
+                  src="./assets/images/img-tour-6.jpg"
+                  alt="Tour Image"
+                  class="absolute inset-0 size-full object-cover"
+                />
+
+                <!-- Info -->
+                <div class="relative z-10 space-y-2 leading-8 tracking-wider">
+                  <div
+                    class="w-fit bg-white text-brand-dark-purple rounded-10 py-1 px-4"
+                  >
+                    Фирменный тур
+                  </div>
+                  <div
+                    class="w-fit text-white rounded-10 backdrop-blur py-1 px-4"
+                  >
+                    Осталось 10 мест
+                  </div>
+                </div>
+              </div>
+
+              <!-- Info Side -->
+              <div
+                class="flex-1 relative flex flex-col xl:flex-row justify-between gap-5 bg-white rounded-b-3xl lg:rounded-3xl overflow-hidden px-6 pt-10 pb-4 sm:py-10 sm:px-11"
+              >
+                <!-- Tour Name & Date -->
+                <div class="space-y-4">
+                  <div class="space-y-4">
+                    <h3 class="text-brand-vivid-purple">Пусанские принцы</h3>
+                    <ul>
+                      <li class="flex items-center gap-3">
+                        <img
+                          src="./assets/images/icon-calendar.svg"
+                          alt="Calendar Icon"
+                        />
+                        <p class="font-medium text-brand-dark-purple">
+                          01 апреля – 11 апреля 2025
+                        </p>
+                      </li>
+                      <li class="flex items-center gap-3">
+                        <img
+                          src="./assets/images/icon-location.svg"
+                          alt="Location Icon"
+                        />
+                        <p class="font-medium text-brand-dark-purple">
+                          Сеул, Южная Корея
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <p class="max-w-[450px]">
+                    Корейская культура, провинция Кёнгидо, деревня Букчон,
+                    остров Нами, парк аттракционов Lotte World.
+                  </p>
+                </div>
+
+                <!-- Tour Cost -->
+                <div class="space-y-6">
+                  <span
+                    class="inline-block whitespace-nowrap text-brand-neutrals-faded-puple border border-brand-neutrals-dirty-liliac leading-8 tracking-wider rounded-10 py-[3px] px-4"
+                  >
+                    Полное сопровождение
+                  </span>
+
+                  <div class="flex flex-col xl:items-end">
+                    <h3>$ XXXX</h3>
+                    <p class="text-brand-neutrals-gray">7 дней / 8 ночей</p>
+                  </div>
+                </div>
+
+                <!-- Select tour link -->
+                <div
+                  class="absolute w-fit bottom-4 right-4 lg:right-0 lg:bottom-0 lg:bg-brand-liliac-light rounded-tl-3xl pl-3 pt-3"
+                >
+                  <div class="size-full relative">
+                    <!-- Top corner -->
+                    <span
+                      class="top-corner size-6 hidden lg:block absolute -top-9 right-0 bg-brand-liliac-light"
+                    ></span>
+
+                    <!-- Bottom corner -->
+                    <span
+                      class="bottom-corner size-6 hidden lg:block absolute -left-9 bottom-0 bg-brand-liliac-light"
+                    ></span>
+
+                    <a
+                      href="#"
+                      class="lg:h-72 group flex items-center gap-3 bg-brand-vivid-purple text-white text-lg leading-7 tracking-wider rounded-2xl hover:bg-brand-vivid-purple-hover active:bg-brand-vivid-purple-pressed transition-all duration-200 p-[15px] lg:px-10"
+                    >
+                      <span class="hidden lg:block">Подробнее</span>
+                      <img
+                        src="./assets/images/icon-arrow.svg"
+                        alt="Arrow Icon"
+                        class="group-hover:-mt-3 group-hover:translate-x-3 transition-all duration-200"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Tour 7 -->
+            <div class="flex flex-col lg:flex-row items-stretch lg:gap-4">
+              <!-- Image -->
+              <div
+                class="lg:w-[400px] h-[215px] xs:h-auto xs:min-h-[345px] lg:min-h-0 aspect-video lg:aspect-auto relative z-10 bg-white lg:bg-transparent rounded-3xl overflow-hidden -mb-6 lg:mb-0 p-5"
+              >
+                <img
+                  src="./assets/images/img-tour-7.png"
+                  alt="Tour Image"
+                  class="absolute inset-0 size-full object-cover"
+                />
+
+                <!-- Info -->
+                <div class="relative z-10 space-y-2 leading-8 tracking-wider">
+                  <div
+                    class="w-fit text-white rounded-10 backdrop-blur py-1 px-4"
+                  >
+                    Осталось X мест
+                  </div>
+                </div>
+              </div>
+
+              <!-- Info Side -->
+              <div
+                class="flex-1 relative flex flex-col xl:flex-row justify-between gap-5 bg-white rounded-b-3xl lg:rounded-3xl overflow-hidden px-6 pt-10 pb-4 sm:py-10 sm:px-11"
+              >
+                <!-- Tour Name & Date -->
+                <div class="space-y-4">
+                  <div class="space-y-4">
+                    <h3 class="text-brand-vivid-purple">Luxury тур</h3>
+                    <ul>
+                      <li class="flex items-center gap-3">
+                        <img
+                          src="./assets/images/icon-calendar.svg"
+                          alt="Calendar Icon"
+                        />
+                        <p class="font-medium text-brand-dark-purple">
+                          01 апреля – 11 апреля 2025
+                        </p>
+                      </li>
+                      <li class="flex items-center gap-3">
+                        <img
+                          src="./assets/images/icon-location.svg"
+                          alt="Location Icon"
+                        />
+                        <p class="font-medium text-brand-dark-purple">
+                          Сеул, Южная Корея
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <p class="max-w-[450px]">
+                    Корейская культура, провинция Кёнгидо, деревня Букчон,
+                    остров Нами, парк аттракционов Lotte World.
+                  </p>
+                </div>
+
+                <!-- Tour Cost -->
+                <div class="space-y-6">
+                  <span
+                    class="inline-block whitespace-nowrap text-brand-neutrals-faded-puple border border-brand-neutrals-dirty-liliac leading-8 tracking-wider rounded-10 py-[3px] px-4"
+                  >
+                    Полное сопровождение
+                  </span>
+
+                  <div class="flex flex-col xl:items-end">
+                    <h3>$ XXXX</h3>
+                    <p class="text-brand-neutrals-gray">7 дней / 8 ночей</p>
+                  </div>
+                </div>
+
+                <!-- Select tour link -->
+                <div
+                  class="absolute w-fit bottom-4 right-4 lg:right-0 lg:bottom-0 lg:bg-brand-liliac-light rounded-tl-3xl pl-3 pt-3"
+                >
+                  <div class="size-full relative">
+                    <!-- Top corner -->
+                    <span
+                      class="top-corner size-6 hidden lg:block absolute -top-9 right-0 bg-brand-liliac-light"
+                    ></span>
+
+                    <!-- Bottom corner -->
+                    <span
+                      class="bottom-corner size-6 hidden lg:block absolute -left-9 bottom-0 bg-brand-liliac-light"
+                    ></span>
+
+                    <a
+                      href="#"
+                      class="lg:h-72 group flex items-center gap-3 bg-brand-vivid-purple text-white text-lg leading-7 tracking-wider rounded-2xl hover:bg-brand-vivid-purple-hover active:bg-brand-vivid-purple-pressed transition-all duration-200 p-[15px] lg:px-10"
+                    >
+                      <span class="hidden lg:block">Подробнее</span>
+                      <img
+                        src="./assets/images/icon-arrow.svg"
+                        alt="Arrow Icon"
+                        class="group-hover:-mt-3 group-hover:translate-x-3 transition-all duration-200"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Tour 8 -->
+            <div class="flex flex-col lg:flex-row items-stretch lg:gap-4">
+              <!-- Image -->
+              <div
+                class="lg:w-[400px] h-[215px] xs:h-auto xs:min-h-[345px] lg:min-h-0 aspect-video lg:aspect-auto relative z-10 bg-white lg:bg-transparent rounded-3xl overflow-hidden -mb-6 lg:mb-0 p-5"
+              >
+                <img
+                  src="./assets/images/img-tour-8.png"
+                  alt="Tour Image"
+                  class="absolute inset-0 size-full object-cover"
+                />
+
+                <!-- Info -->
+                <div class="relative z-10 space-y-2 leading-8 tracking-wider">
+                  <div
+                    class="w-fit text-white rounded-10 backdrop-blur py-1 px-4"
+                  >
+                    Осталось X мест
+                  </div>
+                </div>
+              </div>
+
+              <!-- Info Side -->
+              <div
+                class="flex-1 relative flex flex-col xl:flex-row justify-between gap-5 bg-white rounded-b-3xl lg:rounded-3xl overflow-hidden px-6 pt-10 pb-4 sm:py-10 sm:px-11"
+              >
+                <!-- Tour Name & Date -->
+                <div class="space-y-4">
+                  <div class="space-y-4">
+                    <h3 class="text-brand-vivid-purple">Тур в Японию</h3>
+                    <ul>
+                      <li class="flex items-center gap-3">
+                        <img
+                          src="./assets/images/icon-calendar.svg"
+                          alt="Calendar Icon"
+                        />
+                        <p class="font-medium text-brand-dark-purple">
+                          01 апреля – 11 апреля 2025
+                        </p>
+                      </li>
+                      <li class="flex items-center gap-3">
+                        <img
+                          src="./assets/images/icon-location.svg"
+                          alt="Location Icon"
+                        />
+                        <p class="font-medium text-brand-dark-purple">
+                          Сеул, Южная Корея
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <p class="max-w-[450px]">
+                    Корейская культура, провинция Кёнгидо, деревня Букчон,
+                    остров Нами, парк аттракционов Lotte World.
+                  </p>
+                </div>
+
+                <!-- Tour Cost -->
+                <div class="space-y-6">
+                  <span
+                    class="inline-block whitespace-nowrap text-brand-neutrals-faded-puple border border-brand-neutrals-dirty-liliac leading-8 tracking-wider rounded-10 py-[3px] px-4"
+                  >
+                    Полное сопровождение
+                  </span>
+
+                  <div class="flex flex-col xl:items-end">
+                    <h3>$ XXXX</h3>
+                    <p class="text-brand-neutrals-gray">7 дней / 8 ночей</p>
+                  </div>
+                </div>
+
+                <!-- Select tour link -->
+                <div
+                  class="absolute w-fit bottom-4 right-4 lg:right-0 lg:bottom-0 lg:bg-brand-liliac-light rounded-tl-3xl pl-3 pt-3"
+                >
+                  <div class="size-full relative">
+                    <!-- Top corner -->
+                    <span
+                      class="top-corner size-6 hidden lg:block absolute -top-9 right-0 bg-brand-liliac-light"
+                    ></span>
+
+                    <!-- Bottom corner -->
+                    <span
+                      class="bottom-corner size-6 hidden lg:block absolute -left-9 bottom-0 bg-brand-liliac-light"
+                    ></span>
+
+                    <a
+                      href="#"
+                      class="lg:h-72 group flex items-center gap-3 bg-brand-vivid-purple text-white text-lg leading-7 tracking-wider rounded-2xl hover:bg-brand-vivid-purple-hover active:bg-brand-vivid-purple-pressed transition-all duration-200 p-[15px] lg:px-10"
+                    >
+                      <span class="hidden lg:block">Подробнее</span>
+                      <img
+                        src="./assets/images/icon-arrow.svg"
+                        alt="Arrow Icon"
+                        class="group-hover:-mt-3 group-hover:translate-x-3 transition-all duration-200"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Tour 9 -->
+            <div class="flex flex-col lg:flex-row items-stretch lg:gap-4">
+              <!-- Image -->
+              <div
+                class="lg:w-[400px] h-[215px] xs:h-auto xs:min-h-[345px] lg:min-h-0 aspect-video lg:aspect-auto relative z-10 bg-white lg:bg-transparent rounded-3xl overflow-hidden -mb-6 lg:mb-0 p-5"
+              >
+                <img
+                  src="./assets/images/img-tour-9.jpg"
+                  alt="Tour Image"
+                  class="absolute inset-0 size-full object-cover"
+                />
+
+                <!-- Info -->
+                <div class="relative z-10 space-y-2 leading-8 tracking-wider">
+                  <div
+                    class="w-fit bg-white text-brand-dark-purple rounded-10 py-1 px-4"
+                  >
+                    Фирменный тур
+                  </div>
+                  <div
+                    class="w-fit text-white rounded-10 backdrop-blur py-1 px-4"
+                  >
+                    Осталось 10 мест
+                  </div>
+                </div>
+              </div>
+
+              <!-- Info Side -->
+              <div
+                class="flex-1 relative flex flex-col xl:flex-row justify-between gap-5 bg-white rounded-b-3xl lg:rounded-3xl overflow-hidden px-6 pt-10 pb-4 sm:py-10 sm:px-11"
+              >
+                <!-- Tour Name & Date -->
+                <div class="space-y-4">
+                  <div class="space-y-4">
+                    <h3 class="text-brand-vivid-purple">Осенняя Корея</h3>
+                    <ul>
+                      <li class="flex items-center gap-3">
+                        <img
+                          src="./assets/images/icon-calendar.svg"
+                          alt="Calendar Icon"
+                        />
+                        <p class="font-medium text-brand-dark-purple">
+                          01 апреля – 11 апреля 2025
+                        </p>
+                      </li>
+                      <li class="flex items-center gap-3">
+                        <img
+                          src="./assets/images/icon-location.svg"
+                          alt="Location Icon"
+                        />
+                        <p class="font-medium text-brand-dark-purple">
+                          Сеул, Южная Корея
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <p class="max-w-[450px]">
+                    Корейская культура, провинция Кёнгидо, деревня Букчон,
+                    остров Нами, парк аттракционов Lotte World.
+                  </p>
+                </div>
+
+                <!-- Tour Cost -->
+                <div class="space-y-6">
+                  <span
+                    class="inline-block whitespace-nowrap text-brand-neutrals-faded-puple border border-brand-neutrals-dirty-liliac leading-8 tracking-wider rounded-10 py-[3px] px-4"
+                  >
+                    Полное сопровождение
+                  </span>
+
+                  <div class="flex flex-col xl:items-end">
+                    <h3>$ 2900</h3>
+                    <p class="text-brand-neutrals-gray">7 дней / 8 ночей</p>
+                  </div>
+                </div>
+
+                <!-- Select tour link -->
+                <div
+                  class="absolute w-fit bottom-4 right-4 lg:right-0 lg:bottom-0 lg:bg-brand-liliac-light rounded-tl-3xl pl-3 pt-3"
+                >
+                  <div class="size-full relative">
+                    <!-- Top corner -->
+                    <span
+                      class="top-corner size-6 hidden lg:block absolute -top-9 right-0 bg-brand-liliac-light"
+                    ></span>
+
+                    <!-- Bottom corner -->
+                    <span
+                      class="bottom-corner size-6 hidden lg:block absolute -left-9 bottom-0 bg-brand-liliac-light"
+                    ></span>
+
+                    <a
+                      href="#"
+                      class="lg:h-72 group flex items-center gap-3 bg-brand-vivid-purple text-white text-lg leading-7 tracking-wider rounded-2xl hover:bg-brand-vivid-purple-hover active:bg-brand-vivid-purple-pressed transition-all duration-200 p-[15px] lg:px-10"
+                    >
+                      <span class="hidden lg:block">Подробнее</span>
+                      <img
+                        src="./assets/images/icon-arrow.svg"
+                        alt="Arrow Icon"
+                        class="group-hover:-mt-3 group-hover:translate-x-3 transition-all duration-200"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Tour 10 -->
+            <div class="flex flex-col lg:flex-row items-stretch lg:gap-4">
+              <!-- Image -->
+              <div
+                class="lg:w-[400px] h-[215px] xs:h-auto xs:min-h-[345px] lg:min-h-0 aspect-video lg:aspect-auto relative z-10 bg-white lg:bg-transparent rounded-3xl overflow-hidden -mb-6 lg:mb-0 p-5"
+              >
+                <img
+                  src="./assets/images/img-tour-10.png"
+                  alt="Tour Image"
+                  class="absolute inset-0 size-full object-cover"
+                />
+
+                <!-- Info -->
+                <div class="relative z-10 space-y-2 leading-8 tracking-wider">
+                  <div
+                    class="w-fit text-white rounded-10 backdrop-blur py-1 px-4"
+                  >
+                    Осталось X мест
+                  </div>
+                </div>
+              </div>
+
+              <!-- Info Side -->
+              <div
+                class="flex-1 relative flex flex-col xl:flex-row justify-between gap-5 bg-white rounded-b-3xl lg:rounded-3xl overflow-hidden px-6 pt-10 pb-4 sm:py-10 sm:px-11"
+              >
+                <!-- Tour Name & Date -->
+                <div class="space-y-4">
+                  <div class="space-y-4">
+                    <h3 class="text-brand-vivid-purple">K-pop тур</h3>
+                    <ul>
+                      <li class="flex items-center gap-3">
+                        <img
+                          src="./assets/images/icon-calendar.svg"
+                          alt="Calendar Icon"
+                        />
+                        <p class="font-medium text-brand-dark-purple">
+                          01 апреля – 11 апреля 2025
+                        </p>
+                      </li>
+                      <li class="flex items-center gap-3">
+                        <img
+                          src="./assets/images/icon-location.svg"
+                          alt="Location Icon"
+                        />
+                        <p class="font-medium text-brand-dark-purple">
+                          Сеул, Южная Корея
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <p class="max-w-[450px]">
+                    Корейская культура, провинция Кёнгидо, деревня Букчон,
+                    остров Нами, парк аттракционов Lotte World.
+                  </p>
+                </div>
+
+                <!-- Tour Cost -->
+                <div class="space-y-6">
+                  <span
+                    class="inline-block whitespace-nowrap text-brand-neutrals-faded-puple border border-brand-neutrals-dirty-liliac leading-8 tracking-wider rounded-10 py-[3px] px-4"
+                  >
+                    Полное сопровождение
+                  </span>
+
+                  <div class="flex flex-col xl:items-end">
+                    <h3>$ XXXX</h3>
+                    <p class="text-brand-neutrals-gray">7 дней / 8 ночей</p>
+                  </div>
+                </div>
+
+                <!-- Select tour link -->
+                <div
+                  class="absolute w-fit bottom-4 right-4 lg:right-0 lg:bottom-0 lg:bg-brand-liliac-light rounded-tl-3xl pl-3 pt-3"
+                >
+                  <div class="size-full relative">
+                    <!-- Top corner -->
+                    <span
+                      class="top-corner size-6 hidden lg:block absolute -top-9 right-0 bg-brand-liliac-light"
+                    ></span>
+
+                    <!-- Bottom corner -->
+                    <span
+                      class="bottom-corner size-6 hidden lg:block absolute -left-9 bottom-0 bg-brand-liliac-light"
+                    ></span>
+
+                    <a
+                      href="#"
+                      class="lg:h-72 group flex items-center gap-3 bg-brand-vivid-purple text-white text-lg leading-7 tracking-wider rounded-2xl hover:bg-brand-vivid-purple-hover active:bg-brand-vivid-purple-pressed transition-all duration-200 p-[15px] lg:px-10"
+                    >
+                      <span class="hidden lg:block">Подробнее</span>
+                      <img
+                        src="./assets/images/icon-arrow.svg"
+                        alt="Arrow Icon"
+                        class="group-hover:-mt-3 group-hover:translate-x-3 transition-all duration-200"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Tour 11 -->
+            <div class="flex flex-col lg:flex-row items-stretch lg:gap-4">
+              <!-- Image -->
+              <div
+                class="lg:w-[400px] h-[215px] xs:h-auto xs:min-h-[345px] lg:min-h-0 aspect-video lg:aspect-auto relative z-10 bg-white lg:bg-transparent rounded-3xl overflow-hidden -mb-6 lg:mb-0 p-5"
+              >
+                <img
+                  src="./assets/images/img-tour-11.jpg"
+                  alt="Tour Image"
+                  class="absolute inset-0 size-full object-cover"
+                />
+
+                <!-- Info -->
+                <div class="relative z-10 space-y-2 leading-8 tracking-wider">
+                  <div
+                    class="w-fit text-white rounded-10 backdrop-blur py-1 px-4"
+                  >
+                    Осталось X мест
+                  </div>
+                </div>
+              </div>
+
+              <!-- Info Side -->
+              <div
+                class="flex-1 relative flex flex-col xl:flex-row justify-between gap-5 bg-white rounded-b-3xl lg:rounded-3xl overflow-hidden px-6 pt-10 pb-4 sm:py-10 sm:px-11"
+              >
+                <!-- Tour Name & Date -->
+                <div class="space-y-4">
+                  <div class="space-y-4">
+                    <h3 class="text-brand-vivid-purple">Тур в Японию</h3>
+                    <ul>
+                      <li class="flex items-center gap-3">
+                        <img
+                          src="./assets/images/icon-calendar.svg"
+                          alt="Calendar Icon"
+                        />
+                        <p class="font-medium text-brand-dark-purple">
+                          01 апреля – 11 апреля 2025
+                        </p>
+                      </li>
+                      <li class="flex items-center gap-3">
+                        <img
+                          src="./assets/images/icon-location.svg"
+                          alt="Location Icon"
+                        />
+                        <p class="font-medium text-brand-dark-purple">
+                          Сеул, Южная Корея
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <p class="max-w-[450px]">
+                    Корейская культура, провинция Кёнгидо, деревня Букчон,
+                    остров Нами, парк аттракционов Lotte World.
+                  </p>
+                </div>
+
+                <!-- Tour Cost -->
+                <div class="space-y-6">
+                  <span
+                    class="inline-block whitespace-nowrap text-brand-neutrals-faded-puple border border-brand-neutrals-dirty-liliac leading-8 tracking-wider rounded-10 py-[3px] px-4"
+                  >
+                    Полное сопровождение
+                  </span>
+
+                  <div class="flex flex-col xl:items-end">
+                    <h3>$ XXXX</h3>
+                    <p class="text-brand-neutrals-gray">7 дней / 8 ночей</p>
+                  </div>
+                </div>
+
+                <!-- Select tour link -->
+                <div
+                  class="absolute w-fit bottom-4 right-4 lg:right-0 lg:bottom-0 lg:bg-brand-liliac-light rounded-tl-3xl pl-3 pt-3"
+                >
+                  <div class="size-full relative">
+                    <!-- Top corner -->
+                    <span
+                      class="top-corner size-6 hidden lg:block absolute -top-9 right-0 bg-brand-liliac-light"
+                    ></span>
+
+                    <!-- Bottom corner -->
+                    <span
+                      class="bottom-corner size-6 hidden lg:block absolute -left-9 bottom-0 bg-brand-liliac-light"
+                    ></span>
+
+                    <a
+                      href="#"
+                      class="lg:h-72 group flex items-center gap-3 bg-brand-vivid-purple text-white text-lg leading-7 tracking-wider rounded-2xl hover:bg-brand-vivid-purple-hover active:bg-brand-vivid-purple-pressed transition-all duration-200 p-[15px] lg:px-10"
+                    >
+                      <span class="hidden lg:block">Подробнее</span>
+                      <img
+                        src="./assets/images/icon-arrow.svg"
+                        alt="Arrow Icon"
+                        class="group-hover:-mt-3 group-hover:translate-x-3 transition-all duration-200"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq">
+        <div class="max-w-base mx-auto mt-6 lg:mt-7 px-3 md:px-16 lg:px-3">
+          <div class="bg-white rounded-2xl lg:rounded-3xl p-6 lg:p-11">
+            <!-- Title & Socials -->
+            <div
+              class="flex flex-col xl:flex-row justify-between mb-5 lg:mb-7 gap-6"
+            >
+              <h2>
+                <span class="text-brand-vivid-purple">Отвечаем</span> <br />
+                на частые вопросы
+              </h2>
+
+              <div
+                class="xl:w-[55%] hidden sm:flex md:flex-col lg:flex-row lg:items-center justify-between gap-4"
+              >
+                <p
+                  class="max-w-[450px] text-brand-dark-purple font-medium leading-7"
+                >
+                  Если у вас остались вопросы, на которые вы не нашли ответ,
+                  просто напишите нам и мы поможем
+                </p>
+
+                <!-- Socials -->
+                <div class="flex items-center gap-3">
+                  <a
+                    href="#"
+                    class="shrink-0 bg-brand-liliac rounded-full hover:bg-brand-liliac-hover active:bg-brand-liliac-pressed transition-all duration-300 p-3"
+                  >
+                    <img
+                      src="./assets/images/icon-instagram.svg"
+                      alt="Instagram Icon"
+                    />
+                  </a>
+                  <a
+                    href="#"
+                    class="shrink-0 bg-brand-liliac rounded-full hover:bg-brand-liliac-hover active:bg-brand-liliac-pressed transition-all duration-300 p-3"
+                  >
+                    <img
+                      src="./assets/images/icon-telegram.svg"
+                      alt="Telegram Icon"
+                    />
+                  </a>
+                  <a
+                    href="#"
+                    class="shrink-0 bg-brand-liliac rounded-full hover:bg-brand-liliac-hover active:bg-brand-liliac-pressed transition-all duration-300 p-3"
+                  >
+                    <img src="./assets/images/icon-talk.svg" alt="Icon Talk" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQs -->
+            <div>
+              <div class="grid lg:grid-cols-2 gap-4 lg:gap-8">
+                <!-- Accordions Items Left -->
+                <div class="hs-accordion-group space-y-4">
+                  <!-- Accordion Item 1 -->
+                  <div
+                    class="hs-accordion min-h-72 active relative bg-brand-green-light border border-brand-neutrals-dirty-liliac rounded-3xl p-2 lg:px-9 lg:py-[22px]"
+                    id="hs-basic-heading-1"
+                  >
+                    <button
+                      class="hs-accordion-toggle hs-accordion-active:text-brand-green inline-flex items-center justify-between gap-3 w-full font-medium text-start pl-3 lg:pl-0"
+                      aria-expanded="true"
+                      aria-controls="hs-basic-collapse-1"
+                    >
+                      <span
+                        class="text-brand-dark-purple font-semibold text-lg leading-6 tracking-wider"
+                        >Что входит в стоимость тура?</span
+                      >
+                      <div
+                        class="lg:absolute top-2 right-2 shrink-0 bg-brand-dark-purple rounded-2xl p-4"
+                      >
+                        <img
+                          src="./assets/images/icon-plus.svg"
+                          alt="Plus icon"
+                          class="hs-accordion-active:rotate-45 transition-all duration-300"
+                        />
+                      </div>
+                    </button>
+                    <div
+                      id="hs-basic-collapse-1"
+                      class="hs-accordion-content max-w-[450px] overflow-hidden transition-[height] duration-300"
+                      role="region"
+                      aria-labelledby="hs-basic-heading-1"
+                    >
+                      <p class="lg:mt-3 pl-3 lg:pl-0">
+                        После открытия продаж начинается бронирование мест.
+                        Бронь места происходит по предоплате $700. Окончательный
+                        расчет происходит в Корее.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Accordion Item 2 -->
+                  <div
+                    class="hs-accordion min-h-72 relative bg-brand-green-light border border-brand-neutrals-dirty-liliac rounded-3xl p-2 lg:px-9 lg:py-[22px]"
+                    id="hs-basic-heading-2"
+                  >
+                    <button
+                      class="hs-accordion-toggle hs-accordion-active:text-brand-green inline-flex items-center justify-between gap-3 w-full font-medium text-start pl-3 lg:pl-0"
+                      aria-controls="hs-basic-collapse-2"
+                    >
+                      <span
+                        class="text-brand-dark-purple font-semibold text-lg leading-6 tracking-wider"
+                        >Что не входит в стоимость тура?</span
+                      >
+                      <div
+                        class="lg:absolute top-2 right-2 shrink-0 bg-brand-dark-purple rounded-2xl p-4"
+                      >
+                        <img
+                          src="./assets/images/icon-plus.svg"
+                          alt="Plus icon"
+                          class="hs-accordion-active:rotate-45 transition-all duration-300"
+                        />
+                      </div>
+                    </button>
+                    <div
+                      id="hs-basic-collapse-2"
+                      class="hs-accordion-content max-w-[450px] overflow-hidden transition-[height] duration-300"
+                      role="region"
+                      aria-labelledby="hs-basic-heading-2"
+                    >
+                      <p class="lg:mt-3 pl-3 lg:pl-0">
+                        После открытия продаж начинается бронирование мест.
+                        Бронь места происходит по предоплате $700. Окончательный
+                        расчет происходит в Корее.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Accordion Item 3 -->
+                  <div
+                    class="hs-accordion min-h-72 relative bg-brand-green-light border border-brand-neutrals-dirty-liliac rounded-3xl p-2 lg:px-9 lg:py-[22px]"
+                    id="hs-basic-heading-3"
+                  >
+                    <button
+                      class="hs-accordion-toggle hs-accordion-active:text-brand-green inline-flex items-center justify-between gap-3 w-full font-medium text-start pl-3 lg:pl-0"
+                      aria-controls="hs-basic-collapse-3"
+                    >
+                      <span
+                        class="text-brand-dark-purple font-semibold text-lg leading-6 tracking-wider"
+                        >Как забронировать тур?</span
+                      >
+                      <div
+                        class="lg:absolute top-2 right-2 shrink-0 bg-brand-dark-purple rounded-2xl p-4"
+                      >
+                        <img
+                          src="./assets/images/icon-plus.svg"
+                          alt="Plus icon"
+                          class="hs-accordion-active:rotate-45 transition-all duration-300"
+                        />
+                      </div>
+                    </button>
+                    <div
+                      id="hs-basic-collapse-3"
+                      class="hs-accordion-content max-w-[450px] overflow-hidden transition-[height] duration-300"
+                      role="region"
+                      aria-labelledby="hs-basic-heading-3"
+                    >
+                      <p class="lg:mt-3 pl-3 lg:pl-0">
+                        После открытия продаж начинается бронирование мест.
+                        Бронь места происходит по предоплате $700. Окончательный
+                        расчет происходит в Корее.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Accordion Item 4 -->
+                  <div
+                    class="hs-accordion min-h-72 relative bg-brand-green-light border border-brand-neutrals-dirty-liliac rounded-3xl p-2 lg:px-9 lg:py-[22px]"
+                    id="hs-basic-heading-4"
+                  >
+                    <button
+                      class="hs-accordion-toggle hs-accordion-active:text-brand-green inline-flex items-center justify-between gap-3 w-full font-medium text-start pl-3 lg:pl-0"
+                      aria-controls="hs-basic-collapse-4"
+                    >
+                      <span
+                        class="text-brand-dark-purple font-semibold text-lg leading-6 tracking-wider"
+                        >Как оплатить тур?</span
+                      >
+                      <div
+                        class="lg:absolute top-2 right-2 shrink-0 bg-brand-dark-purple rounded-2xl p-4"
+                      >
+                        <img
+                          src="./assets/images/icon-plus.svg"
+                          alt="Plus icon"
+                          class="hs-accordion-active:rotate-45 transition-all duration-300"
+                        />
+                      </div>
+                    </button>
+                    <div
+                      id="hs-basic-collapse-4"
+                      class="hs-accordion-content max-w-[450px] overflow-hidden transition-[height] duration-300"
+                      role="region"
+                      aria-labelledby="hs-basic-heading-4"
+                    >
+                      <p class="lg:mt-3 px-3 lg:px-0">
+                        После открытия продаж начинается бронирование мест.
+                        Бронь места происходит по предоплате $700. Окончательный
+                        расчет происходит в Корее.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Accordion Item 5 -->
+                  <div
+                    class="hs-accordion min-h-72 relative bg-brand-green-light border border-brand-neutrals-dirty-liliac rounded-3xl p-2 lg:px-9 lg:py-[22px]"
+                    id="hs-basic-heading-5"
+                  >
+                    <button
+                      class="hs-accordion-toggle hs-accordion-active:text-brand-green inline-flex items-center justify-between gap-3 w-full font-medium text-start pl-3 lg:pl-0"
+                      aria-controls="hs-basic-collapse-5"
+                    >
+                      <span
+                        class="text-brand-dark-purple font-semibold text-lg leading-6 tracking-wider"
+                        >Как оплатить тур?</span
+                      >
+                      <div
+                        class="lg:absolute top-2 right-2 shrink-0 bg-brand-dark-purple rounded-2xl p-4"
+                      >
+                        <img
+                          src="./assets/images/icon-plus.svg"
+                          alt="Plus icon"
+                          class="hs-accordion-active:rotate-45 transition-all duration-300"
+                        />
+                      </div>
+                    </button>
+                    <div
+                      id="hs-basic-collapse-5"
+                      class="hs-accordion-content max-w-[450px] overflow-hidden transition-[height] duration-300"
+                      role="region"
+                      aria-labelledby="hs-basic-heading-5"
+                    >
+                      <p class="lg:mt-3 px-3 lg:px-0">
+                        После открытия продаж начинается бронирование мест.
+                        Бронь места происходит по предоплате $700. Окончательный
+                        расчет происходит в Корее.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Accordions Items Right -->
+                <div class="hs-accordion-group space-y-4">
+                  <!-- Accordion Item 6 -->
+                  <div
+                    class="hs-accordion min-h-72 active relative bg-brand-green-light border border-brand-neutrals-dirty-liliac rounded-3xl p-2 lg:px-9 lg:py-[22px]"
+                    id="hs-basic-heading-6"
+                  >
+                    <button
+                      class="hs-accordion-toggle hs-accordion-active:text-brand-green inline-flex items-center justify-between gap-3 w-full font-medium text-start pl-3 lg:pl-0"
+                      aria-expanded="true"
+                      aria-controls="hs-basic-collapse-6"
+                    >
+                      <span
+                        class="text-brand-dark-purple font-semibold text-lg leading-6 tracking-wider"
+                        >Как узнать подробную программу тура?</span
+                      >
+                      <div
+                        class="lg:absolute top-2 right-2 shrink-0 bg-brand-dark-purple rounded-2xl p-4"
+                      >
+                        <img
+                          src="./assets/images/icon-plus.svg"
+                          alt="Plus icon"
+                          class="hs-accordion-active:rotate-45 transition-all duration-300"
+                        />
+                      </div>
+                    </button>
+                    <div
+                      id="hs-basic-collapse-6"
+                      class="hs-accordion-content max-w-[450px] overflow-hidden transition-[height] duration-300"
+                      role="region"
+                      aria-labelledby="hs-basic-heading-6"
+                    >
+                      <p class="lg:mt-3 pl-3 lg:pl-0">
+                        После открытия продаж начинается бронирование мест.
+                        Бронь места происходит по предоплате $700. Окончательный
+                        расчет происходит в Корее.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Accordion Item 7 -->
+                  <div
+                    class="hs-accordion min-h-72 relative bg-brand-green-light border border-brand-neutrals-dirty-liliac rounded-3xl p-2 lg:px-9 lg:py-[22px]"
+                    id="hs-basic-heading-7"
+                  >
+                    <button
+                      class="hs-accordion-toggle hs-accordion-active:text-brand-green inline-flex items-center justify-between gap-3 w-full font-medium text-start pl-3 lg:pl-0"
+                      aria-controls="hs-basic-collapse-7"
+                    >
+                      <span
+                        class="text-brand-dark-purple font-semibold text-lg leading-6 tracking-wider"
+                        >Как успеть забронировать место в туре?</span
+                      >
+                      <div
+                        class="lg:absolute top-2 right-2 shrink-0 bg-brand-dark-purple rounded-2xl p-4"
+                      >
+                        <img
+                          src="./assets/images/icon-plus.svg"
+                          alt="Plus icon"
+                          class="hs-accordion-active:rotate-45 transition-all duration-300"
+                        />
+                      </div>
+                    </button>
+                    <div
+                      id="hs-basic-collapse-7"
+                      class="hs-accordion-content max-w-[450px] overflow-hidden transition-[height] duration-300"
+                      role="region"
+                      aria-labelledby="hs-basic-heading-7"
+                    >
+                      <p class="lg:mt-3 pl-3 lg:pl-0">
+                        После открытия продаж начинается бронирование мест.
+                        Бронь места происходит по предоплате $700. Окончательный
+                        расчет происходит в Корее.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Accordion Item 8 -->
+                  <div
+                    class="hs-accordion min-h-72 relative bg-brand-green-light border border-brand-neutrals-dirty-liliac rounded-3xl p-2 lg:px-9 lg:py-[22px]"
+                    id="hs-basic-heading-8"
+                  >
+                    <button
+                      class="hs-accordion-toggle hs-accordion-active:text-brand-green inline-flex items-center justify-between gap-3 w-full font-medium text-start pl-3 lg:pl-0"
+                      aria-controls="hs-basic-collapse-8"
+                    >
+                      <span
+                        class="text-brand-dark-purple font-semibold text-lg leading-6 tracking-wider"
+                        >Зачем вступать в закрытый чат Telegram?</span
+                      >
+                      <div
+                        class="lg:absolute top-2 right-2 shrink-0 bg-brand-dark-purple rounded-2xl p-4"
+                      >
+                        <img
+                          src="./assets/images/icon-plus.svg"
+                          alt="Plus icon"
+                          class="hs-accordion-active:rotate-45 transition-all duration-300"
+                        />
+                      </div>
+                    </button>
+                    <div
+                      id="hs-basic-collapse-8"
+                      class="hs-accordion-content max-w-[450px] overflow-hidden transition-[height] duration-300"
+                      role="region"
+                      aria-labelledby="hs-basic-heading-8"
+                    >
+                      <p class="lg:mt-3 pl-3 lg:pl-0">
+                        После открытия продаж начинается бронирование мест.
+                        Бронь места происходит по предоплате $700. Окончательный
+                        расчет происходит в Корее.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Accordion Item 9 -->
+                  <div
+                    class="hs-accordion min-h-72 relative bg-brand-green-light border border-brand-neutrals-dirty-liliac rounded-3xl p-2 lg:px-9 lg:py-[22px]"
+                    id="hs-basic-heading-9"
+                  >
+                    <button
+                      class="hs-accordion-toggle hs-accordion-active:text-brand-green inline-flex items-center justify-between gap-3 w-full font-medium text-start pl-3 lg:pl-0"
+                      aria-controls="hs-basic-collapse-9"
+                    >
+                      <span
+                        class="text-brand-dark-purple font-semibold text-lg leading-6 tracking-wider"
+                        >Из какой страны можно попасть в тур?</span
+                      >
+                      <div
+                        class="lg:absolute top-2 right-2 shrink-0 bg-brand-dark-purple rounded-2xl p-4"
+                      >
+                        <img
+                          src="./assets/images/icon-plus.svg"
+                          alt="Plus icon"
+                          class="hs-accordion-active:rotate-45 transition-all duration-300"
+                        />
+                      </div>
+                    </button>
+                    <div
+                      id="hs-basic-collapse-9"
+                      class="hs-accordion-content max-w-[450px] overflow-hidden transition-[height] duration-300"
+                      role="region"
+                      aria-labelledby="hs-basic-heading-9"
+                    >
+                      <p class="lg:mt-3 px-3 lg:px-0">
+                        После открытия продаж начинается бронирование мест.
+                        Бронь места происходит по предоплате $700. Окончательный
+                        расчет происходит в Корее.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Accordion Item 10 -->
+                  <div
+                    class="hs-accordion min-h-72 relative bg-brand-green-light border border-brand-neutrals-dirty-liliac rounded-3xl p-2 lg:px-9 lg:py-[22px]"
+                    id="hs-basic-heading-10"
+                  >
+                    <button
+                      class="hs-accordion-toggle hs-accordion-active:text-brand-green inline-flex items-center justify-between gap-3 w-full font-medium text-start pl-3 lg:pl-0"
+                      aria-controls="hs-basic-collapse-10"
+                    >
+                      <span
+                        class="text-brand-dark-purple font-semibold text-lg leading-6 tracking-wider"
+                        >Есть ли ограничения для участников тура?</span
+                      >
+                      <div
+                        class="lg:absolute top-2 right-2 shrink-0 bg-brand-dark-purple rounded-2xl p-4"
+                      >
+                        <img
+                          src="./assets/images/icon-plus.svg"
+                          alt="Plus icon"
+                          class="hs-accordion-active:rotate-45 transition-all duration-300"
+                        />
+                      </div>
+                    </button>
+                    <div
+                      id="hs-basic-collapse-10"
+                      class="hs-accordion-content max-w-[450px] overflow-hidden transition-[height] duration-300"
+                      role="region"
+                      aria-labelledby="hs-basic-heading-10"
+                    >
+                      <p class="lg:mt-3 px-3 lg:px-0">
+                        После открытия продаж начинается бронирование мест.
+                        Бронь места происходит по предоплате $700. Окончательный
+                        расчет происходит в Корее.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="xl:w-[55%] flex sm:hidden flex-col gap-3 mt-5">
+              <p class="max-w-[450px] leading-7">
+                Если у вас остались вопросы, на которые вы не нашли ответ,
+                просто напишите нам и мы поможем
+              </p>
+
+              <!-- Socials -->
+              <div class="flex items-center gap-3">
+                <a
+                  href="#"
+                  class="shrink-0 bg-brand-liliac rounded-full hover:bg-brand-liliac-hover active:bg-brand-liliac-pressed transition-all duration-300 p-3"
+                >
+                  <img
+                    src="./assets/images/icon-instagram.svg"
+                    alt="Instagram Icon"
+                  />
+                </a>
+                <a
+                  href="#"
+                  class="shrink-0 bg-brand-liliac rounded-full hover:bg-brand-liliac-hover active:bg-brand-liliac-pressed transition-all duration-300 p-3"
+                >
+                  <img
+                    src="./assets/images/icon-telegram.svg"
+                    alt="Telegram Icon"
+                  />
+                </a>
+                <a
+                  href="#"
+                  class="shrink-0 bg-brand-liliac rounded-full hover:bg-brand-liliac-hover active:bg-brand-liliac-pressed transition-all duration-300 p-3"
+                >
+                  <img src="./assets/images/icon-talk.svg" alt="Icon Talk" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
