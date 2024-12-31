@@ -1,3 +1,4 @@
+// Faq Accordion
 document.addEventListener("DOMContentLoaded", () => {
   const accordionGroups = document.querySelectorAll(".hs-accordion-group");
 
@@ -87,6 +88,26 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+const header = document.querySelector("header");
+const logo = document.querySelector(".logo");
+const links = document.querySelector(".links");
+const cart = document.querySelector(".cart");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 100) {
+    header.classList.add("header");
+    logo.classList.add("border-gray-200", "shadow-md");
+    links.classList.add("border-gray-200", "shadow-md");
+    cart.classList.add("shadow-md");
+  } else {
+    header.classList.remove("header");
+    logo.classList.remove("border-gray-200", "shadow-md");
+    links.classList.remove("border-gray-200", "shadow-md");
+    cart.classList.remove("shadow-md");
+  }
+});
+
+// Dropdown
 document.addEventListener("DOMContentLoaded", () => {
   const dropdownContainers = document.querySelectorAll("[data-dropdown]");
 
@@ -132,6 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+// Mob men accordion
 document.addEventListener("DOMContentLoaded", () => {
   const accordionHeaders = document.querySelectorAll("[data-accordion-toggle]");
 
@@ -162,6 +184,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// Mob Menu
 const mobMenu = document.getElementById("mob-menu");
 const mobMenuOpen = document.getElementById("mob-menu-toggle-btn");
 const mobMenuClose = document.getElementById("mob-menu-close-btn");
