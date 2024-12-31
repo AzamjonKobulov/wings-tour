@@ -105,7 +105,7 @@ window.addEventListener("scroll", () => {
     header.classList.remove("header");
     logo.classList.remove("border-gray-200", "shadow-md");
     links.classList.remove("border-gray-200", "shadow-md");
-    cart.classList.remove(" border-brand-dark-purple", "shadow-md");
+    cart.classList.remove("border-brand-dark-purple", "shadow-md");
     menuBtn.classList.remove("border-gray-200", "shadow-md");
   }
 });
