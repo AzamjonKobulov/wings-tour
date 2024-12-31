@@ -238,3 +238,20 @@ document.addEventListener("DOMContentLoaded", () => {
     container.scrollLeft = scrollLeft - walk;
   });
 });
+
+// Select the button and the paragraph
+const button = document.getElementById("toggle-info");
+const paragraph = document.getElementById("additional-info");
+
+// Add an event listener to the button
+button.addEventListener("click", () => {
+  // Toggle the "hidden" class on the paragraph
+  paragraph.classList.toggle("hidden");
+
+  // Update the button text based on the paragraph's visibility
+  if (paragraph.classList.contains("hidden")) {
+    button.textContent = "Подробнее"; // Set to "More details"
+  } else {
+    button.textContent = "Скрыть"; // Set to "Hide"
+  }
+});
