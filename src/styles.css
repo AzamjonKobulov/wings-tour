@@ -47,3 +47,46 @@
 .swiper-wrapper {
   @apply !items-stretch;
 }
+
+.header {
+  @apply transition-all duration-300 !mt-3;
+}
+
+.dropdown-content {
+  transform-origin: top;
+  transform: translateY(20px);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.3s ease;
+}
+
+.dropdown-content.open {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.accordion-body {
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+.accordion-icon {
+  transition: transform 0.3s ease;
+}
+.accordion-icon.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.fade-in {
+  animation: fadeIn 0.2s ease-in-out forwards, scaleIn 0.2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

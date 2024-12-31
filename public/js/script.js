@@ -86,3 +86,101 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const dropdownContainers = document.querySelectorAll("[data-dropdown]");
+
+  dropdownContainers.forEach((dropdown) => {
+    const button = dropdown.querySelector(".dropdown-btn");
+    const content = dropdown.querySelector(".dropdown-content");
+    const links = content.querySelectorAll("a");
+
+    // Toggle dropdown
+    button.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const isOpen = content.classList.contains("open");
+      closeAllDropdowns(); // Close other dropdowns
+      if (!isOpen) {
+        content.classList.add("open");
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+
+    // Close dropdown when clicking on a link
+    links.forEach((link) => {
+      link.addEventListener("click", () => {
+        closeDropdown(content);
+      });
+    });
+  });
+
+  // Close dropdown when clicking outside
+  document.addEventListener("click", closeAllDropdowns);
+
+  function closeAllDropdowns() {
+    dropdownContainers.forEach((dropdown) => {
+      const content = dropdown.querySelector(".dropdown-content");
+      closeDropdown(content);
+    });
+  }
+
+  function closeDropdown(content) {
+    if (content.classList.contains("open")) {
+      content.classList.remove("open");
+      content.style.maxHeight = null;
+    }
+  }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const accordionHeaders = document.querySelectorAll("[data-accordion-toggle]");
+
+  accordionHeaders.forEach((header) => {
+    header.addEventListener("click", () => {
+      const body = header.nextElementSibling;
+      const isOpen = body.classList.contains("hidden");
+
+      // Close all other accordions if needed
+      document.querySelectorAll(".accordion-body").forEach((item) => {
+        if (item !== body) {
+          item.classList.add("hidden");
+          item.previousElementSibling
+            .querySelector(".accordion-icon")
+            .classList.remove("rotate-180");
+        }
+      });
+
+      // Toggle current accordion
+      if (isOpen) {
+        body.classList.remove("hidden");
+        header.querySelector(".accordion-icon").classList.add("rotate-180");
+      } else {
+        body.classList.add("hidden");
+        header.querySelector(".accordion-icon").classList.remove("rotate-180");
+      }
+    });
+  });
+});
+
+const mobMenu = document.getElementById("mob-menu");
+const mobMenuOpen = document.getElementById("mob-menu-toggle-btn");
+const mobMenuClose = document.getElementById("mob-menu-close-btn");
+
+mobMenuOpen.addEventListener("click", function () {
+  mobMenu.classList.remove("-translate-x-full");
+  document.body.classList.add("overflow-hidden");
+});
+
+mobMenuClose.addEventListener("click", function () {
+  mobMenu.classList.add("-translate-x-full");
+  document.body.classList.remove("overflow-hidden");
+});
+
+const menuLinks = mobMenu.querySelectorAll("a");
+
+menuLinks.forEach((link) => {
+  link.addEventListener("click", function () {
+    mobMenu.classList.add("-translate-x-full");
+    document.body.classList.remove("overflow-hidden");
+  });
+});

@@ -13,31 +13,32 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header class="pt-8">
+    <header class="header sticky top-5 z-50 mt-3 lg:mt-8">
       <nav
         class="max-w-base mx-auto flex items-center gap-3 lg:gap-4 px-3 md:px-16 lg:px-3"
       >
         <!-- Mob Menu Btn -->
-        <button class="size-72 shrink-0 lg:hidden bg-white rounded-xl p-5">
+        <button
+          class="size-72 shrink-0 lg:hidden bg-white rounded-xl p-5"
+          id="mob-menu-toggle-btn"
+        >
           <img src="./assets/images/icon-hamburger.svg" alt="Hamburger Icon" />
         </button>
 
         <!-- Logo -->
-        <a href="#" class="w-full lg:w-fit">
-          <div
-            class="w-full h-72 grid place-content-center bg-white rounded-xl px-8"
-          >
+        <a href="#" class="logo w-full lg:w-fit rounded-xl overflow-hidden">
+          <div class="w-full h-72 grid place-content-center bg-white px-8">
             <img src="./assets/images/logo.svg" alt="Logo" />
           </div>
         </a>
 
         <!-- Links -->
         <ul
-          class="flex-1 h-72 hidden lg:flex items-center justify-between font-medium text-brand-dark-purple bg-white xl:text-lg leading-7 tracking-wider rounded-xl px-12"
+          class="links flex-1 h-72 hidden lg:flex items-center justify-between font-medium text-brand-dark-purple bg-white xl:text-lg leading-7 tracking-wider rounded-xl px-12"
         >
-          <!-- Dropdown -->
-          <li class="group">
-            <button class="flex items-center gap-1.5 2xl:gap-3">
+          <li class="dropdown-container relative group" data-dropdown>
+            <!-- Dropdown Btn -->
+            <button class="dropdown-btn flex items-center gap-1.5 2xl:gap-3">
               <span
                 class="group-hover:text-brand-dark-purple-hover transition-all duration-300"
                 >Wings Tour</span
@@ -62,7 +63,34 @@
                 />
               </svg>
             </button>
+
+            <!-- Dropdown Content -->
+            <div
+              class="dropdown-content w-[354px] absolute top-11 -left-1/3 space-y-5 bg-white font-normal text-brand-dark-purple leading-8 tracking-wider rounded-b-xl pl-12 pb-8 pt-3"
+            >
+              <a
+                href="#"
+                class="block hover:text-brand-dark-purple-hover transition-all duration-300"
+                >Наши партнёры</a
+              >
+              <a
+                href="#"
+                class="block hover:text-brand-dark-purple-hover transition-all duration-300"
+                >Вакансии</a
+              >
+              <a
+                href="#"
+                class="block hover:text-brand-dark-purple-hover transition-all duration-300"
+                >Система лояльности</a
+              >
+              <a
+                href="#"
+                class="block hover:text-brand-dark-purple-hover transition-all duration-300"
+                >Подарочный сертификат</a
+              >
+            </div>
           </li>
+
           <li>
             <a
               href="#"
@@ -103,7 +131,7 @@
         <!-- Cart -->
         <a href="#">
           <div
-            class="size-72 shrink-0 bg-brand-dark-purple rounded-xl hover:bg-brand-dark-purple-hover active:bg-brand-dark-purple-pressed transition-all duration-300 p-5"
+            class="cart size-72 shrink-0 bg-brand-dark-purple rounded-xl hover:bg-brand-dark-purple-hover active:bg-brand-dark-purple-pressed transition-all duration-300 p-5"
           >
             <img
               src="./assets/images/icon-cart.svg"
@@ -113,6 +141,115 @@
           </div>
         </a>
       </nav>
+
+      <!-- Mobile Menu -->
+      <div
+        class="fixed inset-0 z-50 size-full bg-white -translate-x-full transition-all duration-300"
+        id="mob-menu"
+      >
+        <!-- Header -->
+        <div class="flex items-center">
+          <button class="p-5" id="mob-menu-close-btn">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2 6L30 26"
+                stroke="#382176"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M2 26L30 6"
+                stroke="#382176"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+          <!-- Logo -->
+          <a href="#" class="flex-1 flex items-center justify-center">
+            <div class="h-72 grid place-content-center bg-white mr-72 px-8">
+              <img src="./assets/images/logo.svg" alt="Logo" />
+            </div>
+          </a>
+        </div>
+
+        <!-- Links -->
+        <ul
+          class="flex-1 h-72 space-y-9 font-medium text-brand-dark-purple text-lg leading-6 bg-white tracking-wider rounded-xl mt-12 px-6"
+        >
+          <!-- Accordion Item -->
+          <li class="accordion-item">
+            <button
+              class="accordion-header flex items-center gap-3 w-full text-left"
+              data-accordion-toggle
+            >
+              <span>Wings Tour</span>
+              <svg
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="stroke-brand-dark-purple accordion-icon transition-transform duration-300"
+              >
+                <path
+                  d="M12.5 17.3994L4.80021 9.69963"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M12.5 17.3994L20.1998 9.69963"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+            <div
+              class="accordion-body fade-in hidden space-y-3 bg-white text-base font-normal leading-8 mt-5 mb-2 pl-3"
+            >
+              <a href="#" class="block hover:text-brand-dark-purple-hover"
+                >Наши партнёры</a
+              >
+              <a href="#" class="block hover:text-brand-dark-purple-hover"
+                >Вакансии</a
+              >
+              <a href="#" class="block hover:text-brand-dark-purple-hover"
+                >Система лояльности</a
+              >
+              <a href="#" class="block hover:text-brand-dark-purple-hover"
+                >Подарочный сертификат</a
+              >
+            </div>
+          </li>
+
+          <!-- Other Links -->
+          <li>
+            <a href="#" class="hover:text-brand-dark-purple-hover">Услуги</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-brand-dark-purple-hover"
+              >Расписание туров</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:text-brand-dark-purple-hover">FAQ</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-brand-dark-purple-hover">Отзывы</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-brand-dark-purple-hover"
+              >Контакты и оплата</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
 
     <!-- MAIN -->
@@ -121,7 +258,7 @@
       <section id="hero">
         <!-- Main Content -->
         <div
-          class="max-w-base mx-auto grid gap-3 lg:grid-cols-2 xl:flex items-stretch lg:gap-4 pt-4 px-3 md:px-16 lg:px-3"
+          class="max-w-base mx-auto grid gap-3 lg:grid-cols-2 xl:flex items-stretch lg:gap-4 pt-6 px-3 md:px-16 lg:px-3"
         >
           <!-- Left Info -->
           <div
@@ -2004,7 +2141,7 @@
                 <div class="hs-accordion-group space-y-4">
                   <!-- Accordion Item 1 -->
                   <div
-                    class="hs-accordion min-h-72 active relative bg-brand-green-light border border-brand-neutrals-dirty-liliac rounded-3xl p-2 lg:px-9 lg:py-[22px]"
+                    class="hs-accordion min-h-72 relative bg-brand-green-light border border-brand-neutrals-dirty-liliac rounded-3xl p-2 lg:px-9 lg:py-[22px]"
                     id="hs-basic-heading-1"
                   >
                     <button
