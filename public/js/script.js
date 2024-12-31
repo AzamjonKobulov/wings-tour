@@ -1,4 +1,4 @@
-// Faq Accordion
+// FAQ Accordion
 document.addEventListener("DOMContentLoaded", () => {
   const accordionGroups = document.querySelectorAll(".hs-accordion-group");
 
@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     accordions.forEach((accordion) => {
       const toggleButton = accordion.querySelector(".hs-accordion-toggle");
       const content = accordion.querySelector(".hs-accordion-content");
+      const icon = toggleButton.querySelector("img");
 
       toggleButton.addEventListener("click", () => {
         const isOpen = accordion.classList.contains("active");
@@ -21,27 +22,25 @@ document.addEventListener("DOMContentLoaded", () => {
             const otherContent = otherAccordion.querySelector(
               ".hs-accordion-content"
             );
+            const otherIcon = otherAccordion.querySelector(
+              ".hs-accordion-toggle img"
+            );
             otherAccordion.classList.remove("active");
-            otherContent.style.height = otherContent.scrollHeight + "px"; // Set current height to enable smooth transition
-            requestAnimationFrame(() => {
-              otherContent.style.height = "0px";
-            });
+            otherContent.style.height = "0px"; // Close the other accordion
+            otherIcon.classList.remove("rotate-45"); // Reset icon rotation
           }
         });
 
         if (isOpen) {
           // Close the clicked accordion
           accordion.classList.remove("active");
-          content.style.height = content.scrollHeight + "px"; // Set current height to enable smooth transition
-          requestAnimationFrame(() => {
-            content.style.height = "0px";
-          });
+          content.style.height = "0px"; // Close the current accordion
+          icon.classList.remove("rotate-45"); // Reset icon rotation
         } else {
           // Open the clicked accordion
           accordion.classList.add("active");
-
-          // Set the height explicitly to enable smooth transition
-          content.style.height = content.scrollHeight + "px";
+          content.style.height = content.scrollHeight + "px"; // Set content to its full height
+          icon.classList.add("rotate-45"); // Rotate the plus icon
         }
       });
 
@@ -51,13 +50,6 @@ document.addEventListener("DOMContentLoaded", () => {
       } else {
         content.style.height = "0px";
       }
-
-      // Transition end event to reset height property to auto for open accordions
-      content.addEventListener("transitionend", () => {
-        if (accordion.classList.contains("active")) {
-          content.style.height = "auto";
-        }
-      });
     });
   });
 });
@@ -117,6 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
   dropdownContainers.forEach((dropdown) => {
     const button = dropdown.querySelector(".dropdown-btn");
     const content = dropdown.querySelector(".dropdown-content");
+    const svgIcon = button.querySelector(".angle-icon"); // Select the SVG icon
     const links = content.querySelectorAll("a");
 
     // Toggle dropdown
@@ -127,13 +120,14 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!isOpen) {
         content.classList.add("open");
         content.style.maxHeight = content.scrollHeight + "px";
+        svgIcon.classList.add("rotate-180"); // Add rotation class
       }
     });
 
     // Close dropdown when clicking on a link
     links.forEach((link) => {
       link.addEventListener("click", () => {
-        closeDropdown(content);
+        closeDropdown(content, svgIcon);
       });
     });
   });
@@ -144,14 +138,16 @@ document.addEventListener("DOMContentLoaded", () => {
   function closeAllDropdowns() {
     dropdownContainers.forEach((dropdown) => {
       const content = dropdown.querySelector(".dropdown-content");
-      closeDropdown(content);
+      const svgIcon = dropdown.querySelector(".angle-icon");
+      closeDropdown(content, svgIcon);
     });
   }
 
-  function closeDropdown(content) {
+  function closeDropdown(content, svgIcon) {
     if (content.classList.contains("open")) {
       content.classList.remove("open");
       content.style.maxHeight = null;
+      svgIcon.classList.remove("rotate-180"); // Remove rotation class
     }
   }
 });
@@ -208,5 +204,37 @@ menuLinks.forEach((link) => {
   link.addEventListener("click", function () {
     mobMenu.classList.add("-translate-x-full");
     document.body.classList.remove("overflow-hidden");
+  });
+});
+
+// Tags container scrolling func
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.querySelector(".tags-container");
+  let isDragging = false;
+  let startX, scrollLeft;
+
+  container.addEventListener("mousedown", (e) => {
+    isDragging = true;
+    container.classList.add("cursor-grabbing");
+    startX = e.pageX - container.offsetLeft;
+    scrollLeft = container.scrollLeft;
+  });
+
+  container.addEventListener("mouseleave", () => {
+    isDragging = false;
+    container.classList.remove("cursor-grabbing");
+  });
+
+  container.addEventListener("mouseup", () => {
+    isDragging = false;
+    container.classList.remove("cursor-grabbing");
+  });
+
+  container.addEventListener("mousemove", (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.pageX - container.offsetLeft;
+    const walk = (x - startX) * 2; // Adjust scroll speed
+    container.scrollLeft = scrollLeft - walk;
   });
 });

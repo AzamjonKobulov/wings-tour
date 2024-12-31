@@ -94,3 +94,7 @@
     transform: scale(1);
   }
 }
+
+.cursor-grabbing {
+  cursor: grabbing !important;
+}
