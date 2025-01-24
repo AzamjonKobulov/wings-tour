@@ -1,0 +1,1896 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Wins Tour</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header sticky top-5 z-50 mt-3 lg:mt-8">
+      <nav
+        class="max-w-base mx-auto flex items-center gap-3 lg:gap-4 px-3 md:px-16 lg:px-3"
+      >
+        <!-- Mob Menu Btn -->
+        <button
+          class="menu-btn size-72 shrink-0 lg:hidden bg-white border border-transparent rounded-xl p-5"
+          id="mob-menu-toggle-btn"
+        >
+          <img src="./assets/images/icon-hamburger.svg" alt="Hamburger Icon" />
+        </button>
+
+        <!-- Logo -->
+        <a
+          href="#"
+          class="logo w-full lg:w-fit border border-transparent rounded-xl overflow-hidden"
+        >
+          <div class="w-full h-72 grid place-content-center bg-white px-8">
+            <img src="./assets/images/logo.svg" alt="Logo" />
+          </div>
+        </a>
+
+        <!-- Links -->
+        <ul
+          class="links flex-1 h-72 hidden lg:flex items-center justify-between font-medium text-brand-dark-purple bg-white xl:text-lg leading-7 tracking-wider border border-transparent rounded-xl px-12"
+        >
+          <li class="dropdown-container relative group" data-dropdown>
+            <!-- Dropdown Btn -->
+            <button class="dropdown-btn flex items-center gap-1.5 2xl:gap-3">
+              <span
+                class="group-hover:text-brand-dark-purple-hover transition-all duration-300"
+                >Wings Tour</span
+              >
+              <svg
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="angle-icon size-4 xl:size-5 2xl:size-6 stroke-brand-dark-purple group-hover:stroke-brand-dark-purple-hover transition-transform duration-300"
+              >
+                <path
+                  d="M12.5 17.3994L4.80021 9.69963"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M12.5 17.3994L20.1998 9.69963"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+
+            <!-- Dropdown Content -->
+            <div
+              class="dropdown-content w-[354px] absolute top-11 -left-1/3 space-y-5 bg-white font-normal text-brand-dark-purple leading-8 tracking-wider border border-gray-200 rounded-xl shadow-md p-8"
+            >
+              <a
+                href="#"
+                class="block hover:text-brand-dark-purple-hover transition-all duration-300"
+                >Наши партнёры</a
+              >
+              <a
+                href="#"
+                class="block hover:text-brand-dark-purple-hover transition-all duration-300"
+                >Вакансии</a
+              >
+              <a
+                href="#"
+                class="block hover:text-brand-dark-purple-hover transition-all duration-300"
+                >Система лояльности</a
+              >
+              <a
+                href="#"
+                class="block hover:text-brand-dark-purple-hover transition-all duration-300"
+                >Подарочный сертификат</a
+              >
+            </div>
+          </li>
+
+          <li>
+            <a
+              href="#services"
+              class="hover:text-brand-dark-purple-hover transition-all duration-300"
+              >Услуги</a
+            >
+          </li>
+          <li>
+            <a
+              href="#schedule"
+              class="hover:text-brand-dark-purple-hover transition-all duration-300"
+              >Расписание туров</a
+            >
+          </li>
+          <li>
+            <a
+              href="#faq"
+              class="hover:text-brand-dark-purple-hover transition-all duration-300"
+              >FAQ</a
+            >
+          </li>
+          <li>
+            <a
+              href="#reviews"
+              class="hover:text-brand-dark-purple-hover transition-all duration-300"
+              >Отзывы</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contacts"
+              class="hover:text-brand-dark-purple-hover transition-all duration-300"
+              >Контакты и оплата</a
+            >
+          </li>
+        </ul>
+
+        <!-- Cart -->
+        <a href="#">
+          <div
+            class="cart size-72 shrink-0 bg-brand-dark-purple border border-transparent rounded-xl hover:bg-brand-dark-purple-hover active:bg-brand-dark-purple-pressed transition-all duration-300 p-5"
+          >
+            <img
+              src="./assets/images/icon-cart.svg"
+              alt="Icon Cart"
+              class="size-8 shrink-0"
+            />
+          </div>
+        </a>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div
+        class="fixed inset-0 z-50 size-full bg-white -translate-x-full transition-all duration-300"
+        id="mob-menu"
+      >
+        <!-- Header -->
+        <div class="flex items-center">
+          <button class="p-5" id="mob-menu-close-btn">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2 6L30 26"
+                stroke="#382176"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M2 26L30 6"
+                stroke="#382176"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+          <!-- Logo -->
+          <a href="#" class="flex-1 flex items-center justify-center">
+            <div class="h-72 grid place-content-center bg-white mr-72 px-8">
+              <img src="./assets/images/logo.svg" alt="Logo" />
+            </div>
+          </a>
+        </div>
+
+        <!-- Links -->
+        <ul
+          class="flex-1 h-72 space-y-9 font-medium text-brand-dark-purple text-lg leading-6 bg-white tracking-wider rounded-xl mt-12 px-6"
+        >
+          <!-- Accordion Item -->
+          <li class="accordion-item">
+            <button
+              class="accordion-header flex items-center gap-3 w-full text-left"
+              data-accordion-toggle
+            >
+              <span>Wings Tour</span>
+              <svg
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="stroke-brand-dark-purple accordion-icon transition-transform duration-300"
+              >
+                <path
+                  d="M12.5 17.3994L4.80021 9.69963"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M12.5 17.3994L20.1998 9.69963"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+            <div
+              class="accordion-body fade-in hidden space-y-3 bg-white text-base font-normal leading-8 mt-5 mb-2 pl-3"
+            >
+              <a href="#" class="block hover:text-brand-dark-purple-hover"
+                >Наши партнёры</a
+              >
+              <a href="#" class="block hover:text-brand-dark-purple-hover"
+                >Вакансии</a
+              >
+              <a href="#" class="block hover:text-brand-dark-purple-hover"
+                >Система лояльности</a
+              >
+              <a href="#" class="block hover:text-brand-dark-purple-hover"
+                >Подарочный сертификат</a
+              >
+            </div>
+          </li>
+
+          <!-- Other Links -->
+          <li>
+            <a href="#services" class="hover:text-brand-dark-purple-hover"
+              >Услуги</a
+            >
+          </li>
+          <li>
+            <a href="#schedule" class="hover:text-brand-dark-purple-hover"
+              >Расписание туров</a
+            >
+          </li>
+          <li>
+            <a href="#faq" class="hover:text-brand-dark-purple-hover">FAQ</a>
+          </li>
+          <li>
+            <a href="#reviews" class="hover:text-brand-dark-purple-hover"
+              >Отзывы</a
+            >
+          </li>
+          <li>
+            <a href="#contacts" class="hover:text-brand-dark-purple-hover"
+              >Контакты и оплата</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <!-- Course -->
+      <section id="course">
+        <div class="max-w-base mx-auto pt-10 lg:pt-16 px-3 md:px-16 lg:px-3">
+          <!-- Info -->
+          <div
+            class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-5"
+          >
+            <div class="space-y-3">
+              <h1 class="max-w-[470px] uppercase">
+                ФИРМЕННЫй тур
+                <span class="text-brand-vivid-purple">ЦВЕТЕНИЕ ВИШНИ</span>
+              </h1>
+              <!-- Date & Location -->
+              <div class="flex flex-col sm:flex-row sm:items-center sm:gap-8">
+                <!-- Date -->
+                <div class="flex items-center gap-3">
+                  <img
+                    src="./assets/images/icon-calendar.svg"
+                    alt="Calenda Icon"
+                  />
+                  <p class="font-medium text-brand-dark-purple leading-8">
+                    01 апреля – 09 апреля 2025
+                  </p>
+                </div>
+
+                <!-- Location -->
+                <div class="flex items-center gap-3">
+                  <img
+                    src="./assets/images/icon-location.svg"
+                    alt="Location Icon"
+                  />
+                  <p class="font-medium text-brand-dark-purple leading-8">
+                    Сеул, Южная Корея
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <p class="max-w-lg leading-8 text-brand-dark-purple sm:pr-20">
+              Приглашаем вас в удивительное путешествие по Южной Корее в самый
+              красивый момент года – весной, когда расцветают вишневые деревья.
+            </p>
+          </div>
+
+          <!-- Tour -->
+          <div class="relative mt-5">
+            <!-- Image -->
+            <div
+              class="w-full min-h-[309px] xs:h-96 lg:h-[585px] relative z-10 bg-white lg:bg-transparent rounded-3xl overflow-hidden -mb-6 lg:mb-0 p-5"
+            >
+              <img
+                src="./assets/images/img-tour-1.webp"
+                alt="Tour Image"
+                class="absolute inset-0 size-full object-cover"
+              />
+
+              <!-- Info -->
+              <div
+                class="absolute top-0 sm:top-auto sm:bottom-0 left-0 z-10 space-y-2 leading-8 tracking-wider p-5 sm:pl-10 sm:pb-8"
+              >
+                <!-- <div
+                  class="w-fit bg-white text-brand-dark-purple rounded-10 py-1 px-4"
+                >
+                  Фирменный тур
+                </div> -->
+                <div
+                  class="w-fit text-white rounded-10 backdrop-blur py-1 px-4"
+                >
+                  Осталось 9 мест
+                </div>
+              </div>
+            </div>
+            <!-- Select tour link -->
+            <div
+              class="absolute w-fit right-0 bottom-0 z-10 bg-brand-liliac-light rounded-tl-3xl pl-3 pt-3"
+            >
+              <div class="size-full relative">
+                <!-- Top corner -->
+                <span
+                  class="top-corner size-6 absolute -top-9 right-0 bg-brand-liliac-light"
+                ></span>
+
+                <!-- Bottom corner -->
+                <span
+                  class="bottom-corner size-6 absolute -left-9 bottom-0 bg-brand-liliac-light"
+                ></span>
+
+                <a
+                  href="#"
+                  class="h-72 group flex items-center gap-3 bg-brand-vivid-purple text-white text-lg leading-7 tracking-wider rounded-2xl hover:bg-brand-vivid-purple-hover active:bg-brand-vivid-purple-pressed transition-all duration-200 px-10"
+                >
+                  <span>Запись в тур</span>
+                  <img
+                    src="./assets/images/icon-arrow.svg"
+                    alt="Arrow Icon"
+                    class="group-hover:-mt-3 group-hover:translate-x-3 transition-all duration-200"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Tour -->
+      <section id="about">
+        <div class="max-w-base mx-auto px-3 md:px-16 lg:px-3">
+          <div
+            class="space-y-7 bg-white rounded-2xl lg:rounded-3xl mt-12 lg:mt-7 p-6 lg:p-11"
+          >
+            <!-- Title & Socials -->
+            <div class="flex flex-col xl:flex-row justify-between gap-6">
+              <h2>
+                <span class="text-brand-vivid-purple">О нашем <br /> </span
+                >путешествии
+              </h2>
+
+              <div
+                class="xl:w-[55%] hidden sm:flex flex-col lg:flex-row lg:items-center justify-between gap-4"
+              >
+                <p
+                  class="max-w-[500px] text-brand-dark-purple font-medium leading-7"
+                >
+                  Ознакомьтесь с основной информацией о нашем туре, cвяжитесь с
+                  нами, если у вас остались вопросы
+                </p>
+
+                <!-- Socials -->
+                <div class="flex items-center gap-3">
+                  <a
+                    href="#"
+                    class="shrink-0 bg-brand-liliac rounded-full hover:bg-brand-liliac-hover active:bg-brand-liliac-pressed transition-all duration-300 p-3"
+                  >
+                    <img
+                      src="./assets/images/icon-instagram.svg"
+                      alt="Instagram Icon"
+                    />
+                  </a>
+                  <a
+                    href="#"
+                    class="shrink-0 bg-brand-liliac rounded-full hover:bg-brand-liliac-hover active:bg-brand-liliac-pressed transition-all duration-300 p-3"
+                  >
+                    <img
+                      src="./assets/images/icon-telegram.svg"
+                      alt="Telegram Icon"
+                    />
+                  </a>
+                  <a
+                    href="#"
+                    class="shrink-0 bg-brand-liliac rounded-full hover:bg-brand-liliac-hover active:bg-brand-liliac-pressed transition-all duration-300 p-3"
+                  >
+                    <img src="./assets/images/icon-talk.svg" alt="Icon Talk" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Infos -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+              <!-- Info 1 -->
+              <div
+                class="min-h-40 sm:min-h-[222px] flex flex-col justify-between gap-6 bg-services sm:bg-none border-2 border-brand-vivid-purple rounded-2xl lg:rounded-3xl py-6 px-7"
+              >
+                <!-- Top Title -->
+                <div class="flex items-center gap-4">
+                  <div
+                    class="size-12 shrink-0 grid place-content-center bg-brand-liliac rounded-full"
+                  >
+                    <img
+                      src="./assets/images/icon-about-tour-1.svg"
+                      alt="Icon"
+                    />
+                  </div>
+
+                  <h3 class="text-brand-vivid-purple">$ 2 700</h3>
+                </div>
+
+                <p class="">
+                  Стоимость тура. Ниже на странице вы можете ознакомиться с
+                  полным пакетом услуг.
+                </p>
+              </div>
+              <!-- Info 2 -->
+              <div
+                class="min-h-40 sm:min-h-[222px] flex flex-col justify-between gap-6 bg-services sm:bg-none border-2 border-brand-vivid-purple rounded-2xl lg:rounded-3xl py-6 px-7"
+              >
+                <!-- Top Title -->
+                <div class="flex items-center gap-4">
+                  <div
+                    class="size-12 shrink-0 grid place-content-center bg-brand-liliac rounded-full"
+                  >
+                    <img
+                      src="./assets/images/icon-about-tour-2.svg"
+                      alt="Icon"
+                    />
+                  </div>
+
+                  <h3 class="text-brand-vivid-purple">9 дней / 8 ночей</h3>
+                </div>
+
+                <p class="">
+                  По запросу мы организуем для вас самостоятельное пребывание в
+                  Сеуле после окончания тура.
+                </p>
+              </div>
+              <!-- Info 3 -->
+              <div
+                class="min-h-40 sm:min-h-[222px] flex flex-col justify-between gap-6 bg-services sm:bg-none border-2 border-brand-vivid-purple rounded-2xl lg:rounded-3xl py-6 px-7"
+              >
+                <!-- Top Title -->
+                <div class="flex items-center gap-4">
+                  <div
+                    class="size-12 shrink-0 grid place-content-center bg-brand-liliac rounded-full"
+                  >
+                    <img
+                      src="./assets/images/icon-about-tour-3.svg"
+                      alt="Icon"
+                    />
+                  </div>
+
+                  <h3 class="text-brand-vivid-purple">Ограничения</h3>
+                </div>
+
+                <p class="">
+                  Вам должно быть 18+ лет для участия в туре. Наличие
+                  загранпаспорта и возможность получения визы.
+                </p>
+              </div>
+              <!-- Info 4 -->
+              <div
+                class="min-h-40 sm:min-h-[222px] flex flex-col justify-between gap-6 bg-services sm:bg-none border-2 border-brand-vivid-purple rounded-2xl lg:rounded-3xl py-6 px-7"
+              >
+                <!-- Top Title -->
+                <div class="flex items-center gap-4">
+                  <div
+                    class="size-12 shrink-0 grid place-content-center bg-brand-liliac rounded-full"
+                  >
+                    <img
+                      src="./assets/images/icon-about-tour-4.svg"
+                      alt="Icon"
+                    />
+                  </div>
+
+                  <h3 class="text-brand-vivid-purple">Предоплата</h3>
+                </div>
+
+                <p class="">
+                  Для записи в тур необходимо внести предоплату $700.
+                </p>
+              </div>
+              <!-- Info 5 -->
+              <div
+                class="min-h-40 sm:min-h-[222px] flex flex-col justify-between gap-6 bg-services sm:bg-none border-2 border-brand-vivid-purple rounded-2xl lg:rounded-3xl py-6 px-7"
+              >
+                <!-- Top Title -->
+                <div class="flex items-center gap-4">
+                  <div
+                    class="size-12 shrink-0 grid place-content-center bg-brand-liliac rounded-full"
+                  >
+                    <img
+                      src="./assets/images/icon-about-tour-5.svg"
+                      alt="Icon"
+                    />
+                  </div>
+
+                  <h3 class="text-brand-vivid-purple">Сопровождение</h3>
+                </div>
+
+                <p class="">
+                  Во время всего тура вас будут сопровождать организаторы,
+                  владеющие корейским и английским.
+                </p>
+              </div>
+              <!-- Info 6 -->
+              <div
+                class="min-h-40 sm:min-h-[222px] flex flex-col justify-between gap-6 bg-services sm:bg-none border-2 border-brand-vivid-purple rounded-2xl lg:rounded-3xl py-6 px-7"
+              >
+                <!-- Top Title -->
+                <div class="flex items-center gap-4">
+                  <div
+                    class="size-12 shrink-0 grid place-content-center bg-brand-liliac rounded-full"
+                  >
+                    <img
+                      src="./assets/images/icon-about-tour-2.svg"
+                      alt="Icon"
+                    />
+                  </div>
+
+                  <h3 class="text-brand-vivid-purple">Участники тура</h3>
+                </div>
+
+                <p class="">
+                  Не бойтесь ехать в тур, если вы одна! В туре мы становимся
+                  единой веселой командой единомышленников.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tour Programs -->
+      <section id="tour-programs">
+        <div class="max-w-base mx-auto mt-12 lg:mt-16 px-3 md:px-16 lg:px-14">
+          <!-- Title & Slide Nav Btns -->
+          <div class="flex justify-between mb-5 lg:mb-7 gap-6">
+            <h2>
+              Программа
+              <span class="text-brand-vivid-purple">тура</span>
+            </h2>
+
+            <p
+              class="max-w-[450px] hidden xl:block text-brand-dark-purple font-medium leading-7"
+            >
+              Программа тура может быть скорректирована организаторами с
+              уведомлением участников
+            </p>
+
+            <div class="flex items-center justify-between gap-4">
+              <!-- Slide Nav Btns -->
+              <div class="flex items-center gap-3">
+                <button
+                  class="prev-review shrink-0 bg-brand-vivid-purple disabled:bg-brand-vivid-purple-disabled hover:bg-brand-vivid-purple-hover active:bg-brand-vivid-purple-pressed rounded-2xl transition-all duration-300 p-4"
+                >
+                  <img
+                    src="./assets/images/icon-link-horizontal-arrow.svg"
+                    alt="Arrow Icon"
+                    class="rotate-180"
+                  />
+                </button>
+                <button
+                  class="next-review shrink-0 bg-brand-vivid-purple disabled:bg-brand-vivid-purple-disabled hover:bg-brand-vivid-purple-hover active:bg-brand-vivid-purple-pressed rounded-2xl transition-all duration-300 p-4"
+                >
+                  <img
+                    src="./assets/images/icon-link-horizontal-arrow.svg"
+                    alt="Arrow Icon"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Reviews -->
+          <div class="swiper mySwiper2">
+            <div class="swiper-wrapper !flex !items-stretch">
+              <!-- Review 1 -->
+              <div class="swiper-slide">
+                <div class="h-[530px] sm:h-[600px] bg-white rounded-3xl">
+                  <!-- Image -->
+                  <div class="h-[48%] rounded-3xl overflow-hidden">
+                    <img
+                      src="./assets/images/img-tour-programm-1.png"
+                      alt="Tour Program Image"
+                      class="size-full object-cover"
+                    />
+                  </div>
+
+                  <!-- Texts -->
+                  <div
+                    class="space-y-5 pt-4 px-6 pb-7 sm:pt-7 sm:pb-10 sm:px-10"
+                  >
+                    <h3 class="text-brand-vivid-purple">День 1</h3>
+
+                    <ul class="space-y-2">
+                      <li class="flex gap-2">
+                        <img
+                          src="./assets/images/icon-star.svg"
+                          alt="icon"
+                          class="size-6 mt-1"
+                        />
+                        <p>Встреча в аэропорту</p>
+                      </li>
+                      <li class="flex gap-2">
+                        <img
+                          src="./assets/images/icon-star.svg"
+                          alt="icon"
+                          class="size-6 mt-1"
+                        />
+                        <p>Размещение в отеле (Мёндон)</p>
+                      </li>
+                      <li class="flex gap-2">
+                        <img
+                          src="./assets/images/icon-star.svg"
+                          alt="icon"
+                          class="size-6 mt-1"
+                        />
+                        <p>Приветственный ужин на Хондэ</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Review 2 -->
+              <div class="swiper-slide">
+                <div class="h-[530px] sm:h-[600px] bg-white rounded-3xl">
+                  <!-- Image -->
+                  <div class="h-[48%] rounded-3xl overflow-hidden">
+                    <img
+                      src="./assets/images/img-tour-programm-2.png"
+                      alt="Tour Program Image"
+                      class="size-full object-cover"
+                    />
+                  </div>
+
+                  <!-- Texts -->
+                  <div
+                    class="space-y-5 pt-4 px-6 pb-7 sm:pt-7 sm:pb-10 sm:px-10"
+                  >
+                    <h3 class="text-brand-vivid-purple">День 2</h3>
+
+                    <ul class="space-y-2">
+                      <li class="flex gap-2">
+                        <img
+                          src="./assets/images/icon-star.svg"
+                          alt="icon"
+                          class="size-6 mt-1"
+                        />
+                        <p>Центр. сеульская площадь</p>
+                      </li>
+                      <li class="flex gap-2">
+                        <img
+                          src="./assets/images/icon-star.svg"
+                          alt="icon"
+                          class="size-6 mt-1"
+                        />
+                        <p>Дворец Кёнбоккун</p>
+                      </li>
+                      <li class="flex gap-2">
+                        <img
+                          src="./assets/images/icon-star.svg"
+                          alt="icon"
+                          class="size-6 mt-1"
+                        />
+                        <p>Чаепитие в доме Инсадон</p>
+                      </li>
+                      <li class="flex gap-2">
+                        <img
+                          src="./assets/images/icon-star.svg"
+                          alt="icon"
+                          class="size-6 mt-1"
+                        />
+                        <p>Уличная еда на Мёндоне</p>
+                      </li>
+                      <li class="flex gap-2">
+                        <img
+                          src="./assets/images/icon-star.svg"
+                          alt="icon"
+                          class="size-6 mt-1"
+                        />
+                        <p>Популярное шоу Нанта</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Review 3 -->
+              <div class="swiper-slide">
+                <div class="h-[530px] sm:h-[600px] bg-white rounded-3xl">
+                  <!-- Image -->
+                  <div class="h-[48%] rounded-3xl overflow-hidden">
+                    <img
+                      src="./assets/images/img-tour-programm-3.png"
+                      alt="Tour Program Image"
+                      class="size-full object-cover"
+                    />
+                  </div>
+
+                  <!-- Texts -->
+                  <div
+                    class="space-y-5 pt-4 px-6 pb-7 sm:pt-7 sm:pb-10 sm:px-10"
+                  >
+                    <h3 class="text-brand-vivid-purple">День 3</h3>
+
+                    <ul class="space-y-2">
+                      <li class="flex gap-2">
+                        <img
+                          src="./assets/images/icon-star.svg"
+                          alt="icon"
+                          class="size-6 mt-1"
+                        />
+                        <p>Выезд в провинцию Кёнгидо</p>
+                      </li>
+                      <li class="flex gap-2">
+                        <img
+                          src="./assets/images/icon-star.svg"
+                          alt="icon"
+                          class="size-6 mt-1"
+                        />
+                        <p>Фольклорная деревня Минсокчхон</p>
+                      </li>
+                      <li class="flex gap-2">
+                        <img
+                          src="./assets/images/icon-star.svg"
+                          alt="icon"
+                          class="size-6 mt-1"
+                        />
+                        <p>Парк Йонъин (места съёмок дорам и клипов)</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Review 4 -->
+              <div class="swiper-slide">
+                <div class="h-[530px] sm:h-[600px] bg-white rounded-3xl">
+                  <!-- Image -->
+                  <div class="h-[48%] rounded-3xl overflow-hidden">
+                    <img
+                      src="./assets/images/img-tour-programm-4.png"
+                      alt="Tour Program Image"
+                      class="size-full object-cover"
+                    />
+                  </div>
+
+                  <!-- Texts -->
+                  <div
+                    class="space-y-5 pt-4 px-6 pb-7 sm:pt-7 sm:pb-10 sm:px-10"
+                  >
+                    <h3 class="text-brand-vivid-purple">День 4</h3>
+
+                    <ul class="space-y-2">
+                      <li class="flex gap-2">
+                        <img
+                          src="./assets/images/icon-star.svg"
+                          alt="icon"
+                          class="size-6 mt-1"
+                        />
+                        <p>Деревня Букчон</p>
+                      </li>
+                      <li class="flex gap-2">
+                        <img
+                          src="./assets/images/icon-star.svg"
+                          alt="icon"
+                          class="size-6 mt-1"
+                        />
+                        <p>Сеульская башня на горе Намсан</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Review 5 -->
+              <div class="swiper-slide">
+                <div class="h-[530px] sm:h-[600px] bg-white rounded-3xl">
+                  <!-- Image -->
+                  <div class="h-[48%] rounded-3xl overflow-hidden">
+                    <img
+                      src="./assets/images/img-tour-programm-5.png"
+                      alt="Tour Program Image"
+                      class="size-full object-cover"
+                    />
+                  </div>
+
+                  <!-- Texts -->
+                  <div
+                    class="space-y-5 pt-4 px-6 pb-7 sm:pt-7 sm:pb-10 sm:px-10"
+                  >
+                    <h3 class="text-brand-vivid-purple">День 5</h3>
+
+                    <ul class="space-y-2">
+                      <li class="flex gap-2">
+                        <img
+                          src="./assets/images/icon-star.svg"
+                          alt="icon"
+                          class="size-6 mt-1"
+                        />
+                        <p>Остров Нами</p>
+                      </li>
+                      <li class="flex gap-2">
+                        <img
+                          src="./assets/images/icon-star.svg"
+                          alt="icon"
+                          class="size-6 mt-1"
+                        />
+                        <p>Прогулка на рейлбайках</p>
+                      </li>
+                      <li class="flex gap-2">
+                        <img
+                          src="./assets/images/icon-star.svg"
+                          alt="icon"
+                          class="size-6 mt-1"
+                        />
+                        <p>Сад Утреннего Спокойствия</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Review 6 -->
+              <div class="swiper-slide">
+                <div class="h-[530px] sm:h-[600px] bg-white rounded-3xl">
+                  <!-- Image -->
+                  <div class="h-[48%] rounded-3xl overflow-hidden">
+                    <img
+                      src="./assets/images/img-tour-programm-6.png"
+                      alt="Tour Program Image"
+                      class="size-full object-cover"
+                    />
+                  </div>
+
+                  <!-- Texts -->
+                  <div
+                    class="space-y-5 pt-4 px-6 pb-7 sm:pt-7 sm:pb-10 sm:px-10"
+                  >
+                    <h3 class="text-brand-vivid-purple">День 6</h3>
+
+                    <ul class="space-y-2">
+                      <li class="flex gap-2">
+                        <img
+                          src="./assets/images/icon-star.svg"
+                          alt="icon"
+                          class="size-6 mt-1"
+                        />
+                        <p>Парк аттракционов Lotte World</p>
+                      </li>
+                      <li class="flex gap-2">
+                        <img
+                          src="./assets/images/icon-star.svg"
+                          alt="icon"
+                          class="size-6 mt-1"
+                        />
+                        <p>Фестиваль цветения вишни на озере Бокчон</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Review 7 -->
+              <div class="swiper-slide">
+                <div class="h-[530px] sm:h-[600px] bg-white rounded-3xl">
+                  <!-- Image -->
+                  <div class="h-[48%] rounded-3xl overflow-hidden">
+                    <img
+                      src="./assets/images/img-tour-programm-7.png"
+                      alt="Tour Program Image"
+                      class="size-full object-cover"
+                    />
+                  </div>
+
+                  <!-- Texts -->
+                  <div
+                    class="space-y-5 pt-4 px-6 pb-7 sm:pt-7 sm:pb-10 sm:px-10"
+                  >
+                    <h3 class="text-brand-vivid-purple">День 7</h3>
+
+                    <ul class="space-y-2">
+                      <li class="flex gap-2">
+                        <img
+                          src="./assets/images/icon-star.svg"
+                          alt="icon"
+                          class="size-6 mt-1"
+                        />
+                        <p>Свободная программа с индивид. сопровождением</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Review 8 -->
+              <div class="swiper-slide">
+                <div class="h-[530px] sm:h-[600px] bg-white rounded-3xl">
+                  <!-- Image -->
+                  <div class="h-[48%] rounded-3xl overflow-hidden">
+                    <img
+                      src="./assets/images/img-tour-programm-8.png"
+                      alt="Tour Program Image"
+                      class="size-full object-cover"
+                    />
+                  </div>
+
+                  <!-- Texts -->
+                  <div
+                    class="space-y-5 pt-4 px-6 pb-7 sm:pt-7 sm:pb-10 sm:px-10"
+                  >
+                    <h3 class="text-brand-vivid-purple">День 8</h3>
+
+                    <ul class="space-y-2">
+                      <li class="flex gap-2">
+                        <img
+                          src="./assets/images/icon-star.svg"
+                          alt="icon"
+                          class="size-6 mt-1"
+                        />
+                        <p>Сеульский рынок</p>
+                      </li>
+                      <li class="flex gap-2">
+                        <img
+                          src="./assets/images/icon-star.svg"
+                          alt="icon"
+                          class="size-6 mt-1"
+                        />
+                        <p>Библиотека Коекс</p>
+                      </li>
+                      <li class="flex gap-2">
+                        <img
+                          src="./assets/images/icon-star.svg"
+                          alt="icon"
+                          class="size-6 mt-1"
+                        />
+                        <p>Прогулка на яхте по реке Ханган</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Review 9 -->
+              <div class="swiper-slide">
+                <div class="h-[530px] sm:h-[600px] bg-white rounded-3xl">
+                  <!-- Image -->
+                  <div class="h-[48%] rounded-3xl overflow-hidden">
+                    <img
+                      src="./assets/images/img-tour-programm-9.png"
+                      alt="Tour Program Image"
+                      class="size-full object-cover"
+                    />
+                  </div>
+
+                  <!-- Texts -->
+                  <div
+                    class="space-y-5 pt-4 px-6 pb-7 sm:pt-7 sm:pb-10 sm:px-10"
+                  >
+                    <h3 class="text-brand-vivid-purple">День 9</h3>
+
+                    <ul class="space-y-2">
+                      <li class="flex gap-2">
+                        <img
+                          src="./assets/images/icon-star.svg"
+                          alt="icon"
+                          class="size-6 mt-1"
+                        />
+                        <p>Трансфер в аэропорт</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Price -->
+      <section id="price">
+        <div class="max-w-base mx-auto mt-12 lg:mt-16 px-3 md:px-16 lg:px-3">
+          <!-- Title & Slide Nav Btns -->
+          <div class="flex justify-between mb-5 lg:mb-7 gap-6">
+            <h2>
+              <span class="text-brand-vivid-purple">Что входит</span> <br />
+              в стоимость
+            </h2>
+
+            <p
+              class="max-w-[450px] hidden xl:block text-brand-dark-purple font-medium leading-7"
+            >
+              Ознакомьтесь с тем, что входит в стоимость тура и какие
+              дополнительные расходы вам нужно учесть
+            </p>
+          </div>
+
+          <!-- Price Info Section -->
+          <div class="md:flex items-stretch gap-4">
+            <!-- Main Price Info -->
+            <div
+              class="flex-1 h-[530px] sm:h-[600px] bg-white rounded-3xl overflow-hidden"
+            >
+              <!-- Infos -->
+              <div class="space-y-6 p-6 lg:py-10 lg:px-11">
+                <div class="space-y-1">
+                  <div class="flex items-center gap-4">
+                    <img
+                      src="./assets/images/icon-about-tour-1.svg"
+                      alt="icon"
+                    />
+                    <p
+                      class="font-bold text-brand-vivid-purple text-[32px] leading-8"
+                    >
+                      $ 2700
+                    </p>
+                  </div>
+                  <p class="text-brand-dark-purple font-medium leading-8">
+                    в стоимость тура входит:
+                  </p>
+                </div>
+
+                <!-- List -->
+                <div class="grid xl:grid-cols-2 gap-2 xl:gap-9 leading-8">
+                  <!-- Left Column -->
+                  <ul class="space-y-3">
+                    <li class="flex gap-3">
+                      <img
+                        src="./assets/images/icon-arrow-right.svg"
+                        alt="Arrow"
+                        class="size-6 mt-1"
+                      />
+                      <p class="text-brand-dark-purple">
+                        проживание в комфортных отелях
+                      </p>
+                    </li>
+                    <li class="flex gap-3">
+                      <img
+                        src="./assets/images/icon-arrow-right.svg"
+                        alt="Arrow"
+                        class="size-6 mt-1"
+                      />
+                      <p class="text-brand-dark-purple">
+                        завтраки, обеды, первый ужин
+                      </p>
+                    </li>
+                    <li class="flex gap-3">
+                      <img
+                        src="./assets/images/icon-arrow-right.svg"
+                        alt="Arrow"
+                        class="size-6 mt-1"
+                      />
+                      <p class="text-brand-dark-purple">
+                        симкарта с безлимитным интернетом
+                      </p>
+                    </li>
+                    <li class="flex gap-3">
+                      <img
+                        src="./assets/images/icon-arrow-right.svg"
+                        alt="Arrow"
+                        class="size-6 mt-1"
+                      />
+                      <p class="text-brand-dark-purple">транспортная карта</p>
+                    </li>
+                    <li class="flex gap-3">
+                      <img
+                        src="./assets/images/icon-arrow-right.svg"
+                        alt="Arrow"
+                        class="size-6 mt-1"
+                      />
+                      <p class="text-brand-dark-purple">
+                        трансфер от/до аэеропорта
+                      </p>
+                    </li>
+                    <li class="flex gap-3">
+                      <img
+                        src="./assets/images/icon-arrow-right.svg"
+                        alt="Arrow"
+                        class="size-6 mt-1"
+                      />
+                      <p class="text-brand-dark-purple">
+                        авторская программа каждого дня
+                      </p>
+                    </li>
+                  </ul>
+
+                  <!-- Additional Info Section -->
+                  <ul id="additional-info-1" class="hidden space-y-3">
+                    <li class="flex gap-3">
+                      <img
+                        src="./assets/images/icon-arrow-right.svg"
+                        alt="Arrow"
+                        class="size-6 mt-1"
+                      />
+                      <p class="text-brand-dark-purple">
+                        входные билеты по программе
+                      </p>
+                    </li>
+                    <li class="flex gap-3">
+                      <img
+                        src="./assets/images/icon-arrow-right.svg"
+                        alt="Arrow"
+                        class="size-6 mt-1"
+                      />
+                      <p class="text-brand-dark-purple">
+                        сопровождение по программе
+                      </p>
+                    </li>
+                    <li class="flex gap-3">
+                      <img
+                        src="./assets/images/icon-arrow-right.svg"
+                        alt="Arrow"
+                        class="size-6 mt-1"
+                      />
+                      <p class="text-brand-dark-purple">
+                        помощь в подборе авиабилетов
+                      </p>
+                    </li>
+                    <li class="flex gap-3">
+                      <img
+                        src="./assets/images/icon-arrow-right.svg"
+                        alt="Arrow"
+                        class="size-6 mt-1"
+                      />
+                      <p class="text-brand-dark-purple">оформление KETA/визы</p>
+                    </li>
+                  </ul>
+
+                  <div id="additional-info-2" class="hidden space-y-6 pt-5">
+                    <h3 class="text-brand-vivid-purple">
+                      Дополнительные расходы
+                    </h3>
+                    <ul class="space-y-3">
+                      <li class="flex gap-3">
+                        <img
+                          src="./assets/images/icon-arrow-right.svg"
+                          alt="Arrow"
+                          class="size-6 mt-1"
+                        />
+                        <p class="text-brand-dark-purple">личные расходы</p>
+                      </li>
+                      <li class="flex gap-3">
+                        <img
+                          src="./assets/images/icon-arrow-right.svg"
+                          alt="Arrow"
+                          class="size-6 mt-1"
+                        />
+                        <p class="text-brand-dark-purple">билеты на самолет</p>
+                      </li>
+                      <li class="flex gap-3">
+                        <img
+                          src="./assets/images/icon-arrow-right.svg"
+                          alt="Arrow"
+                          class="size-6 mt-1"
+                        />
+                        <p class="text-brand-dark-purple">
+                          медицинская страховка
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Mobile Toggle Button -->
+              <div class="flex sm:hidden items-center justify-end pb-4 pr-5">
+                <button
+                  class="text-brand-vivid-purple leading-8 tracking-wider border-b border-brand-vivid-purple pb-0.5"
+                  id="toggle-info"
+                >
+                  Смотреть весь список
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq">
+        <div class="max-w-base mx-auto mt-6 lg:mt-7 px-3 md:px-16 lg:px-3">
+          <div class="bg-white rounded-2xl lg:rounded-3xl p-6 lg:p-11">
+            <!-- Title & Socials -->
+            <div
+              class="flex flex-col xl:flex-row justify-between mb-5 lg:mb-7 gap-6"
+            >
+              <h2>
+                <span class="text-brand-vivid-purple">Отвечаем</span> <br />
+                на частые вопросы
+              </h2>
+
+              <div
+                class="xl:w-[55%] hidden sm:flex flex-col lg:flex-row lg:items-center justify-between gap-4"
+              >
+                <p
+                  class="max-w-[450px] text-brand-dark-purple font-medium leading-7"
+                >
+                  Если у вас остались вопросы, на которые вы не нашли ответ,
+                  просто напишите нам и мы поможем
+                </p>
+
+                <!-- Socials -->
+                <div class="flex items-center gap-3">
+                  <a
+                    href="#"
+                    class="shrink-0 bg-brand-liliac rounded-full hover:bg-brand-liliac-hover active:bg-brand-liliac-pressed transition-all duration-300 p-3"
+                  >
+                    <img
+                      src="./assets/images/icon-instagram.svg"
+                      alt="Instagram Icon"
+                    />
+                  </a>
+                  <a
+                    href="#"
+                    class="shrink-0 bg-brand-liliac rounded-full hover:bg-brand-liliac-hover active:bg-brand-liliac-pressed transition-all duration-300 p-3"
+                  >
+                    <img
+                      src="./assets/images/icon-telegram.svg"
+                      alt="Telegram Icon"
+                    />
+                  </a>
+                  <a
+                    href="#"
+                    class="shrink-0 bg-brand-liliac rounded-full hover:bg-brand-liliac-hover active:bg-brand-liliac-pressed transition-all duration-300 p-3"
+                  >
+                    <img src="./assets/images/icon-talk.svg" alt="Icon Talk" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQs -->
+            <div>
+              <div class="grid lg:grid-cols-2 gap-4 lg:gap-8">
+                <!-- Accordions Items Left -->
+                <div class="hs-accordion-group space-y-4">
+                  <!-- Accordion Item 1 -->
+                  <div
+                    class="hs-accordion min-h-72 relative bg-brand-green-light border border-brand-neutrals-dirty-liliac rounded-3xl p-2 lg:px-9 lg:py-[22px]"
+                    id="hs-basic-heading-1"
+                  >
+                    <button
+                      class="hs-accordion-toggle hs-accordion-active:text-brand-green inline-flex items-center justify-between gap-3 w-full font-medium text-start pl-3 lg:pl-0"
+                      aria-expanded="true"
+                      aria-controls="hs-basic-collapse-1"
+                    >
+                      <span
+                        class="text-brand-dark-purple font-semibold text-lg leading-6 tracking-wider"
+                        >Что входит в стоимость тура?</span
+                      >
+                      <div
+                        class="lg:absolute top-2 right-2 shrink-0 bg-brand-dark-purple rounded-2xl p-4"
+                      >
+                        <img
+                          src="./assets/images/icon-plus.svg"
+                          alt="Plus icon"
+                          class="plus-icon transition-all duration-300"
+                        />
+                      </div>
+                    </button>
+                    <div
+                      id="hs-basic-collapse-1"
+                      class="hs-accordion-content max-w-[450px] overflow-hidden transition-[height] duration-300"
+                      role="region"
+                      aria-labelledby="hs-basic-heading-1"
+                    >
+                      <p class="lg:mt-3 pl-3 lg:pl-0">
+                        После открытия продаж начинается бронирование мест.
+                        Бронь места происходит по предоплате $700. Окончательный
+                        расчет происходит в Корее.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Accordion Item 2 -->
+                  <div
+                    class="hs-accordion min-h-72 relative bg-brand-green-light border border-brand-neutrals-dirty-liliac rounded-3xl p-2 lg:px-9 lg:py-[22px]"
+                    id="hs-basic-heading-2"
+                  >
+                    <button
+                      class="hs-accordion-toggle hs-accordion-active:text-brand-green inline-flex items-center justify-between gap-3 w-full font-medium text-start pl-3 lg:pl-0"
+                      aria-controls="hs-basic-collapse-2"
+                    >
+                      <span
+                        class="text-brand-dark-purple font-semibold text-lg leading-6 tracking-wider"
+                        >Что не входит в стоимость тура?</span
+                      >
+                      <div
+                        class="lg:absolute top-2 right-2 shrink-0 bg-brand-dark-purple rounded-2xl p-4"
+                      >
+                        <img
+                          src="./assets/images/icon-plus.svg"
+                          alt="Plus icon"
+                          class="plus-icon transition-all duration-300"
+                        />
+                      </div>
+                    </button>
+                    <div
+                      id="hs-basic-collapse-2"
+                      class="hs-accordion-content max-w-[450px] overflow-hidden transition-[height] duration-300"
+                      role="region"
+                      aria-labelledby="hs-basic-heading-2"
+                    >
+                      <p class="lg:mt-3 pl-3 lg:pl-0">
+                        После открытия продаж начинается бронирование мест.
+                        Бронь места происходит по предоплате $700. Окончательный
+                        расчет происходит в Корее.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Accordion Item 3 -->
+                  <div
+                    class="hs-accordion min-h-72 relative bg-brand-green-light border border-brand-neutrals-dirty-liliac rounded-3xl p-2 lg:px-9 lg:py-[22px]"
+                    id="hs-basic-heading-3"
+                  >
+                    <button
+                      class="hs-accordion-toggle hs-accordion-active:text-brand-green inline-flex items-center justify-between gap-3 w-full font-medium text-start pl-3 lg:pl-0"
+                      aria-controls="hs-basic-collapse-3"
+                    >
+                      <span
+                        class="text-brand-dark-purple font-semibold text-lg leading-6 tracking-wider"
+                        >Как забронировать тур?</span
+                      >
+                      <div
+                        class="lg:absolute top-2 right-2 shrink-0 bg-brand-dark-purple rounded-2xl p-4"
+                      >
+                        <img
+                          src="./assets/images/icon-plus.svg"
+                          alt="Plus icon"
+                          class="plus-icon transition-all duration-300"
+                        />
+                      </div>
+                    </button>
+                    <div
+                      id="hs-basic-collapse-3"
+                      class="hs-accordion-content max-w-[450px] overflow-hidden transition-[height] duration-300"
+                      role="region"
+                      aria-labelledby="hs-basic-heading-3"
+                    >
+                      <p class="lg:mt-3 pl-3 lg:pl-0">
+                        После открытия продаж начинается бронирование мест.
+                        Бронь места происходит по предоплате $700. Окончательный
+                        расчет происходит в Корее.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Accordion Item 4 -->
+                  <div
+                    class="hs-accordion min-h-72 relative bg-brand-green-light border border-brand-neutrals-dirty-liliac rounded-3xl p-2 lg:px-9 lg:py-[22px]"
+                    id="hs-basic-heading-4"
+                  >
+                    <button
+                      class="hs-accordion-toggle hs-accordion-active:text-brand-green inline-flex items-center justify-between gap-3 w-full font-medium text-start pl-3 lg:pl-0"
+                      aria-controls="hs-basic-collapse-4"
+                    >
+                      <span
+                        class="text-brand-dark-purple font-semibold text-lg leading-6 tracking-wider"
+                        >Как оплатить тур?</span
+                      >
+                      <div
+                        class="lg:absolute top-2 right-2 shrink-0 bg-brand-dark-purple rounded-2xl p-4"
+                      >
+                        <img
+                          src="./assets/images/icon-plus.svg"
+                          alt="Plus icon"
+                          class="plus-icon transition-all duration-300"
+                        />
+                      </div>
+                    </button>
+                    <div
+                      id="hs-basic-collapse-4"
+                      class="hs-accordion-content max-w-[450px] overflow-hidden transition-[height] duration-300"
+                      role="region"
+                      aria-labelledby="hs-basic-heading-4"
+                    >
+                      <p class="lg:mt-3 px-3 lg:px-0">
+                        После открытия продаж начинается бронирование мест.
+                        Бронь места происходит по предоплате $700. Окончательный
+                        расчет происходит в Корее.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Accordion Item 5 -->
+                  <div
+                    class="hs-accordion min-h-72 relative bg-brand-green-light border border-brand-neutrals-dirty-liliac rounded-3xl p-2 lg:px-9 lg:py-[22px]"
+                    id="hs-basic-heading-5"
+                  >
+                    <button
+                      class="hs-accordion-toggle hs-accordion-active:text-brand-green inline-flex items-center justify-between gap-3 w-full font-medium text-start pl-3 lg:pl-0"
+                      aria-controls="hs-basic-collapse-5"
+                    >
+                      <span
+                        class="text-brand-dark-purple font-semibold text-lg leading-6 tracking-wider"
+                        >Как оплатить тур?</span
+                      >
+                      <div
+                        class="lg:absolute top-2 right-2 shrink-0 bg-brand-dark-purple rounded-2xl p-4"
+                      >
+                        <img
+                          src="./assets/images/icon-plus.svg"
+                          alt="Plus icon"
+                          class="plus-icon transition-all duration-300"
+                        />
+                      </div>
+                    </button>
+                    <div
+                      id="hs-basic-collapse-5"
+                      class="hs-accordion-content max-w-[450px] overflow-hidden transition-[height] duration-300"
+                      role="region"
+                      aria-labelledby="hs-basic-heading-5"
+                    >
+                      <p class="lg:mt-3 px-3 lg:px-0">
+                        После открытия продаж начинается бронирование мест.
+                        Бронь места происходит по предоплате $700. Окончательный
+                        расчет происходит в Корее.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Accordions Items Right -->
+                <div class="hs-accordion-group space-y-4">
+                  <!-- Accordion Item 6 -->
+                  <div
+                    class="hs-accordion min-h-72 relative bg-brand-green-light border border-brand-neutrals-dirty-liliac rounded-3xl p-2 lg:px-9 lg:py-[22px]"
+                    id="hs-basic-heading-6"
+                  >
+                    <button
+                      class="hs-accordion-toggle hs-accordion-active:text-brand-green inline-flex items-center justify-between gap-3 w-full font-medium text-start pl-3 lg:pl-0"
+                      aria-expanded="true"
+                      aria-controls="hs-basic-collapse-6"
+                    >
+                      <span
+                        class="text-brand-dark-purple font-semibold text-lg leading-6 tracking-wider"
+                        >Как узнать подробную программу тура?</span
+                      >
+                      <div
+                        class="lg:absolute top-2 right-2 shrink-0 bg-brand-dark-purple rounded-2xl p-4"
+                      >
+                        <img
+                          src="./assets/images/icon-plus.svg"
+                          alt="Plus icon"
+                          class="plus-icon transition-all duration-300"
+                        />
+                      </div>
+                    </button>
+                    <div
+                      id="hs-basic-collapse-6"
+                      class="hs-accordion-content max-w-[450px] overflow-hidden transition-[height] duration-300"
+                      role="region"
+                      aria-labelledby="hs-basic-heading-6"
+                    >
+                      <p class="lg:mt-3 pl-3 lg:pl-0">
+                        После открытия продаж начинается бронирование мест.
+                        Бронь места происходит по предоплате $700. Окончательный
+                        расчет происходит в Корее.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Accordion Item 7 -->
+                  <div
+                    class="hs-accordion min-h-72 relative bg-brand-green-light border border-brand-neutrals-dirty-liliac rounded-3xl p-2 lg:px-9 lg:py-[22px]"
+                    id="hs-basic-heading-7"
+                  >
+                    <button
+                      class="hs-accordion-toggle hs-accordion-active:text-brand-green inline-flex items-center justify-between gap-3 w-full font-medium text-start pl-3 lg:pl-0"
+                      aria-controls="hs-basic-collapse-7"
+                    >
+                      <span
+                        class="text-brand-dark-purple font-semibold text-lg leading-6 tracking-wider"
+                        >Как успеть забронировать место в туре?</span
+                      >
+                      <div
+                        class="lg:absolute top-2 right-2 shrink-0 bg-brand-dark-purple rounded-2xl p-4"
+                      >
+                        <img
+                          src="./assets/images/icon-plus.svg"
+                          alt="Plus icon"
+                          class="plus-icon transition-all duration-300"
+                        />
+                      </div>
+                    </button>
+                    <div
+                      id="hs-basic-collapse-7"
+                      class="hs-accordion-content max-w-[450px] overflow-hidden transition-[height] duration-300"
+                      role="region"
+                      aria-labelledby="hs-basic-heading-7"
+                    >
+                      <p class="lg:mt-3 pl-3 lg:pl-0">
+                        После открытия продаж начинается бронирование мест.
+                        Бронь места происходит по предоплате $700. Окончательный
+                        расчет происходит в Корее.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Accordion Item 8 -->
+                  <div
+                    class="hs-accordion min-h-72 relative bg-brand-green-light border border-brand-neutrals-dirty-liliac rounded-3xl p-2 lg:px-9 lg:py-[22px]"
+                    id="hs-basic-heading-8"
+                  >
+                    <button
+                      class="hs-accordion-toggle hs-accordion-active:text-brand-green inline-flex items-center justify-between gap-3 w-full font-medium text-start pl-3 lg:pl-0"
+                      aria-controls="hs-basic-collapse-8"
+                    >
+                      <span
+                        class="text-brand-dark-purple font-semibold text-lg leading-6 tracking-wider"
+                        >Зачем вступать в закрытый чат Telegram?</span
+                      >
+                      <div
+                        class="lg:absolute top-2 right-2 shrink-0 bg-brand-dark-purple rounded-2xl p-4"
+                      >
+                        <img
+                          src="./assets/images/icon-plus.svg"
+                          alt="Plus icon"
+                          class="plus-icon transition-all duration-300"
+                        />
+                      </div>
+                    </button>
+                    <div
+                      id="hs-basic-collapse-8"
+                      class="hs-accordion-content max-w-[450px] overflow-hidden transition-[height] duration-300"
+                      role="region"
+                      aria-labelledby="hs-basic-heading-8"
+                    >
+                      <p class="lg:mt-3 pl-3 lg:pl-0">
+                        После открытия продаж начинается бронирование мест.
+                        Бронь места происходит по предоплате $700. Окончательный
+                        расчет происходит в Корее.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Accordion Item 9 -->
+                  <div
+                    class="hs-accordion min-h-72 relative bg-brand-green-light border border-brand-neutrals-dirty-liliac rounded-3xl p-2 lg:px-9 lg:py-[22px]"
+                    id="hs-basic-heading-9"
+                  >
+                    <button
+                      class="hs-accordion-toggle hs-accordion-active:text-brand-green inline-flex items-center justify-between gap-3 w-full font-medium text-start pl-3 lg:pl-0"
+                      aria-controls="hs-basic-collapse-9"
+                    >
+                      <span
+                        class="text-brand-dark-purple font-semibold text-lg leading-6 tracking-wider"
+                        >Из какой страны можно попасть в тур?</span
+                      >
+                      <div
+                        class="lg:absolute top-2 right-2 shrink-0 bg-brand-dark-purple rounded-2xl p-4"
+                      >
+                        <img
+                          src="./assets/images/icon-plus.svg"
+                          alt="Plus icon"
+                          class="plus-icon transition-all duration-300"
+                        />
+                      </div>
+                    </button>
+                    <div
+                      id="hs-basic-collapse-9"
+                      class="hs-accordion-content max-w-[450px] overflow-hidden transition-[height] duration-300"
+                      role="region"
+                      aria-labelledby="hs-basic-heading-9"
+                    >
+                      <p class="lg:mt-3 px-3 lg:px-0">
+                        После открытия продаж начинается бронирование мест.
+                        Бронь места происходит по предоплате $700. Окончательный
+                        расчет происходит в Корее.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Accordion Item 10 -->
+                  <div
+                    class="hs-accordion min-h-72 relative bg-brand-green-light border border-brand-neutrals-dirty-liliac rounded-3xl p-2 lg:px-9 lg:py-[22px]"
+                    id="hs-basic-heading-10"
+                  >
+                    <button
+                      class="hs-accordion-toggle hs-accordion-active:text-brand-green inline-flex items-center justify-between gap-3 w-full font-medium text-start pl-3 lg:pl-0"
+                      aria-controls="hs-basic-collapse-10"
+                    >
+                      <span
+                        class="text-brand-dark-purple font-semibold text-lg leading-6 tracking-wider"
+                        >Есть ли ограничения для участников тура?</span
+                      >
+                      <div
+                        class="lg:absolute top-2 right-2 shrink-0 bg-brand-dark-purple rounded-2xl p-4"
+                      >
+                        <img
+                          src="./assets/images/icon-plus.svg"
+                          alt="Plus icon"
+                          class="plus-icon transition-all duration-300"
+                        />
+                      </div>
+                    </button>
+                    <div
+                      id="hs-basic-collapse-10"
+                      class="hs-accordion-content max-w-[450px] overflow-hidden transition-[height] duration-300"
+                      role="region"
+                      aria-labelledby="hs-basic-heading-10"
+                    >
+                      <p class="lg:mt-3 px-3 lg:px-0">
+                        После открытия продаж начинается бронирование мест.
+                        Бронь места происходит по предоплате $700. Окончательный
+                        расчет происходит в Корее.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="xl:w-[55%] flex sm:hidden flex-col gap-3 mt-5">
+              <p class="max-w-[450px] leading-7">
+                Если у вас остались вопросы, на которые вы не нашли ответ,
+                просто напишите нам и мы поможем
+              </p>
+
+              <!-- Socials -->
+              <div class="flex items-center gap-3">
+                <a
+                  href="#"
+                  class="shrink-0 bg-brand-liliac rounded-full hover:bg-brand-liliac-hover active:bg-brand-liliac-pressed transition-all duration-300 p-3"
+                >
+                  <img
+                    src="./assets/images/icon-instagram.svg"
+                    alt="Instagram Icon"
+                  />
+                </a>
+                <a
+                  href="#"
+                  class="shrink-0 bg-brand-liliac rounded-full hover:bg-brand-liliac-hover active:bg-brand-liliac-pressed transition-all duration-300 p-3"
+                >
+                  <img
+                    src="./assets/images/icon-telegram.svg"
+                    alt="Telegram Icon"
+                  />
+                </a>
+                <a
+                  href="#"
+                  class="shrink-0 bg-brand-liliac rounded-full hover:bg-brand-liliac-hover active:bg-brand-liliac-pressed transition-all duration-300 p-3"
+                >
+                  <img src="./assets/images/icon-talk.svg" alt="Icon Talk" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contacts -->
+      <section id="contacts">
+        <div
+          class="max-w-base mx-auto flex flex-col lg:flex-row items-stretch gap-4 mt-12 lg:mt-16 px-3 md:px-16 lg:px-3"
+        >
+          <!-- Image -->
+          <div class="flex-1 rounded-2xl lg:rounded-3xl overflow-hidden">
+            <img
+              src="./assets/images/img-contacts.webp"
+              alt="Image"
+              class="size-full object-cover"
+            />
+          </div>
+
+          <!-- Contacts -->
+          <div
+            class="lg:max-w-[557px] shrink-0 space-y-7 bg-white rounded-2xl lg:rounded-3xl px-6 pt-6 pb-7 lg:pt-10 lg:px-11 lg:pb-12"
+          >
+            <h2>Контакты и оплата</h2>
+            <div class="space-y-6">
+              <div class="grid sm:grid-cols-2 gap-4">
+                <!-- Instagram -->
+                <div
+                  class="text-center border border-brand-neutrals-dirty-liliac rounded-3xl p-3 sm:p-6"
+                >
+                  <a
+                    href="#"
+                    class="text-lg sm:text-2xl font-bold text-brand-vivid-purple leading-6 lg:leading-7 tracking-wider"
+                    >@wings_tour</a
+                  >
+                  <p class="text-brand-dark-purple">наш инстаграм</p>
+                </div>
+                <!-- Telegram -->
+                <div
+                  class="text-center border border-brand-neutrals-dirty-liliac rounded-3xl p-3 sm:p-6"
+                >
+                  <a
+                    href="#"
+                    class="text-lg sm:text-2xl font-bold text-brand-vivid-purple leading-6 lg:leading-7 tracking-wider"
+                    >@wings_tour</a
+                  >
+                  <p class="text-brand-dark-purple">наш телеграм</p>
+                </div>
+                <!-- Email -->
+                <div
+                  class="sm:col-span-2 text-center border border-brand-neutrals-dirty-liliac rounded-3xl p-3 sm:p-6"
+                >
+                  <a
+                    href="#"
+                    class="text-lg sm:text-2xl font-bold text-brand-vivid-purple leading-6 lg:leading-7 tracking-wider"
+                    >wingstour.info@gmail.com</a
+                  >
+                  <p class="text-brand-dark-purple">наша почта</p>
+                </div>
+              </div>
+
+              <!-- Payments -->
+              <div class="flex flex-col sm:flex-row sm:items-center gap-6">
+                <div class="sm:w-[140px] shrink-0 flex flex-wrap gap-3">
+                  <!-- Visa -->
+                  <div
+                    class="w-16 h-11 grid place-content-center border border-brand-neutrals-dirty-liliac rounded-md"
+                  >
+                    <img src="./assets/images/logo-visa.svg" alt="Visa Logo" />
+                  </div>
+                  <!-- Mastercard -->
+                  <div
+                    class="w-16 h-11 grid place-content-center border border-brand-neutrals-dirty-liliac rounded-md"
+                  >
+                    <img
+                      src="./assets/images/logo-mastercard.svg"
+                      alt="Mastercard Logo"
+                    />
+                  </div>
+                  <!-- Maestro -->
+                  <div
+                    class="w-16 h-11 grid place-content-center border border-brand-neutrals-dirty-liliac rounded-md"
+                  >
+                    <img
+                      src="./assets/images/logo-meastro.svg"
+                      alt="Maestro Logo"
+                    />
+                  </div>
+                  <!-- Apple pay -->
+                  <div
+                    class="w-16 h-11 grid place-content-center border border-brand-neutrals-dirty-liliac rounded-md"
+                  >
+                    <img
+                      src="./assets/images/logo-apple-pay.svg"
+                      alt="Apple pay Logo"
+                    />
+                  </div>
+                </div>
+                <p>
+                  Вы можете оплатить тур любым удобным для вас способом из любой
+                  страны.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer
+      class="space-y-11 bg-brand-dark-purple text-white mt-12 lg:mt-16 pt-6 pb-5"
+    >
+      <div
+        class="max-w-base mx-auto space-y-8 sm:space-y-11 px-3 md:px-16 lg:px-3 pt-2"
+      >
+        <!-- Top -->
+        <div
+          class="flex flex-col sm:flex-col-reverse lg:flex-row justify-between gap-10"
+        >
+          <!-- Links -->
+          <div
+            class="max-w-xl xl:max-w-[714px] w-full grid grid-cols-2 sm:flex sm:justify-between font-medium leading-8 tracking-wider gap-10"
+          >
+            <ul class="space-y-5">
+              <li>
+                <a href="#about" class="hover:underline">О нас</a>
+              </li>
+              <li>
+                <a href="#services" class="hover:underline">Услуги</a>
+              </li>
+              <li>
+                <a href="#schedule" class="hover:underline">Расписание туров</a>
+              </li>
+            </ul>
+            <ul class="space-y-5">
+              <li>
+                <a href="#faq" class="hover:underline">FAQ</a>
+              </li>
+              <li>
+                <a href="#reviews" class="hover:underline">Отзывы</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">Вакансии</a>
+              </li>
+            </ul>
+            <ul class="hidden sm:block space-y-5">
+              <li>
+                <a href="#" class="hover:underline">Наши партнёры</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">Система лояльности</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">Подарочный сертификат</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Logo & Others -->
+          <div class="flex lg:flex-col gap-5">
+            <div
+              class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 sm:gap-10"
+            >
+              <!-- Logo -->
+              <a href="#">
+                <img
+                  src="./assets/images/logo-footer.svg"
+                  alt="Logo"
+                  class="min-w-20"
+                />
+              </a>
+            </div>
+
+            <!-- Links -->
+            <div
+              class="sm:max-w-[213px] w-full flex flex-row flex-wrap gap-x-9 gap-y-1 text-xs leading-6 sm:leading-8"
+            >
+              <a href="#" class="underline">Лицензия</a>
+              <a href="#" class="underline">Договор оферты</a>
+              <a href="#" class="underline">Политика конфиденциальности</a>
+            </div>
+          </div>
+
+          <!-- Dropdown -->
+          <div class="h-min relative" data-dropdown>
+            <button
+              class="dropdown-btn flex justify-between items-center text-left font-medium"
+            >
+              <span>회사에 대한 정보</span>
+              <svg
+                class="angle-icon w-6 h-6 transform transition-transform"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <!-- Dropdown Content -->
+            <div
+              class="fade-in dropdown-content text-xs text-white rounded-md space-y-2 mt-4"
+            >
+              <div>사업자등록번호 : 389-86-03374</div>
+              <div>관광사업등록번호: 2024-000056</div>
+              <div>외국인환자 유치업자 등록번호: A-2024-01-01-5587</div>
+              <div>
+                사업장 소재지: 06530 서울시 서초구 신반포로 47 길 47, 301호
+              </div>
+              <div>이메일 : <a href="#">wingstour.info@gmail.com</a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom -->
+        <div class="text-center text-sm leading-8 tracking-wider">
+          <p class="text-white">© 2025, Wings Tour, все права защищены</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/script.js" defer></script>
+  </body>
+</html>

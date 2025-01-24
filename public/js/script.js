@@ -80,6 +80,32 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+// Initialize Swiper instance
+var swiper = new Swiper(".mySwiper2", {
+  navigation: {
+    nextEl: ".next-review", // Set the correct next button class
+    prevEl: ".prev-review", // Set the correct prev button class
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1.1,
+      spaceBetween: 16,
+    },
+    480: {
+      slidesPerView: 1.5,
+      spaceBetween: 16,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 16,
+    },
+    1280: {
+      slidesPerView: 3,
+      spaceBetween: 16,
+    },
+  },
+});
+
 const header = document.querySelector("header");
 const logo = document.querySelector(".logo");
 const links = document.querySelector(".links");
@@ -253,5 +279,20 @@ button.addEventListener("click", () => {
     button.textContent = "Подробнее"; // Set to "More details"
   } else {
     button.textContent = "Скрыть"; // Set to "Hide"
+  }
+});
+
+const hideBtnPriceInfo = document.getElementById("toggle-info");
+const additionalInfo1 = document.getElementById("additional-info-1");
+const additionalInfo2 = document.getElementById("additional-info-2");
+
+hideBtnPriceInfo.addEventListener("click", () => {
+  additionalInfo1.classList.toggle("hidden");
+  additionalInfo2.classList.toggle("hidden");
+
+  if (additionalInfo1.classList.contains("hidden")) {
+    hideBtnPriceInfo.textContent = "Смотреть весь список"; // View Full List
+  } else {
+    hideBtnPriceInfo.textContent = "Скрыть"; // Hide
   }
 });
