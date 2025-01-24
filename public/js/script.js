@@ -265,35 +265,37 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// Select the button and the paragraph
-const button = document.getElementById("toggle-info");
-const paragraph = document.getElementById("additional-info");
+// Function to handle toggle functionality
+function setupToggle(buttonId, contentId, showText, hideText) {
+  const button = document.getElementById(buttonId);
+  const content = document.getElementById(contentId);
 
-// Add an event listener to the button
-button.addEventListener("click", () => {
-  // Toggle the "hidden" class on the paragraph
-  paragraph.classList.toggle("hidden");
-
-  // Update the button text based on the paragraph's visibility
-  if (paragraph.classList.contains("hidden")) {
-    button.textContent = "Подробнее"; // Set to "More details"
-  } else {
-    button.textContent = "Скрыть"; // Set to "Hide"
+  // Ensure both button and content exist
+  if (!button || !content) {
+    console.warn(
+      `Button or content element not found: ${buttonId}, ${contentId}`
+    );
+    return;
   }
-});
 
-const hideBtnPriceInfo = document.getElementById("toggle-info");
-const additionalInfo1 = document.getElementById("additional-info");
+  button.addEventListener("click", () => {
+    content.classList.toggle("hidden"); // Toggle the "hidden" class
 
-hideBtnPriceInfo.addEventListener("click", () => {
-  additionalInfo1.classList.toggle("hidden");
+    // Update button text based on content visibility
+    button.textContent = content.classList.contains("hidden")
+      ? showText
+      : hideText;
+  });
+}
 
-  if (additionalInfo1.classList.contains("hidden")) {
-    hideBtnPriceInfo.textContent = "Смотреть весь список"; // View Full List
-  } else {
-    hideBtnPriceInfo.textContent = "Скрыть"; // Hide
-  }
-});
+// Setup toggles for different buttons and content
+setupToggle(
+  "toggle-info-price",
+  "additional-info-price",
+  "Смотреть весь список",
+  "Скрыть"
+);
+setupToggle("toggle-info", "additional-info", "Подробнее", "Скрыть");
 
 // Footer Accordion
 document.addEventListener("DOMContentLoaded", () => {

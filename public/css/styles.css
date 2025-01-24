@@ -727,9 +727,6 @@ p{
 .mt-6{
   margin-top: 1.5rem;
 }
-.mt-auto{
-  margin-top: auto;
-}
 .block{
   display: block;
 }
@@ -799,14 +796,6 @@ p{
 .h-\[530px\]{
   height: 530px;
 }
-.h-min{
-  height: -moz-min-content;
-  height: min-content;
-}
-.h-max{
-  height: -moz-max-content;
-  height: max-content;
-}
 .max-h-0{
   max-height: 0px;
 }
@@ -816,14 +805,14 @@ p{
 .min-h-72{
   min-height: 72px;
 }
+.min-h-\[152px\]{
+  min-height: 152px;
+}
 .min-h-\[309px\]{
   min-height: 309px;
 }
 .min-h-\[436px\]{
   min-height: 436px;
-}
-.min-h-\[152px\]{
-  min-height: 152px;
 }
 .w-16{
   width: 4rem;
@@ -1224,9 +1213,6 @@ p{
 .pt-4{
   padding-top: 1rem;
 }
-.pt-5{
-  padding-top: 1.25rem;
-}
 .pt-6{
   padding-top: 1.5rem;
 }
@@ -1241,6 +1227,10 @@ p{
 }
 .text-start{
   text-align: start;
+}
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 .text-\[32px\]{
   font-size: 32px;
@@ -1260,10 +1250,6 @@ p{
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
-}
-.text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 .font-bold{
   font-weight: 700;
