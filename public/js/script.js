@@ -100,7 +100,7 @@ var swiper = new Swiper(".mySwiper2", {
       spaceBetween: 16,
     },
     1280: {
-      slidesPerView: 3,
+      slidesPerView: 3.1,
       spaceBetween: 16,
     },
   },
@@ -283,16 +283,45 @@ button.addEventListener("click", () => {
 });
 
 const hideBtnPriceInfo = document.getElementById("toggle-info");
-const additionalInfo1 = document.getElementById("additional-info-1");
-const additionalInfo2 = document.getElementById("additional-info-2");
+const additionalInfo1 = document.getElementById("additional-info");
 
 hideBtnPriceInfo.addEventListener("click", () => {
   additionalInfo1.classList.toggle("hidden");
-  additionalInfo2.classList.toggle("hidden");
 
   if (additionalInfo1.classList.contains("hidden")) {
     hideBtnPriceInfo.textContent = "Смотреть весь список"; // View Full List
   } else {
     hideBtnPriceInfo.textContent = "Скрыть"; // Hide
   }
+});
+
+// Footer Accordion
+document.addEventListener("DOMContentLoaded", () => {
+  const accordions = document.querySelectorAll("[data-accordion]");
+
+  accordions.forEach((accordion) => {
+    const button = accordion.querySelector(".accordion-btn");
+    const content = accordion.querySelector(".accordion-content");
+    const icon = accordion.querySelector(".angle-icon");
+
+    button.addEventListener("click", () => {
+      // Check if accordion is open
+      const isOpen =
+        content.style.maxHeight && content.style.maxHeight !== "0px";
+
+      if (isOpen) {
+        // Close the accordion
+        content.style.maxHeight = "0px";
+      } else {
+        // Open the accordion (set max-height to content's scrollHeight)
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+
+      // Rotate the icon
+      icon.classList.toggle("rotate-180");
+    });
+
+    // Ensure the accordion starts closed
+    content.style.maxHeight = "0px";
+  });
 });
