@@ -1020,12 +1020,9 @@
             </p>
           </div>
 
-          <!-- Price Info Section -->
-          <div class="md:flex items-stretch gap-4">
-            <!-- Main Price Info -->
-            <div
-              class="flex-1 h-[530px] sm:h-[600px] bg-white rounded-3xl overflow-hidden"
-            >
+          <!-- Price Info -->
+          <div class="md:flex flex-col lg:flex-row items-stretch gap-4">
+            <div class="flex-1 bg-white rounded-3xl overflow-hidden">
               <!-- Infos -->
               <div class="space-y-6 p-6 lg:py-10 lg:px-11">
                 <div class="space-y-1">
@@ -1047,7 +1044,7 @@
 
                 <!-- List -->
                 <div class="grid xl:grid-cols-2 gap-2 xl:gap-9 leading-8">
-                  <!-- Left Column -->
+                  <!-- Left -->
                   <ul class="space-y-3">
                     <li class="flex gap-3">
                       <img
@@ -1109,8 +1106,8 @@
                     </li>
                   </ul>
 
-                  <!-- Additional Info Section -->
-                  <ul id="additional-info-1" class="hidden space-y-3">
+                  <!-- Right -->
+                  <ul id="additional-info-1" class="hidden sm:block space-y-3">
                     <li class="flex gap-3">
                       <img
                         src="./assets/images/icon-arrow-right.svg"
@@ -1118,7 +1115,7 @@
                         class="size-6 mt-1"
                       />
                       <p class="text-brand-dark-purple">
-                        входные билеты по программе
+                        входные билеты по программе в парки, музеи, шоу и т.д.
                       </p>
                     </li>
                     <li class="flex gap-3">
@@ -1147,14 +1144,20 @@
                         alt="Arrow"
                         class="size-6 mt-1"
                       />
-                      <p class="text-brand-dark-purple">оформление KETA/визы</p>
+                      <p class="text-brand-dark-purple">
+                        оформление KETA/помощь с оформлением визы
+                      </p>
                     </li>
                   </ul>
 
-                  <div id="additional-info-2" class="hidden space-y-6 pt-5">
+                  <div
+                    id="additional-info-2"
+                    class="hidden sm:hidden space-y-6 pt-5"
+                  >
                     <h3 class="text-brand-vivid-purple">
                       Дополнительные расходы
                     </h3>
+
                     <ul class="space-y-3">
                       <li class="flex gap-3">
                         <img
@@ -1187,7 +1190,13 @@
                 </div>
               </div>
 
-              <!-- Mobile Toggle Button -->
+              <!-- Bottom Images -->
+              <img
+                src="./assets/images/price-images-1.png"
+                alt="Images"
+                class="w-full hidden lg:block"
+              />
+
               <div class="flex sm:hidden items-center justify-end pb-4 pr-5">
                 <button
                   class="text-brand-vivid-purple leading-8 tracking-wider border-b border-brand-vivid-purple pb-0.5"
@@ -1196,6 +1205,49 @@
                   Смотреть весь список
                 </button>
               </div>
+            </div>
+
+            <!-- Additionals -->
+            <div
+              class="lg:w-[400px] hidden sm:flex flex-col justify-between bg-white rounded-3xl overflow-hidden mt-4 md:mt-0 p-6 lg:pb-0 lg:pt-10 lg:px-11"
+            >
+              <div class="space-y-6">
+                <h3 class="text-brand-vivid-purple">Дополнительные расходы</h3>
+
+                <ul class="space-y-3">
+                  <li class="flex gap-3">
+                    <img
+                      src="./assets/images/icon-arrow-right.svg"
+                      alt="Arrow"
+                      class="size-6 mt-1"
+                    />
+                    <p class="text-brand-dark-purple">личные расходы</p>
+                  </li>
+                  <li class="flex gap-3">
+                    <img
+                      src="./assets/images/icon-arrow-right.svg"
+                      alt="Arrow"
+                      class="size-6 mt-1"
+                    />
+                    <p class="text-brand-dark-purple">билеты на самолет</p>
+                  </li>
+                  <li class="flex gap-3">
+                    <img
+                      src="./assets/images/icon-arrow-right.svg"
+                      alt="Arrow"
+                      class="size-6 mt-1"
+                    />
+                    <p class="text-brand-dark-purple">медицинская страховка</p>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Bottom Images -->
+              <img
+                src="./assets/images/price-images-2.png"
+                alt="Images"
+                class="w-full hidden lg:block mt-auto"
+              />
             </div>
           </div>
         </div>
