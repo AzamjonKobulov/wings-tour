@@ -803,6 +803,10 @@ p{
   height: -moz-min-content;
   height: min-content;
 }
+.h-max{
+  height: -moz-max-content;
+  height: max-content;
+}
 .max-h-0{
   max-height: 0px;
 }
@@ -817,6 +821,9 @@ p{
 }
 .min-h-\[436px\]{
   min-height: 436px;
+}
+.min-h-\[152px\]{
+  min-height: 152px;
 }
 .w-16{
   width: 4rem;
@@ -1253,6 +1260,10 @@ p{
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
+}
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 .font-bold{
   font-weight: 700;
