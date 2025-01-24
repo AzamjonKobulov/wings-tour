@@ -27,7 +27,7 @@
 
         <!-- Logo -->
         <a
-          href="#"
+          href="./index.html"
           class="logo w-full lg:w-fit border border-transparent rounded-xl overflow-hidden"
         >
           <div class="w-full h-72 grid place-content-center bg-white px-8">
@@ -2849,11 +2849,11 @@
       >
         <!-- Top -->
         <div
-          class="flex flex-col sm:flex-col-reverse lg:flex-row lg:items-center justify-between gap-10"
+          class="flex flex-col sm:flex-col-reverse lg:flex-row justify-between gap-10"
         >
           <!-- Links -->
           <div
-            class="max-w-xl xl:max-w-[714px] w-full grid grid-cols-2 sm:flex items-center sm:justify-between font-medium leading-8 tracking-wider gap-10"
+            class="max-w-xl xl:max-w-[714px] w-full grid grid-cols-2 sm:flex sm:justify-between font-medium leading-8 tracking-wider gap-10"
           >
             <ul class="space-y-5">
               <li>
@@ -2891,33 +2891,62 @@
           </div>
 
           <!-- Logo & Others -->
-          <div
-            class="grid grid-cols-2 sm:flex lg:flex-col justify-between lg:justify-start space-x-3"
-          >
+          <div class="flex lg:flex-col gap-5">
             <div
-              class="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-10"
+              class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 sm:gap-10"
             >
               <!-- Logo -->
-              <a href="#">
-                <img src="./assets/images/logo-footer.svg" alt="Logo" />
+              <a href="./index.html">
+                <img
+                  src="./assets/images/logo-footer.svg"
+                  alt="Logo"
+                  class="min-w-20"
+                />
               </a>
-
-              <div class="w-fit">
-                <p class="text-white">ИП XXXXXXXXXXXXXX</p>
-                <p class="text-white">ИНН XXXXXXXXXXXXX</p>
-              </div>
             </div>
 
             <!-- Links -->
             <div
-              class="sm:max-w-[213px] w-full flex flex-col sm:flex-row sm:flex-wrap gap-x-9 gap-y-1 text-xs leading-6 sm:leading-8 mt-3"
+              class="sm:max-w-[213px] w-full flex flex-row flex-wrap gap-x-9 gap-y-1 text-xs leading-6 sm:leading-8"
             >
               <a href="#" class="underline">Лицензия</a>
               <a href="#" class="underline">Договор оферты</a>
-              <a href="#" class="underline"
-                >Политика <br class="sm:hidden" />
-                конфиденциальности</a
+              <a href="#" class="underline">Политика конфиденциальности</a>
+            </div>
+          </div>
+
+          <!-- Dropdown -->
+          <div class="h-min relative" data-dropdown>
+            <button
+              class="dropdown-btn flex justify-between items-center text-left font-medium"
+            >
+              <span>회사에 대한 정보</span>
+              <svg
+                class="angle-icon w-6 h-6 transform transition-transform"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
               >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <!-- Dropdown Content -->
+            <div
+              class="fade-in dropdown-content text-xs text-white rounded-md space-y-2 mt-4"
+            >
+              <div>사업자등록번호 : 389-86-03374</div>
+              <div>관광사업등록번호: 2024-000056</div>
+              <div>외국인환자 유치업자 등록번호: A-2024-01-01-5587</div>
+              <div>
+                사업장 소재지: 06530 서울시 서초구 신반포로 47 길 47, 301호
+              </div>
+              <div>이메일 : <a href="#">wingstour.info@gmail.com</a></div>
             </div>
           </div>
         </div>
