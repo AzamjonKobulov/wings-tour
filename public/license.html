@@ -11,8 +11,12 @@
     <!-- Fancybox CSS  -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
     />
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- JS Fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Wins Tour</title>
   </head>
@@ -272,9 +276,7 @@
           class="max-w-base mx-auto space-y-6 lg:space-y-16 pt-10 pb-12 lg:py-16 px-3 md:px-16 lg:px-3"
         >
           <!-- Title & Text -->
-          <div
-            class="flex flex-col lg:flex-row lg:items-center justify-between gap-5"
-          >
+          <div class="flex flex-col lg:flex-row justify-between gap-5">
             <div>
               <h1>ЛИЦЕНЗИЯ</h1>
               <div class="flex items-center gap-3">
@@ -308,8 +310,8 @@
 
               <!-- Image -->
               <a
-                href="./assets/images/img-license-1.jpg"
                 class="max-w-[441px] mx-auto block shadow-license cursor-pointer overflow-hidden"
+                href="./assets/images/img-license-1.jpg"
                 data-fancybox="gallery"
                 data-caption="Туристическая лицензия"
               >
@@ -328,10 +330,11 @@
 
               <!-- Image -->
               <a
+                class="max-w-[441px] mx-auto block shadow-license cursor-pointer overflow-hidden"
                 href="./assets/images/img-license-2.jpg"
                 data-fancybox="gallery"
-                class="max-w-[441px] mx-auto block shadow-license cursor-pointer overflow-hidden"
-                data-caption="Лицензия на медицинский туризм"
+                data-caption="Лицензия
+                на медицинский туризм"
               >
                 <img src="./assets/images/img-license-2.jpg" />
               </a>
@@ -461,11 +464,6 @@
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- Fancybox JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-
-    <script></script>
     <script src="./js/script.js"></script>
   </body>
 </html>
