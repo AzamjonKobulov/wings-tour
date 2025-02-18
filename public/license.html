@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Fancybox CSS  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Wins Tour</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header sticky top-5 z-50 mt-3 lg:mt-8">
+      <nav
+        class="max-w-base mx-auto flex items-center gap-3 lg:gap-4 px-3 md:px-16 lg:px-3"
+      >
+        <!-- Mob Menu Btn -->
+        <button
+          class="menu-btn size-72 shrink-0 lg:hidden bg-white border border-transparent rounded-xl p-5"
+          id="mob-menu-toggle-btn"
+        >
+          <img src="./assets/images/icon-hamburger.svg" alt="Hamburger Icon" />
+        </button>
+
+        <!-- Logo -->
+        <a
+          href="./index.html"
+          class="logo w-full lg:w-fit border border-transparent rounded-xl overflow-hidden"
+        >
+          <div class="w-full h-72 grid place-content-center bg-white px-8">
+            <img src="./assets/images/logo.svg" alt="Logo" />
+          </div>
+        </a>
+
+        <!-- Links -->
+        <ul
+          class="links flex-1 h-72 hidden lg:flex items-center justify-between font-medium text-brand-dark-purple bg-white xl:text-lg leading-7 tracking-wider border border-transparent rounded-xl px-12"
+        >
+          <li class="dropdown-container relative group" data-dropdown>
+            <!-- Dropdown Btn -->
+            <button class="dropdown-btn flex items-center gap-1.5 2xl:gap-3">
+              <span
+                class="group-hover:text-brand-dark-purple-hover transition-all duration-300"
+                >Wings Tour</span
+              >
+              <svg
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="angle-icon size-4 xl:size-5 2xl:size-6 stroke-brand-dark-purple group-hover:stroke-brand-dark-purple-hover transition-transform duration-300"
+              >
+                <path
+                  d="M12.5 17.3994L4.80021 9.69963"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M12.5 17.3994L20.1998 9.69963"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+
+            <!-- Dropdown Content -->
+            <div
+              class="dropdown-content w-[354px] absolute top-11 -left-1/3 space-y-5 bg-white font-normal text-brand-dark-purple leading-8 tracking-wider border border-gray-200 rounded-xl shadow-md p-8"
+            >
+              <a
+                href="#"
+                class="block hover:text-brand-dark-purple-hover transition-all duration-300"
+                >Наши партнёры</a
+              >
+              <a
+                href="#"
+                class="block hover:text-brand-dark-purple-hover transition-all duration-300"
+                >Вакансии</a
+              >
+              <a
+                href="#"
+                class="block hover:text-brand-dark-purple-hover transition-all duration-300"
+                >Система лояльности</a
+              >
+              <a
+                href="#"
+                class="block hover:text-brand-dark-purple-hover transition-all duration-300"
+                >Подарочный сертификат</a
+              >
+            </div>
+          </li>
+
+          <li>
+            <a
+              href="#services"
+              class="hover:text-brand-dark-purple-hover transition-all duration-300"
+              >Услуги</a
+            >
+          </li>
+          <li>
+            <a
+              href="#schedule"
+              class="hover:text-brand-dark-purple-hover transition-all duration-300"
+              >Расписание туров</a
+            >
+          </li>
+          <li>
+            <a
+              href="#faq"
+              class="hover:text-brand-dark-purple-hover transition-all duration-300"
+              >FAQ</a
+            >
+          </li>
+          <li>
+            <a
+              href="#reviews"
+              class="hover:text-brand-dark-purple-hover transition-all duration-300"
+              >Отзывы</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contacts"
+              class="hover:text-brand-dark-purple-hover transition-all duration-300"
+              >Контакты и оплата</a
+            >
+          </li>
+        </ul>
+
+        <!-- Cart -->
+        <a href="#">
+          <div
+            class="cart size-72 shrink-0 bg-brand-dark-purple border border-transparent rounded-xl hover:bg-brand-dark-purple-hover active:bg-brand-dark-purple-pressed transition-all duration-300 p-5"
+          >
+            <img
+              src="./assets/images/icon-cart.svg"
+              alt="Icon Cart"
+              class="size-8 shrink-0"
+            />
+          </div>
+        </a>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div
+        class="fixed inset-0 z-50 size-full bg-white -translate-x-full transition-all duration-300"
+        id="mob-menu"
+      >
+        <!-- Header -->
+        <div class="flex items-center">
+          <button class="p-5" id="mob-menu-close-btn">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2 6L30 26"
+                stroke="#382176"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M2 26L30 6"
+                stroke="#382176"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+          <!-- Logo -->
+          <a href="#" class="flex-1 flex items-center justify-center">
+            <div class="h-72 grid place-content-center bg-white mr-72 px-8">
+              <img src="./assets/images/logo.svg" alt="Logo" />
+            </div>
+          </a>
+        </div>
+
+        <!-- Links -->
+        <ul
+          class="flex-1 h-72 space-y-9 font-medium text-brand-dark-purple text-lg leading-6 bg-white tracking-wider rounded-xl mt-12 px-6"
+        >
+          <!-- Accordion Item -->
+          <li class="accordion-item">
+            <button
+              class="accordion-header flex items-center gap-3 w-full text-left"
+              data-accordion-toggle
+            >
+              <span>Wings Tour</span>
+              <svg
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="stroke-brand-dark-purple accordion-icon transition-transform duration-300"
+              >
+                <path
+                  d="M12.5 17.3994L4.80021 9.69963"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M12.5 17.3994L20.1998 9.69963"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+            <div
+              class="accordion-body fade-in hidden space-y-3 bg-white text-base font-normal leading-8 mt-5 mb-2 pl-3"
+            >
+              <a href="#" class="block hover:text-brand-dark-purple-hover"
+                >Наши партнёры</a
+              >
+              <a href="#" class="block hover:text-brand-dark-purple-hover"
+                >Вакансии</a
+              >
+              <a href="#" class="block hover:text-brand-dark-purple-hover"
+                >Система лояльности</a
+              >
+              <a href="#" class="block hover:text-brand-dark-purple-hover"
+                >Подарочный сертификат</a
+              >
+            </div>
+          </li>
+
+          <!-- Other Links -->
+          <li>
+            <a href="#services" class="hover:text-brand-dark-purple-hover"
+              >Услуги</a
+            >
+          </li>
+          <li>
+            <a href="#schedule" class="hover:text-brand-dark-purple-hover"
+              >Расписание туров</a
+            >
+          </li>
+          <li>
+            <a href="#faq" class="hover:text-brand-dark-purple-hover">FAQ</a>
+          </li>
+          <li>
+            <a href="#reviews" class="hover:text-brand-dark-purple-hover"
+              >Отзывы</a
+            >
+          </li>
+          <li>
+            <a href="#contacts" class="hover:text-brand-dark-purple-hover"
+              >Контакты и оплата</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <!-- License -->
+      <section id="license">
+        <div
+          class="max-w-base mx-auto space-y-6 lg:space-y-16 pt-10 pb-12 lg:py-16 px-3 md:px-16 lg:px-3"
+        >
+          <!-- Title & Text -->
+          <div
+            class="flex flex-col lg:flex-row lg:items-center justify-between gap-5"
+          >
+            <div>
+              <h1>ЛИЦЕНЗИЯ</h1>
+              <div class="flex items-center gap-3">
+                <img
+                  src="./assets/images/icon-license.svg"
+                  alt="License Icon"
+                />
+                <p class="text-brand-vivid-purple font-medium">
+                  выданная Южной Кореей
+                </p>
+              </div>
+            </div>
+
+            <p class="max-w-[557px] text-brand-dark-purple lg:pr-20 lg:-mr-10">
+              Мы работаем в Южной Корее официально по Лицензии. Это значит, что
+              мы гарантируем для наших клиентов безопасность и законность
+              предоставляемых услуг.
+            </p>
+          </div>
+
+          <!-- Licenses -->
+          <div class="grid lg:grid-cols-2 gap-3 lg:gap-4">
+            <!-- License 1 -->
+            <div
+              class="space-y-5 lg:space-y-7 bg-white rounded-2xl lg:rounded-3xl p-6 lg:p-10"
+            >
+              <h2>
+                <span class="text-brand-vivid-purple">Туристическая</span><br />
+                лицензия
+              </h2>
+
+              <!-- Image -->
+              <a
+                href="./assets/images/img-license-1.jpg"
+                class="max-w-[441px] mx-auto block shadow-license cursor-pointer overflow-hidden"
+                data-fancybox="gallery"
+                data-caption="Туристическая лицензия"
+              >
+                <img src="./assets/images/img-license-1.jpg" />
+              </a>
+            </div>
+
+            <!-- License 2 -->
+            <div
+              class="space-y-5 lg:space-y-7 bg-white rounded-2xl lg:rounded-3xl p-6 lg:p-10"
+            >
+              <h2>
+                <span class="text-brand-vivid-purple">Лицензия</span><br />
+                на медицинский туризм
+              </h2>
+
+              <!-- Image -->
+              <a
+                href="./assets/images/img-license-2.jpg"
+                data-fancybox="gallery"
+                class="max-w-[441px] mx-auto block shadow-license cursor-pointer overflow-hidden"
+                data-caption="Лицензия на медицинский туризм"
+              >
+                <img src="./assets/images/img-license-2.jpg" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer
+      class="space-y-11 bg-brand-dark-purple text-white mt-12 lg:mt-16 pt-6 pb-5"
+    >
+      <div
+        class="max-w-base mx-auto space-y-8 sm:space-y-11 px-3 md:px-16 lg:px-3 pt-2"
+      >
+        <!-- Top -->
+        <div
+          class="min-h-[152px] flex flex-col sm:flex-col-reverse lg:flex-row justify-between gap-10"
+        >
+          <!-- Links -->
+          <div
+            class="max-w-xl xl:max-w-[714px] w-full grid grid-cols-2 sm:flex sm:justify-between font-medium leading-8 tracking-wider gap-10"
+          >
+            <ul class="space-y-5">
+              <li>
+                <a href="#about" class="hover:underline">О нас</a>
+              </li>
+              <li>
+                <a href="#services" class="hover:underline">Услуги</a>
+              </li>
+              <li>
+                <a href="#schedule" class="hover:underline">Расписание туров</a>
+              </li>
+            </ul>
+            <ul class="space-y-5">
+              <li>
+                <a href="#faq" class="hover:underline">FAQ</a>
+              </li>
+              <li>
+                <a href="#reviews" class="hover:underline">Отзывы</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">Вакансии</a>
+              </li>
+            </ul>
+            <ul class="hidden sm:block space-y-5">
+              <li>
+                <a href="#" class="hover:underline">Наши партнёры</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">Система лояльности</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">Подарочный сертификат</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Logo & Others -->
+          <div class="flex lg:flex-col gap-5">
+            <div
+              class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 sm:gap-10"
+            >
+              <!-- Logo -->
+              <a href="./index.html">
+                <img
+                  src="./assets/images/logo-footer.svg"
+                  alt="Logo"
+                  class="min-w-20"
+                />
+              </a>
+            </div>
+
+            <!-- Links -->
+            <div
+              class="sm:max-w-[213px] w-full flex flex-row flex-wrap gap-x-9 gap-y-1 text-xs leading-6 sm:leading-8"
+            >
+              <a href="#" class="underline">Лицензия</a>
+              <a href="#" class="underline">Договор оферты</a>
+              <a href="#" class="underline">Политика конфиденциальности</a>
+            </div>
+          </div>
+
+          <!-- Accordion -->
+          <div class="relative" data-accordion>
+            <button
+              class="accordion-btn flex justify-between items-center text-left font-medium"
+            >
+              <span>회사에 대한 정보</span>
+              <svg
+                class="angle-icon w-6 h-6 transform transition-transform"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <!-- Accordion Content -->
+            <div
+              class="accordion-content overflow-hidden max-h-0 transition-all duration-300 text-xs text-white rounded-md space-y-2 mt-4"
+            >
+              <div>사업자등록번호 : 389-86-03374</div>
+              <div>관광사업등록번호: 2024-000056</div>
+              <div>외국인환자 유치업자 등록번호: A-2024-01-01-5587</div>
+              <div>
+                사업장 소재지: 06530 서울시 서초구 신반포로 47 길 47, 301호
+              </div>
+              <div>이메일 : <a href="#">wingstour.info@gmail.com</a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom -->
+        <div class="text-center text-sm leading-8 tracking-wider">
+          <p class="text-white">© 2025, Wings Tour, все права защищены</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Fancybox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+    <script></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

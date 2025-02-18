@@ -60,6 +60,9 @@ module.exports = {
       backgroundImage: {
         services: "linear-gradient(180deg, #FFFFFF 0%, #DBD5FB 100%);",
       },
+      boxShadow: {
+        license: "4px 4px 17px 6px #CCCCCC40",
+      },
     },
   },
   plugins: [],

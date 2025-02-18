@@ -328,3 +328,13 @@ document.addEventListener("DOMContentLoaded", () => {
     content.style.maxHeight = "0px";
   });
 });
+
+// Initialize Fancybox v4
+Fancybox.bind('[data-fancybox="gallery"]', {
+  // Optional: Customize options
+  loop: true, // Loop through images
+  buttons: ["zoom", "close", "fullscreen"], // Customize buttons
+  caption: function (instance, item) {
+    return item.element.dataset.caption || ""; // Dynamically load caption
+  },
+});
