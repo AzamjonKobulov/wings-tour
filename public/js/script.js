@@ -236,6 +236,10 @@ menuLinks.forEach((link) => {
 // Tags container scrolling func
 document.addEventListener("DOMContentLoaded", () => {
   const container = document.querySelector(".tags-container");
+
+  // Prevent script from running if .tags-container is missing
+  if (!container) return;
+
   let isDragging = false;
   let startX, scrollLeft;
 
@@ -260,7 +264,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!isDragging) return;
     e.preventDefault();
     const x = e.pageX - container.offsetLeft;
-    const walk = (x - startX) * 2; // Adjust scroll speed
+    const walk = (x - startX) * 2;
     container.scrollLeft = scrollLeft - walk;
   });
 });
@@ -272,9 +276,6 @@ function setupToggle(buttonId, contentId, showText, hideText) {
 
   // Ensure both button and content exist
   if (!button || !content) {
-    console.warn(
-      `Button or content element not found: ${buttonId}, ${contentId}`
-    );
     return;
   }
 
