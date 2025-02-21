@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Wins Tour</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header sticky top-5 z-50 mt-3 lg:mt-8">
+      <nav
+        class="max-w-base mx-auto flex items-center gap-3 lg:gap-4 px-3 md:px-16 lg:px-3"
+      >
+        <!-- Mob Menu Btn -->
+        <button
+          class="menu-btn size-72 shrink-0 lg:hidden bg-white border border-transparent rounded-xl p-5"
+          id="mob-menu-toggle-btn"
+        >
+          <img src="./assets/images/icon-hamburger.svg" alt="Hamburger Icon" />
+        </button>
+
+        <!-- Logo -->
+        <a
+          href="./index.html"
+          class="logo w-full lg:w-fit border border-transparent rounded-xl overflow-hidden"
+        >
+          <div class="w-full h-72 grid place-content-center bg-white px-8">
+            <img src="./assets/images/logo.svg" alt="Logo" />
+          </div>
+        </a>
+
+        <!-- Links -->
+        <ul
+          class="links flex-1 h-72 hidden lg:flex items-center justify-between font-medium text-brand-dark-purple bg-white xl:text-lg leading-7 tracking-wider border border-transparent rounded-xl px-12"
+        >
+          <li class="dropdown-container relative group" data-dropdown>
+            <!-- Dropdown Btn -->
+            <button class="dropdown-btn flex items-center gap-1.5 2xl:gap-3">
+              <span
+                class="group-hover:text-brand-dark-purple-hover transition-all duration-300"
+                >Wings Tour</span
+              >
+              <svg
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="angle-icon size-4 xl:size-5 2xl:size-6 stroke-brand-dark-purple group-hover:stroke-brand-dark-purple-hover transition-transform duration-300"
+              >
+                <path
+                  d="M12.5 17.3994L4.80021 9.69963"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M12.5 17.3994L20.1998 9.69963"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+
+            <!-- Dropdown Content -->
+            <div
+              class="dropdown-content w-[354px] absolute top-11 -left-1/3 space-y-5 bg-white font-normal text-brand-dark-purple leading-8 tracking-wider border border-gray-200 rounded-xl shadow-md p-8"
+            >
+              <a
+                href="#"
+                class="block hover:text-brand-dark-purple-hover transition-all duration-300"
+                >Наши партнёры</a
+              >
+              <a
+                href="#"
+                class="block hover:text-brand-dark-purple-hover transition-all duration-300"
+                >Вакансии</a
+              >
+              <a
+                href="#"
+                class="block hover:text-brand-dark-purple-hover transition-all duration-300"
+                >Система лояльности</a
+              >
+              <a
+                href="#"
+                class="block hover:text-brand-dark-purple-hover transition-all duration-300"
+                >Подарочный сертификат</a
+              >
+            </div>
+          </li>
+
+          <li>
+            <a
+              href="#services"
+              class="hover:text-brand-dark-purple-hover transition-all duration-300"
+              >Услуги</a
+            >
+          </li>
+          <li>
+            <a
+              href="#schedule"
+              class="hover:text-brand-dark-purple-hover transition-all duration-300"
+              >Расписание туров</a
+            >
+          </li>
+          <li>
+            <a
+              href="#faq"
+              class="hover:text-brand-dark-purple-hover transition-all duration-300"
+              >FAQ</a
+            >
+          </li>
+          <li>
+            <a
+              href="#reviews"
+              class="hover:text-brand-dark-purple-hover transition-all duration-300"
+              >Отзывы</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contacts"
+              class="hover:text-brand-dark-purple-hover transition-all duration-300"
+              >Контакты и оплата</a
+            >
+          </li>
+        </ul>
+
+        <!-- Cart -->
+        <a href="#">
+          <div
+            class="cart size-72 shrink-0 bg-brand-dark-purple border border-transparent rounded-xl hover:bg-brand-dark-purple-hover active:bg-brand-dark-purple-pressed transition-all duration-300 p-5"
+          >
+            <img
+              src="./assets/images/icon-cart.svg"
+              alt="Icon Cart"
+              class="size-8 shrink-0"
+            />
+          </div>
+        </a>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div
+        class="fixed inset-0 z-50 size-full bg-white -translate-x-full transition-all duration-300"
+        id="mob-menu"
+      >
+        <!-- Header -->
+        <div class="flex items-center">
+          <button class="p-5" id="mob-menu-close-btn">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2 6L30 26"
+                stroke="#382176"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M2 26L30 6"
+                stroke="#382176"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+          <!-- Logo -->
+          <a href="#" class="flex-1 flex items-center justify-center">
+            <div class="h-72 grid place-content-center bg-white mr-72 px-8">
+              <img src="./assets/images/logo.svg" alt="Logo" />
+            </div>
+          </a>
+        </div>
+
+        <!-- Links -->
+        <ul
+          class="flex-1 h-72 space-y-9 font-medium text-brand-dark-purple text-lg leading-6 bg-white tracking-wider rounded-xl mt-12 px-6"
+        >
+          <!-- Accordion Item -->
+          <li class="accordion-item">
+            <button
+              class="accordion-header flex items-center gap-3 w-full text-left"
+              data-accordion-toggle
+            >
+              <span>Wings Tour</span>
+              <svg
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="stroke-brand-dark-purple accordion-icon transition-transform duration-300"
+              >
+                <path
+                  d="M12.5 17.3994L4.80021 9.69963"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M12.5 17.3994L20.1998 9.69963"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+            <div
+              class="accordion-body fade-in hidden space-y-3 bg-white text-base font-normal leading-8 mt-5 mb-2 pl-3"
+            >
+              <a href="#" class="block hover:text-brand-dark-purple-hover"
+                >Наши партнёры</a
+              >
+              <a href="#" class="block hover:text-brand-dark-purple-hover"
+                >Вакансии</a
+              >
+              <a href="#" class="block hover:text-brand-dark-purple-hover"
+                >Система лояльности</a
+              >
+              <a href="#" class="block hover:text-brand-dark-purple-hover"
+                >Подарочный сертификат</a
+              >
+            </div>
+          </li>
+
+          <!-- Other Links -->
+          <li>
+            <a href="#services" class="hover:text-brand-dark-purple-hover"
+              >Услуги</a
+            >
+          </li>
+          <li>
+            <a href="#schedule" class="hover:text-brand-dark-purple-hover"
+              >Расписание туров</a
+            >
+          </li>
+          <li>
+            <a href="#faq" class="hover:text-brand-dark-purple-hover">FAQ</a>
+          </li>
+          <li>
+            <a href="#reviews" class="hover:text-brand-dark-purple-hover"
+              >Отзывы</a
+            >
+          </li>
+          <li>
+            <a href="#contacts" class="hover:text-brand-dark-purple-hover"
+              >Контакты и оплата</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <!-- Policy -->
+      <section id="policy">
+        <div class="max-w-base mx-auto mt-4 px-3 md:px-16 lg:px-3">
+          <div class="bg-white rounded-3xl py-6 px-5 lg:py-[60px]">
+            <div class="max-w-[902px] mx-auto space-y-8 lg:space-y-10">
+              <!-- Title & Text -->
+              <div class="flex flex-col lg:flex-row justify-between gap-5">
+                <div class="space-y-2">
+                  <h1 class="uppercase">
+                    Политика <br />
+                    <span class="hidden xs:block">конфиденциальности</span>
+                    <span class="xs:hidden">конфиденци-альности</span>
+                  </h1>
+                  <p
+                    class="text-brand-vivid-purple font-medium text-lg leading-6"
+                  >
+                    Политика обработки персональных данных
+                  </p>
+                </div>
+              </div>
+
+              <!-- Text Content -->
+              <div class="space-y-8 lg:sapce-y-10">
+                <!-- Content 1 -->
+                <div class="space-y-5 lg:space-y-6">
+                  <p class="text-brand-dark-purple tracking-widest">
+                    Политика конфиденциальности, правовая информация и правила
+                    ее использования разработаны в соответствии с действующим
+                    законодательством Российской Федерации, а именно Федеральным
+                    Законом РФ от 27.07.2006 года №152-ФЗ «О персональных
+                    данных», и Республики Корея  Закон «О защите персональных
+                    данных» (PIPA), Закон о сетях ИТ.
+                  </p>
+                  <p class="text-brand-dark-purple tracking-widest">
+                    Указанные понятия распространяются на отношения, которые
+                    вытекают из положений договора реализации туристского
+                    продукта и договора на оказание туристских услуг,
+                    заключенных между «Исполнителем» - Компания Wings Tour Co.,
+                    Ltd, зарегистрированная в Республике Корея (Свидетельство
+                    налогоплательщика № 389-86-03374, регистрационный номер №
+                    110111-9028550), в лице Генерального директора Коваленко
+                    Анны и «Заказчика» — физического лица — субъекта
+                    персональных данных.
+                  </p>
+                  <p class="text-brand-dark-purple tracking-widest">
+                    Настоящая Политика конфиденциальности действует в отношении
+                    всей информации, расположенный на доменном имени <a
+                      href="https://wings-tour.com"
+                      class="text-brand-vivid-purple hover:underline"
+                      >https://wings-tour.com</a
+                    >, которую Исполнитель может получить о Пользователе во
+                    время использования сайта – если пользователь
+                    зарегистрируется на сайте, отправит запрос на подбор тура
+                    или воспользуется другими продуктами.
+                  </p>
+                  <div class="space-y-2.5 lg:space-y-3 tracking-widest">
+                    <p class="text-brand-dark-purple tracking-widest">
+                      К основным положениями Политики конфиденциальности сайта
+                      относятся следующие пункты:
+                    </p>
+                    <ul class="list-disc text-brand-dark-purple leading-8 pl-6">
+                      <li>
+                        Мы обязуемся не передавать вашу персональную информацию
+                        каким-либо третьим лицам.
+                      </li>
+                      <li>
+                        Мы обязуемся сохранить конфиденциальность вашей
+                        контактной информации и не оглашать ее без вашего
+                        согласия.
+                      </li>
+                      <li>
+                        Только вы решаете в каком объеме вы хотите раскрыть свою
+                        персональную информацию.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Content 2 -->
+                <div class="space-y-5 lg:space-y-6">
+                  <h3
+                    class="font-bold uppercase text-brand-vivid-purple text-xl lg:text-2xl leading-7"
+                  >
+                    1. ОПРЕДЕЛЕНИЕ ТЕРМИНОВ
+                  </h3>
+                  <div class="space-y-2.5 lg:space-y-3">
+                    <p class="text-brand-dark-purple">
+                      В настоящей Политике конфиденциальности используются
+                      следующие термины:
+                    </p>
+                    <ul
+                      class="space-y-2.5 lg:space-y-3 text-brand-dark-purple tracking-widest leading-8"
+                    >
+                      <li>
+                        <span class="font-semibold">«Оператор»</span> – Компания
+                        Wings Tour Co., Ltd, которая организует и (или)
+                        осуществляет обработку персональных данных, а также
+                        определяет цели обработки персональных данных, состав
+                        персональных данных, подлежащих обработке, действия
+                        (операции), совершаемые с персональными данными.
+                      </li>
+                      <li>
+                        <span class="font-semibold">«Персональные данные»</span
+                        > - любая информация, относящаяся к прямо или косвенно
+                        определенному или определяемому физическому лицу
+                        (субъекту персональных данных).
+                      </li>
+                      <li>
+                        <span class="font-semibold"
+                          >«Обработка персональных данных»</span
+                        >  - любое действие (операция) или совокупность действий
+                        (операций), совершаемых с использованием средств
+                        автоматизации или без использования таких средств с
+                        персональными данными, включая сбор, запись,
+                        систематизацию, накопление, хранение, уточнение
+                        (обновление, изменение), извлечение, использование,
+                        передачу (распространение, предоставление, доступ),
+                        обезличивание, блокирование, удаление, уничтожение
+                        персональных данных.
+                      </li>
+                      <li>
+                        <span class="font-semibold"
+                          >«Конфиденциальность персональных данных»</span
+                        > - обязательное для соблюдения оператором или иным
+                        получившим доступ к персональным данным лицом требование
+                        не допускать их распространения без согласия субъекта
+                        персональных данных или наличия иного законного
+                        основания.
+                      </li>
+                      <li>
+                        <span class="font-semibold">«Пользователь Сайта»</span> 
+                        (далее - Пользователь) – лицо, имеющее доступ к Сайту
+                        посредством сети Интернет и использующее сервисы Сайта.
+                      </li>
+                      <li>
+                        <span class="font-semibold"> «Cookies»</span> —
+                        небольшой фрагмент данных, отправленный веб-сервером и
+                        хранимый на компьютере пользователя, который веб-клиент
+                        или веб-браузер каждый раз пересылает веб-серверу в
+                        HTTP-запросе при попытке открыть страницу
+                        соответствующего сайта.
+                      </li>
+                      <li>
+                        <span class="font-semibold">«IP-адрес»</span>   —
+                        уникальный сетевой адрес узла в компьютерной сети,
+                        построенной по протоколу IP.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Content 3 -->
+                <div class="space-y-5 lg:space-y-6">
+                  <h3
+                    class="font-bold uppercase text-brand-vivid-purple text-xl lg:text-2xl leading-7"
+                  >
+                    2. ОБЩИЕ ПОЛОЖЕНИЯ
+                  </h3>
+                  <ul
+                    class="space-y-2.5 lg:space-y-3 text-brand-dark-purple leading-8 tracking-widest"
+                  >
+                    <li>
+                      2.1 Использование Пользователем сервисов Сайта означает
+                      согласие с настоящей Политикой конфиденциальности и
+                      условиями обработки персональных данных Пользователя
+                    </li>
+                    <li>
+                      2.2 В случае несогласия с условиями Политики
+                      конфиденциальности Пользователь должен прекратить
+                      использование сервисов Сайта
+                    </li>
+                    <li>
+                      2.3 Настоящая Политика конфиденциальности применяется
+                      только к Сайту Оператора. Оператор не контролирует и не
+                      несёт ответственность за сайты третьих лиц, на которые
+                      Пользователь может перейти по ссылкам, доступным на Сайте
+                      Оператора.
+                    </li>
+                    <li>
+                      2.4 Оператор не проверяет достоверность персональных
+                      данных, предоставляемых Пользователем Системы
+                      бронирования.
+                    </li>
+                  </ul>
+                </div>
+                <!-- Content 4 -->
+                <div class="space-y-5 lg:space-y-6">
+                  <h3
+                    class="font-bold uppercase text-brand-vivid-purple text-xl lg:text-2xl leading-7"
+                  >
+                    4. ПРЕДМЕТ ПОЛИТИКИ КОНФИДЕНЦИАЛЬНОСТИ
+                  </h3>
+                  <ul
+                    class="space-y-5 lg:space-y-6 text-brand-dark-purple leading-8 tracking-widest"
+                  >
+                    <li>
+                      3.1 Настоящая Политика конфиденциальности устанавливает
+                      обязательства Оператора по неразглашению и обеспечению
+                      режима защиты конфиденциальности персональных данных,
+                      которые Пользователь предоставляет по запросу Оператора
+                      при регистрации на Сайте или при оформлении заказа для
+                      приобретения товаров и услуг, реализуемых посредством
+                      Сайта.
+                    </li>
+                    <li class="space-y-2.5 lg:space-y-3">
+                      <span
+                        >3.2 Персональные данные, разрешённые к обработке в
+                        рамках настоящей Политики конфиденциальности,
+                        предоставляются Пользователем путём заполнения
+                        регистрационной формы на Сайте и включают в себя
+                        следующую информацию:</span
+                      >
+                      <ul class="list-disc space-y-2.5 lg:space-y-3 pl-6">
+                        <li>фамилию, имя, отчество Пользователя;</li>
+                        <li>контактный телефон Пользователя;</li>
+                        <li>адрес электронной почты (e-mail);</li>
+                        <li>
+                          место жительство (страна, город, адрес) Пользователя.
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="space-y-2.5 lg:space-y-3">
+                      <span
+                        >3.3 Система бронирования защищает информацию, которая
+                        автоматически передаётся в процессе использования
+                        Пользователем Системы бронирования:</span
+                      >
+                      <ul class="list-disc space-y-2.5 lg:space-y-3 pl-6">
+                        <li>IP адрес;</li>
+                        <li>информация из cookies;</li>
+                        <li>информация о браузере;</li>
+                        <li>время доступа;</li>
+                        <li>адрес используемой страницы.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      3.4 На Сайте применяется технология идентификации
+                      пользователей, основанная на использовании файлов cookies.
+                      Сookies – это небольшие текстовые файлы, сохраняемые на
+                      Вашем компьютере посредством веб-браузера.
+                    </li>
+                    <li>
+                      При использовании Пользователем Сайта на компьютер,
+                      используемый им для доступа, могут быть записаны файлы
+                      cookies, которые в дальнейшем будут использованы для
+                      автоматической авторизации Пользователя на Сайте, а также
+                      для сбора статистических данных, в частности о
+                      посещаемости Сайта. При этом мы никогда не сохраняем
+                      персональные данные или пароли в файлах cookies.
+                    </li>
+                    <li>
+                      Если Вы все же полагаете, что по тем или иным причинам
+                      использование технологии cookies для Вас неприемлемо, Вы
+                      вправе запретить сохранение файлов cookies на компьютере,
+                      используемом для доступа к Сайту, соответствующим образом
+                      настроив браузер. При этом следует иметь в виду, что все
+                      сервисы в сети Интернет, использующие данную технологию,
+                      окажутся недоступными.
+                    </li>
+                    <li>
+                      3.5 Сайт может содержать ссылки на другие веб-сайты. Мы, в
+                      свою очередь, не несем ответственности за политику
+                      конфиденциальности данных сайтов. Мы призываем Вас быть
+                      осторожными, когда Вы покидаете наш сайт, и внимательно
+                      читать правила конфиденциальности каждого сайта, который
+                      собирает личную информацию о пользователе. Настоящая
+                      политика конфиденциальности относится исключительно к
+                      информации, которую собирает Сайт <a
+                        href="https://wings-tour.com"
+                        class="text-brand-vivid-purple hover:underline"
+                        >https://wings-tour.com</a
+                      >.
+                    </li>
+                    <li>
+                      3.6 Сайт оператора осуществляет сбор статистики об
+                      IP-адресах своих посетителей. Данная информация
+                      используется с целью выявления и решения технических
+                      проблем, для повышения качества работы и безопасности
+                      Сайта.
+                    </li>
+                    <li>
+                      3.7 Любая иная персональная информация неоговоренная выше
+                      (история покупок, используемые браузеры и операционные
+                      системы и т.д.) подлежит надёжному хранению и
+                      нераспространению, за исключением случаев, предусмотренных
+                      в п.п. 5.2. и 5.3. настоящей Политики конфиденциальности.
+                    </li>
+                  </ul>
+                </div>
+                <!-- Content 5 -->
+                <div class="space-y-5 lg:space-y-6">
+                  <h3
+                    class="font-bold uppercase text-brand-vivid-purple text-xl lg:text-2xl leading-7"
+                  >
+                    4. ЦЕЛИ СБОРА ПЕРСОНАЛЬНОЙ ИНФОРМАЦИИ ПОЛЬЗОВАТЕЛЯ
+                  </h3>
+                  <div class="space-y-2.5 lg:space-y-3">
+                    <p class="text-brand-dark-purple tracking-widest">
+                      Персональные данные Пользователя Оператор может
+                      использовать в целях:
+                    </p>
+                    <ul
+                      class="list-disc space-y-2.5 lg:space-y-3 text-brand-dark-purple tracking-widest leading-8 pl-6"
+                    >
+                      <li>
+                        Идентификации Пользователя, зарегистрированного на
+                        Сайте, для оформления заказа и (или) заключения
+                        Договора реализации туристического продукта товара или
+                        услуги дистанционным способом.
+                      </li>
+                      <li>
+                        Предоставления Пользователю доступа к
+                        персонализированным ресурсам Сайта.
+                      </li>
+                      <li>
+                        Установления с Пользователем обратной связи, включая
+                        направление уведомлений, запросов, касающихся
+                        использования сервисов Сайта, оказания услуг, обработки
+                        запросов и заявок от Пользователя.
+                      </li>
+                      <li>
+                        Определения места нахождения Пользователя для
+                        обеспечения безопасности, предотвращения мошенничества.
+                      </li>
+                      <li>
+                        Подтверждения достоверности и полноты персональных
+                        данных, предоставленных Пользователем.
+                      </li>
+                      <li>
+                        Создания учётной записи для совершения покупок, если
+                        Пользователь дал согласие на создание учётной записи.
+                      </li>
+                      <li>
+                        Уведомления Пользователя Сайта о состоянии Заказа.
+                      </li>
+                      <li>
+                        Обработки и получения платежей, оспаривания платежа.
+                      </li>
+                      <li>
+                        Предоставления Пользователю эффективной клиентской и
+                        технической поддержки при возникновении проблем
+                        связанных с использованием Сайта
+                      </li>
+                      <li>
+                        Предоставления Пользователю с его согласия, обновлений
+                        продукции, специальных предложений, информации о ценах,
+                        новостной рассылки и иных сведений от имени Оператора.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Content 6 -->
+                <div class="space-y-5 lg:space-y-6">
+                  <h3
+                    class="font-bold uppercase text-brand-vivid-purple text-xl lg:text-2xl leading-7"
+                  >
+                    5. СПОСОБЫ И СРОКИ ОБРАБОТКИ ПЕРСОНАЛЬНОЙ ИНФОРМАЦИИ
+                  </h3>
+                  <ul
+                    class="space-y-2.5 lg:space-y-3 text-brand-dark-purple leading-8 tracking-widest"
+                  >
+                    <li>
+                      5.1 Обработка персональных данных Пользователя
+                      осуществляется без ограничения срока, любым законным
+                      способом, в том числе в информационных системах
+                      персональных данных с использованием средств автоматизации
+                      или без использования таких средств.
+                    </li>
+                    <li>
+                      5.2 Пользователь соглашается с тем, что Оператор вправе
+                      передавать персональные данные третьим лицам, в частности,
+                      курьерским службам, организациями почтовой связи,
+                      операторам электросвязи, исключительно в целях выполнения
+                      заказа Пользователя, оформленного на Сайте.
+                    </li>
+                    <li>
+                      5.3 Персональные данные Пользователя могут быть переданы
+                      уполномоченным органам государственной власти Российской
+                      Федерации только по основаниям и в порядке, установленным
+                      законодательством Российской Федерации.
+                    </li>
+                    <li>
+                      5.4 При утрате или разглашении персональных данных
+                      Оператор информирует Пользователя об утрате или
+                      разглашении персональных данных.
+                    </li>
+                    <li>
+                      5.5 Оператор осуществляющий разработку и поддержку Сайта,
+                      принимает необходимые организационные и технические меры
+                      для защиты персональной информации Пользователя от
+                      неправомерного или случайного доступа, уничтожения,
+                      изменения, блокирования, копирования, распространения, а
+                      также от иных неправомерных действий третьих лиц.
+                    </li>
+                    <li>
+                      5.6 Оператор совместно с Пользователем принимает все
+                      необходимые меры по предотвращению убытков или иных
+                      отрицательных последствий, вызванных утратой или
+                      разглашением персональных данных Пользователя.
+                    </li>
+                  </ul>
+                </div>
+                <!-- Content 7 -->
+                <div class="space-y-5 lg:space-y-6">
+                  <h3
+                    class="font-bold uppercase text-brand-vivid-purple text-xl lg:text-2xl leading-7"
+                  >
+                    6. ОБЯЗАТЕЛЬСТВА СТОРОН
+                  </h3>
+                  <ul
+                    class="space-y-2.5 lg:space-y-3 text-brand-dark-purple leading-8 tracking-widest"
+                  >
+                    <li>6.1 Пользователь обязан:</li>
+                    <li>
+                      6.1.1 Предоставить информацию о персональных данных,
+                      необходимую для пользования сервисов Сайта.
+                    </li>
+                    <li>
+                      6.1.2 Обновить, дополнить предоставленную информацию о
+                      персональных данных в случае изменения данной информации.
+                    </li>
+                    <li>6.2 Оператор обязан:</li>
+                    <li>
+                      6.2.1 Использовать полученную информацию исключительно для
+                      целей, указанных в п. 4 настоящей Политики
+                      конфиденциальности.
+                    </li>
+                    <li>
+                      6.2.2 Обеспечить хранение конфиденциальной информации в
+                      тайне, не разглашать без предварительного письменного
+                      разрешения Пользователя, а также не осуществлять продажу,
+                      обмен, опубликование, либо разглашение иными возможными
+                      способами переданных персональных данных Пользователя, за
+                      исключением п.п. 5.2. и 5.3. настоящей Политики
+                      Конфиденциальности.
+                    </li>
+                    <li>
+                      6.2.3 Принимать меры предосторожности для защиты
+                      конфиденциальности персональных данных Пользователя
+                      согласно порядку, обычно используемого для защиты такого
+                      рода информации в существующем деловом обороте.
+                    </li>
+                    <li>
+                      6.2.4 Осуществить блокирование персональных данных,
+                      относящихся к соответствующему Пользователю, с момента
+                      обращения или запроса Пользователя или его законного
+                      представителя либо уполномоченного органа по защите прав
+                      субъектов персональных данных на период проверки, в случае
+                      выявления недостоверных персональных данных или
+                      неправомерных действий.
+                    </li>
+                  </ul>
+                </div>
+                <!-- Content 8 -->
+                <div class="space-y-5 lg:space-y-6">
+                  <h3
+                    class="font-bold uppercase text-brand-vivid-purple text-xl lg:text-2xl leading-7"
+                  >
+                    7. ОТВЕТСТВЕННОСТЬ СТОРОН
+                  </h3>
+                  <ul
+                    class="space-y-2.5 lg:space-y-3 text-brand-dark-purple leading-8 tracking-widest"
+                  >
+                    <li>
+                      7.1 Оператор, не исполнивший свои обязательства, несёт
+                      ответственность за убытки, понесённые Пользователем в
+                      связи с неправомерным использованием персональных данных,
+                      в соответствии с законодательством Российской Федерации,
+                      за исключением случаев, предусмотренных п.п. 5.2., 5.3. и
+                      7.2. настоящей Политики Конфиденциальности.
+                    </li>
+                    <li class="space-y-2.5 lg:space-y-3">
+                      <span
+                        >7.2 В случае утраты или разглашения Конфиденциальной
+                        информации Оператор не несёт ответственность, если
+                        данная конфиденциальная информация:</span
+                      >
+                      <ul class="list-disc space-y-2.5 lg:space-y-3 pl-6">
+                        <li>
+                          Стала публичным достоянием до её утраты или
+                          разглашения.
+                        </li>
+                        <li>
+                          Была получена от третьей стороны до момента её
+                          получения Оператором.
+                        </li>
+                        <li>Была разглашена с согласия Пользователя.</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Content 9 -->
+                <div class="space-y-5 lg:space-y-6">
+                  <h3
+                    class="font-bold uppercase text-brand-vivid-purple text-xl lg:text-2xl leading-7"
+                  >
+                    8. БЕЗОПАСНОСТЬ
+                  </h3>
+                  <p class="text-brand-dark-purple tracking-widest">
+                    Передача персональных данных в любой форме (лично, по
+                    телефону или через Интернет) всегда связана с определенным
+                    риском, поскольку не существует абсолютно надежных
+                    (защищенных от злонамеренных посягательств) систем, однако
+                    Оператор принимает необходимые адекватные меры для
+                    минимизации риска и предотвращения несанкционированного
+                    доступа, несанкционированного использования и искажения
+                    Ваших персональных данных.
+                  </p>
+                </div>
+                <!-- Content 10 -->
+                <div class="space-y-5 lg:space-y-6">
+                  <h3
+                    class="font-bold uppercase text-brand-vivid-purple text-xl lg:text-2xl leading-7"
+                  >
+                    9. НЕСОВЕРШЕННОЛЕТНИЕ
+                  </h3>
+                  <p class="text-brand-dark-purple tracking-widest">
+                    Передача персональных данных в любой форме (лично, по
+                    телефону или через Интернет) всегда связана с определенным
+                    риском, поскольку не существует абсолютно надежных
+                    (защищенных от злонамеренных посягательств) систем, однако
+                    Оператор принимает необходимые адекватные меры для
+                    минимизации риска и предотвращения несанкционированного
+                    доступа, несанкционированного использования и искажения
+                    Ваших персональных данных.
+                  </p>
+                </div>
+                <!-- Content 11 -->
+                <div class="space-y-5 lg:space-y-6">
+                  <h3
+                    class="font-bold uppercase text-brand-vivid-purple text-xl lg:text-2xl leading-7"
+                  >
+                    10. РАЗРЕШЕНИЕ СПОРОВ
+                  </h3>
+                  <p class="text-brand-dark-purple tracking-widest">
+                    10.1 До обращения в суд с иском по спорам, возникающим из
+                    отношений между Пользователем Системы бронирования и
+                    Оператором, обязательным является предъявление претензии
+                    (письменного предложения о добровольном урегулировании
+                    спора).
+                  </p>
+                  <p class="text-brand-dark-purple tracking-widest">
+                    10.2 Получатель претензии в течение 30 календарных дней со
+                    дня получения претензии, письменно уведомляет заявителя
+                    претензии о результатах рассмотрения претензии.
+                  </p>
+                  <p class="text-brand-dark-purple tracking-widest">
+                    10.3 При не достижении соглашения спор будет передан на
+                    рассмотрение в судебный орган в соответствии с действующим
+                    законодательством Российской Федерации.
+                  </p>
+                  <p class="text-brand-dark-purple tracking-widest">
+                    10.4 К настоящей Политике конфиденциальности и отношениям
+                    между Пользователем и Оператором применяется действующее
+                    законодательство Российской Федерации.
+                  </p>
+                </div>
+                <!-- Content 12 -->
+                <div class="space-y-5 lg:space-y-6">
+                  <h3
+                    class="font-bold uppercase text-brand-vivid-purple text-xl lg:text-2xl leading-7"
+                  >
+                    10. ДОПОЛНИТЕЛЬНЫЕ УСЛОВИЯ
+                  </h3>
+                  <p class="text-brand-dark-purple tracking-widest">
+                    11.1 Оператор вправе вносить изменения в настоящую Политику
+                    конфиденциальности без согласия Пользователя.
+                  </p>
+                  <p class="text-brand-dark-purple tracking-widest">
+                    11.2 Новая Политика конфиденциальности вступает в силу с
+                    момента ее размещения на сайте Системы бронирования, если
+                    иное не предусмотрено новой редакцией Политики
+                    конфиденциальности.
+                  </p>
+                </div>
+                <p class="text-brand-dark-purple tracking-widest">
+                  WINGS TOUR LIMITED LIABILITY COMPANY (Wings Tour Co., Ltd)
+                  <br />
+                  Адрес: Республика Корея, г. Сеул, Сочо-гу, Щинбанпо-ро
+                  47-гиль, 47, офис 301 <br />
+                  Свидетельство налогоплательщика № 389-86-03374 <br />
+                  Регистрационный номер юридического лица № 110111-9028550
+                  <br />
+                  Тур. Лицензия № 2024-000056
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer
+      class="space-y-11 bg-brand-dark-purple text-white mt-12 lg:mt-16 pt-6 pb-5"
+    >
+      <div
+        class="max-w-base mx-auto space-y-8 sm:space-y-11 px-3 md:px-16 lg:px-3 pt-2"
+      >
+        <!-- Top -->
+        <div
+          class="min-h-[152px] flex flex-col sm:flex-col-reverse lg:flex-row justify-between gap-10"
+        >
+          <!-- Links -->
+          <div
+            class="max-w-xl xl:max-w-[714px] w-full grid grid-cols-2 sm:flex sm:justify-between font-medium leading-8 tracking-wider gap-10"
+          >
+            <ul class="space-y-5">
+              <li>
+                <a href="#about" class="hover:underline">О нас</a>
+              </li>
+              <li>
+                <a href="#services" class="hover:underline">Услуги</a>
+              </li>
+              <li>
+                <a href="#schedule" class="hover:underline">Расписание туров</a>
+              </li>
+            </ul>
+            <ul class="space-y-5">
+              <li>
+                <a href="#faq" class="hover:underline">FAQ</a>
+              </li>
+              <li>
+                <a href="#reviews" class="hover:underline">Отзывы</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">Вакансии</a>
+              </li>
+            </ul>
+            <ul class="hidden sm:block space-y-5">
+              <li>
+                <a href="#" class="hover:underline">Наши партнёры</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">Система лояльности</a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">Подарочный сертификат</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Logo & Others -->
+          <div class="flex lg:flex-col gap-5">
+            <div
+              class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 sm:gap-10"
+            >
+              <!-- Logo -->
+              <a href="./index.html">
+                <img
+                  src="./assets/images/logo-footer.svg"
+                  alt="Logo"
+                  class="min-w-20"
+                />
+              </a>
+            </div>
+
+            <!-- Links -->
+            <div
+              class="sm:max-w-[213px] w-full flex flex-row flex-wrap gap-x-9 gap-y-1 text-xs leading-6 sm:leading-8"
+            >
+              <a href="#" class="underline">Лицензия</a>
+              <a href="#" class="underline">Договор оферты</a>
+              <a href="#" class="underline">Политика конфиденциальности</a>
+            </div>
+          </div>
+
+          <!-- Accordion -->
+          <div class="relative" data-accordion>
+            <button
+              class="accordion-btn flex justify-between items-center text-left font-medium"
+            >
+              <span>회사에 대한 정보</span>
+              <svg
+                class="angle-icon w-6 h-6 transform transition-transform"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <!-- Accordion Content -->
+            <div
+              class="accordion-content overflow-hidden max-h-0 transition-all duration-300 text-xs text-white rounded-md space-y-2 mt-4"
+            >
+              <div>사업자등록번호 : 389-86-03374</div>
+              <div>관광사업등록번호: 2024-000056</div>
+              <div>외국인환자 유치업자 등록번호: A-2024-01-01-5587</div>
+              <div>
+                사업장 소재지: 06530 서울시 서초구 신반포로 47 길 47, 301호
+              </div>
+              <div>이메일 : <a href="#">wingstour.info@gmail.com</a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom -->
+        <div class="text-center text-sm leading-8 tracking-wider">
+          <p class="text-white">© 2025, Wings Tour, все права защищены</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
